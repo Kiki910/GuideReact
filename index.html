@@ -9,11 +9,22 @@
     <link rel="stylesheet" href="./css/style.css">
     <script src="./js/script.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script>
+        window.addEventListener("scroll",function(){
+            if(window.pageYOffset > 200) {
+                document.getElementById("tornasu").style.display="block";
+            }
+            else {
+                document.getElementById("tornasu").style.display="none";
+            }
+        });
+    </script>
 </head>
 <body class="cont">
+    <a name="Inizio"></a>
     <div class="container-fluid">
         <!-- INIZIO NAVBAR -->
-        <a name="Inizio"></a>
         <nav class="navbar navbar-expand-lg navbar navB">
             <div class="LogoTitolo">
                 <a href="https://www.denina.it/" target="new">
@@ -50,7 +61,7 @@
         </p>
         <!-- INIZIO CONTENUTI -->
 
-        <div class="container-fluid sfondoHome d-lg-block d-none">
+        <div class="container-fluid sfondoHome d-lg-block d-none" data-aos="zoom-in">
             <div class="imm">
                 <div class="row-12 d-flex justify-content-center">
                     SCOPRI I CONTENUTI DI QUESTA GUIDA!
@@ -63,18 +74,19 @@
 
         <div class="container">
             <a name="Vai"></a>
-            <div class="Domanda">
+            <div class="Domanda" data-aos="fade-down">
                 Cosa imparerai?
             </div>
             <br><br>
-            <div class="row d-flex justify-content-center">
+            <div class="row d-flex justify-content-center" data-aos="zoom-in">
                 <div class="col-xl-8 col-md-8 col-sm-8 ">
-                    <div class="card mb-3">
-                        <img src="./images/JSONcodice.png" class="card-img-top" alt="...">
+                    <div class="card mb-3 CardHome">
+                        <img src="./images/JSONcodice.png" class="card-img-top" title="Esempio di codice di un file JSON">
                         <div class="card-body">
-                            <h5 class="card-title d-flex justify-content-center">JSON</h5>
-                            <p class="card-text">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa omnis quia, deserunt sunt eum, odit natus vitae, quasi tempore magni mollitia laudantium aut et sint voluptatem sed! Itaque, quisquam nisi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum ea voluptatem doloribus aliquam earum recusandae aliquid aperiam accusamus accusantium? Nam, hic perferendis nihil repellendus explicabo ex consequatur? Pariatur, voluptas tempora. Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias ratione vel voluptates omnis fuga! Similique iste minima dignissimos dolores placeat aperiam eaque, sapiente ducimus expedita officiis sunt, vitae accusantium sit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi porro deleniti facilis repudiandae vel libero dignissimos enim dolores, ratione rerum asperiores tempora unde sint facere dolor eius? Accusantium, qui vitae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur quis, beatae molestiae vitae quae itaque officiis eveniet aspernatur incidunt, totam consectetur minima temporibus modi tempore reprehenderit sapiente tenetur ad similique. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos libero debitis commodi laboriosam veniam earum saepe officia, deserunt dolores, optio facilis sint sunt labore nobis facere corrupti molestias inventore fuga. lo
+                            <h5 class="card-title d-flex justify-content-center TitoloJSON">JSON</h5>
+                            <p class="card-text TXTcard mt-5">
+                                Il JSON è un formato per lo scambio dati su supporto digitale.<br><br>
+                                Vieni a scoprire il formato JSON, il suo utilizzo, le sue caratteristiche e come puè essere utilizzato nei file.
                             </p>
                             <div class="d-flex justify-content-center">
                                 <a class="JSONBut" href="./JSON.html"> Vai a JSON --></a>
@@ -84,67 +96,68 @@
                 </div>
             </div>
 
-            <div class="row d-flex justify-content-center">
+            <div class="row d-flex justify-content-center" data-aos="zoom-in">
                 <div class="col-xl-8 col-md-8 col-sm-8 ">
-                    <div class="card mb-3">
-                        <img src="./images/XMLcodice.png" class="card-img-top" alt="...">
+                    <div class="card mb-3 CardHome">
+                        <img src="./images/XMLcodice.png" class="card-img-top">
                         <div class="card-body">
-                            <h5 class="card-title d-flex justify-content-center">XML</h5>
-                            <p class="card-text">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa omnis quia, deserunt sunt eum, odit natus vitae, quasi tempore magni mollitia laudantium aut et sint voluptatem sed! Itaque, quisquam nisi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum ea voluptatem doloribus aliquam earum recusandae aliquid aperiam accusamus accusantium? Nam, hic perferendis nihil repellendus explicabo ex consequatur? Pariatur, voluptas tempora. Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias ratione vel voluptates omnis fuga! Similique iste minima dignissimos dolores placeat aperiam eaque, sapiente ducimus expedita officiis sunt, vitae accusantium sit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi porro deleniti facilis repudiandae vel libero dignissimos enim dolores, ratione rerum asperiores tempora unde sint facere dolor eius? Accusantium, qui vitae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur quis, beatae molestiae vitae quae itaque officiis eveniet aspernatur incidunt, totam consectetur minima temporibus modi tempore reprehenderit sapiente tenetur ad similique. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos libero debitis commodi laboriosam veniam earum saepe officia, deserunt dolores, optio facilis sint sunt labore nobis facere corrupti molestias inventore fuga. lo
+                            <h5 class="card-title d-flex justify-content-center TitoloXML">XML</h5>
+                            <p class="card-text TXTcard mt-5">
+                                L'XML è un linguaggio per la rappresentazione di documenti e dati strutturali su supporto digitale.<br><br>
+                                Vieni a scoprire le sue origini, il suo utilizzo come linguaggio di markup, le sue caratteristiche e tante altre cose.
                             </p>
                             <div class="d-flex justify-content-center">
-                                <a class="JSONBut" href="./XML.html"> Vai a XML --></a>
-                            </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row d-flex justify-content-center">
-                <div class="col-xl-8 col-md-8 col-sm-8 ">
-                    <div class="card mb-3">
-                        <img src="./images/JSAv.png" class="card-img-top" >
-                        <div class="card-body">
-                            <h5 class="card-title d-flex justify-content-center">JS Avanzato</h5>
-                            <p class="card-text">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa omnis quia, deserunt sunt eum, odit natus vitae, quasi tempore magni mollitia laudantium aut et sint voluptatem sed! Itaque, quisquam nisi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum ea voluptatem doloribus aliquam earum recusandae aliquid aperiam accusamus accusantium? Nam, hic perferendis nihil repellendus explicabo ex consequatur? Pariatur, voluptas tempora. Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias ratione vel voluptates omnis fuga! Similique iste minima dignissimos dolores placeat aperiam eaque, sapiente ducimus expedita officiis sunt, vitae accusantium sit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi porro deleniti facilis repudiandae vel libero dignissimos enim dolores, ratione rerum asperiores tempora unde sint facere dolor eius? Accusantium, qui vitae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur quis, beatae molestiae vitae quae itaque officiis eveniet aspernatur incidunt, totam consectetur minima temporibus modi tempore reprehenderit sapiente tenetur ad similique. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos libero debitis commodi laboriosam veniam earum saepe officia, deserunt dolores, optio facilis sint sunt labore nobis facere corrupti molestias inventore fuga. lo
-                            </p>
-                            <div class="d-flex justify-content-center">
-                                <a class="JSONBut" href="./JSAvanzato.html"> Vai a JS Avanzato --></a>
+                                <a class="XMLBut" href="./XML.html"> Vai a XML --></a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="row d-flex justify-content-center">
+            <div class="row d-flex justify-content-center" data-aos="zoom-in">
                 <div class="col-xl-8 col-md-8 col-sm-8 ">
-                    <div class="card mb-3">
+                    <div class="card mb-3 CardHome">
+                        <img src="./images/JSAv.png" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title d-flex justify-content-center TitoloJS">JS Avanzato</h5>
+                            <p class="card-text TXTcard mt-5">
+                                JavaScript Avanzato è un modulo che ti insegna l'ES6, ossia l'ultima versione di JavaScript.<br>
+                                Per capire ciò bisogna avere una base di conoscenze di JavaScript, ossia un linguaggio di programmazione utilizzato nella parte Web lato client per la creazione di effetti interattivi all'interno della pagine Web.<br><br>
+                                Vieni a scoprire il Template string, la Promise, la Map, la destrutturazione e lo spread.
+                            </p>
+                            <div class="d-flex justify-content-center">
+                                <a class="JSBut" href="./JSAvanzato.html"> Vai a JS Avanzato --></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row d-flex justify-content-center" data-aos="zoom-in">
+                <div class="col-xl-8 col-md-8 col-sm-8 ">
+                    <div class="card mb-3 CardHome">
                         <img src="./images/ReactCodice.png" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title d-flex justify-content-center">React</h5>
-                            <p class="card-text">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa omnis quia, deserunt sunt eum, odit natus vitae, quasi tempore magni mollitia laudantium aut et sint voluptatem sed! Itaque, quisquam nisi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum ea voluptatem doloribus aliquam earum recusandae aliquid aperiam accusamus accusantium? Nam, hic perferendis nihil repellendus explicabo ex consequatur? Pariatur, voluptas tempora. Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias ratione vel voluptates omnis fuga! Similique iste minima dignissimos dolores placeat aperiam eaque, sapiente ducimus expedita officiis sunt, vitae accusantium sit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi porro deleniti facilis repudiandae vel libero dignissimos enim dolores, ratione rerum asperiores tempora unde sint facere dolor eius? Accusantium, qui vitae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur quis, beatae molestiae vitae quae itaque officiis eveniet aspernatur incidunt, totam consectetur minima temporibus modi tempore reprehenderit sapiente tenetur ad similique. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos libero debitis commodi laboriosam veniam earum saepe officia, deserunt dolores, optio facilis sint sunt labore nobis facere corrupti molestias inventore fuga. lo
+                            <h5 class="card-title d-flex justify-content-center TitoloReact">React</h5>
+                            <p class="card-text TXTcard mt-5">
+                                React, ossia una libreria JavaScript, è una SPA, che sta per Single Page Application, per creare Web App, dato che si crea in una sola pagina. <br><br>
+                                Vieni a scoprire gli Hooks e i componenti principali.
                             </p>
                             <div class="d-flex justify-content-center">
-                                <a class="JSONBut" href="./React.html"> Vai a REACT --></a>
+                                <a class="ReactBut" href="./React.html"> Vai a REACT --></a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+
+            <a href="#Inizio">
+                <div id="tornasu">
+                    <img src="./images/FrecciaSu.png" class="tornasu" width="50%">
+                </div>
+            </a>
         </div>
         <!-- FINE CONTENUTI -->
-
-        <div>
-            <div>
-                <a href="#Inizio">
-                    <div class="d-flex justify-content-end mr-5">
-                        <img src="./images/FrecciaSu.png" alt="Torna su" width="50px" title="Torna a inizio pagina">
-                    </div>
-                </a>
-            </div>
-        </div>
 
         <!-- INIZIO FOOTER -->
         <footer class="footer">
@@ -170,7 +183,10 @@
         <!-- FINE FOOTER -->
     </div>
 
-
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>

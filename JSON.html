@@ -9,8 +9,20 @@
     <link rel="stylesheet" href="./css/style.css">
     <script src="./js/script.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script>
+        window.addEventListener("scroll",function(){
+            if(window.pageYOffset > 200) {
+                document.getElementById("tornasu").style.display="block";
+            }
+            else {
+                document.getElementById("tornasu").style.display="none";
+            }
+        });
+    </script>
 </head>
 <body class="contJSON">
+    <a name="Inizio"></a>
     <div class="container-fluid">
         <!-- INIZIO NAVBAR -->
         <nav class="navbar navbar-expand-lg navbar navB">
@@ -54,16 +66,18 @@
 
         <div class="container">
             <!-- INIZIO INTRODUZIONE + TITOLO JSON -->
-            <div class="TitoloJSON">
-                Il JSON
+            <div class="ContTitJSON">
+                <div class="TitoloJSON" data-aos="flip-up">
+                    Il JSON
+                </div>
             </div>
-            <div>
+            <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
                 <div class="Def">Cos'è il JSON e come si presenta il suo formato?</div>
-                <div class="testoJSON">
+                <div class="testo ml-xl-5 mr-xl-5">
                     Il JSON (JavaScript Objet Notation) è un formato per lo scambio dei dati. È facile da leggere e da scrivere per gli utenti, ma anche facile da interpretare per le macchine. È un sottoinsieme del Linguaggio di Programmazione JavaScript. Possiamo anche dire che il JSON è un formato di testo indipendente dal linguaggio di programmazione, ma utilizza convenzioni simili ai linguaggi del C, C++, Java, JavaScript, Python, ... .
                 </div>
                 <br>
-                <div class="testoJSON">
+                <div class="testo ml-xl-5 mr-xl-5">
                     Il JSON si basa su due strutture:
                     <ul>
                         <li>insieme di coppie nome:valore, che in altri linguaggi può essere visto come una struct, dizionario...</li>
@@ -73,10 +87,14 @@
                 <br>
             </div>
             <!-- FINE INTRODUZIONE + TITOLO JSON -->
-
+            <a href="#Inizio">
+                <div id="tornasu">
+                    <img src="./images/FrecciaSu.png" class="tornasu" width="50%">
+                </div>
+            </a>
             <!-- INIZIO SINTASSI -->
             <div>    
-                <div>
+                <div data-aos="zoom-in-down">
                     <div class="pos-f-t">
                             <button class="navbar-toggler button" type="button" data-toggle="collapse" data-target="#Object" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
                                 Sintassi OBJECT
@@ -154,46 +172,49 @@
             <!-- FINE SINTASSI -->
             
             <div class="d-flex justify-content-between">
-                <div class="sep"></div>
-                <div class="sep2"></div>
-            </div>
-
-            <div>
-                <div class="Def mt-5 d-flex justify-content-center">La fetch</div>
-                <div class="testoJSON">
-                    
-                </div>
-                <br>
-                <div class="testoJSON">
-                    
-                </div>
-                <br>
-            </div>
-
-            <div>
-                <pre class="Codice">
-                    <code>
-                        <span class="blue">const</span><span class="yellow"> visualizza</span><span class="white">=</span><span class="violet">()</span><span class="blue"> => </span><span class="violet">{</span>
-                        
-                        <span class="blue">    const</span><span class="lightB"> URL </span><span class="white">=</span><span class="red"> "https://raw.githubusercontent.com/icobasco/sample_data_files/master/pera_misure_sample.json" </span>
-
-                        <span class="blue">    const</span><span class="yellow"> Connessione</span><span class="white">=</span><span class="violet">()</span><span class="blue"> => </span><span class="violet">{</span>
-                        <span class="yellow">       fetch</span><span class="blue">(</span><span class="lightB">URL</span><span class="blue">)</span>
-                        <span class="yellow">           .then</span><span class="blue">(</span><span class="yellow">(</span><span class="lightB">dati</span><span class="yellow">)</span><span class="blue"> => </span><span class="lightB">dati</span><span class="yellow">.json</span><span class="lightB">()</span><span class="blue">)</span>
-                        <span class="yellow">           .then</span><span class="blue">(</span><span class="yellow">(</span><span class="lightB">datiJSON</span><span class="yellow">)</span><span class="blue"> => </span><span class="violet">{</span>
-                        <span class="lightB">               datiJSON</span><span class="yellow">.forEach(</span><span class="lightB">element</span><span class="violet"> => {</span>
-                        <span class="blue">                   let</span><span class="lightB"> nuovoElemento</span><span class="white"> = </span><span class="lightB">document</span><span class="yellow">.createElement</span><span class="blue">(</span><span class="red">"div"</span><span class="blue">)</span><span class="white">;</span>
-                        <span class="lightB">                   nuovoElemento.innerHTML</span><span class="white">=</span><span class="lightB">element.lora_device_id</span><span class="white">;</span>
-                        <span class="lightB">                   document</span><span class="yellow">.getElementById</span><span class="blue">(</span><span class="red">"device"</span><span class="blue">)</span><span class="yellow">.appendChild</span><span class="blue">(</span><span class="lightB">nuovoElemento</span><span class="blue">)</span><span class="white">;</span>
-                        <span class="violet">               }</span><span class="yellow">)</span>
-                        <span class="violet">           }</span><span class="blue">)</span>
-                        <span class="violet">    }</span>
-                        <span class="violet">}</span>
-                    </code>
-                </pre>
+                <div class="sepJ"></div>
+                <div class="sep2J"></div>
             </div>
             
+            <!-- INIZIO FETCH -->
+            <div>
+                <div class="Def mt-5 d-flex justify-content-center" data-aos="fade-up" data-aos-duration="1000">La fetch</div>
+                <div class="testo ml-xl-5 mr-xl-5" data-aos="fade-right">
+                    La <strong>Fetch</strong> è un metodo che ci permette di mandare una richiesta al server e caricare informazioni ogni volta che ne abbiamo bisogno. <br><br>
+                    Per usare la fetch servono 3 "parole chiavi":
+                    <ul>
+                        <li>fetch(URL): ha bisogno dell'URL da raggiungere per estrapolare le informazioni;</li>
+                        <li>.then(): il primo then() serve per trasformare le informazioni prese tramite l'URL in testo e poi convertirlo in JSON;</li>
+                        <li>.then(): il secondo then() serve per prendere i suoi dati./li>
+                    </ul>
+                </div>
+            </div>
 
+            <div class="row d-flex justify-content-center" data-aos="zoom-out">
+                <div class="col-12">
+                    <pre class="Codice">
+                        <code>
+        <span class="blue">const</span><span class="yellow"> visualizza</span><span class="white"> = </span><span class="violet">()</span><span class="blue"> => </span><span class="violet">{</span>
+
+        <span class="blue">    const</span><span class="lightB"> URL </span><span class="white">=</span><span class="red"> "https://raw.githubusercontent.com/icobasco/sample_data_files/master/pera_misure_sample.json" </span>
+
+        <span class="blue">    const</span><span class="yellow"> Connessione</span><span class="white"> = </span><span class="violet">()</span><span class="blue"> => </span><span class="violet">{</span>
+        <span class="yellow">       fetch</span><span class="blue">(</span><span class="lightB">URL</span><span class="blue">)</span>
+        <span class="yellow">           .then</span><span class="blue">(</span><span class="yellow">(</span><span class="lightB">dati</span><span class="yellow">)</span><span class="blue"> => </span><span class="lightB">dati</span><span class="yellow">.json</span><span class="lightB">()</span><span class="blue">)</span>
+        <span class="yellow">           .then</span><span class="blue">(</span><span class="yellow">(</span><span class="lightB">datiJSON</span><span class="yellow">)</span><span class="blue"> => </span><span class="violet">{</span>
+        <span class="lightB">               datiJSON</span><span class="yellow">.forEach(</span><span class="lightB">element</span><span class="violet"> => {</span>
+        <span class="blue">                   let</span><span class="lightB"> nuovoElemento</span><span class="white"> = </span><span class="lightB">document</span><span class="yellow">.createElement</span><span class="blue">(</span><span class="red">"div"</span><span class="blue">)</span><span class="white">;</span>
+        <span class="lightB">                   nuovoElemento.innerHTML</span><span class="white"> = </span><span class="lightB">element.lora_device_id</span><span class="white">;</span>
+        <span class="lightB">                   document</span><span class="yellow">.getElementById</span><span class="blue">(</span><span class="red">"device"</span><span class="blue">)</span><span class="yellow">.appendChild</span><span class="blue">(</span><span class="lightB">nuovoElemento</span><span class="blue">)</span><span class="white">;</span>
+        <span class="violet">               }</span><span class="yellow">)</span>
+        <span class="violet">           }</span><span class="blue">)</span>
+        <span class="violet">    }</span>
+        <span class="violet">}</span>
+                        </code>
+                    </pre>
+                </div>
+            </div>            
+            <!-- FINE FETCH -->
         </div>
         <!-- FINE CONTENUTI -->
         
@@ -221,7 +242,10 @@
         <!-- FINE FOOTER -->
     </div>
 
-
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>

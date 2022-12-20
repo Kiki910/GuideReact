@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Paseri Kevin - HOME</title>
+    <title>Paseri Kevin - XML</title>
     <link rel="stylesheet" href="./css/style.css">
     <script src="./js/script.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -47,7 +47,90 @@
 
         <p class="d-sm-block d-xl-none d-md-block">
             <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-         </p>
+        </p>
+
+        <!-- INIZIO CONTENUTI -->
+        <div class="container">
+            <!-- INIZIO INTRODUZIONE + TITOLO XML -->
+            <div class="TitoloXML">
+                L'XML
+            </div>
+            <div>
+                <div class="Def">Cos'è l'XML, com'è nato e quali sono le sue principali caratteristiche?</div>
+                <div class="testo ml-xl-5 mr-xl-5">
+                    L'XML è un linguaggio che permette la rappresentazione di documenti e dati su supporto digitale.<br>
+                    Sviluppato dal World Wide Web Consortium, nel 1996 è stato formato un gruppo di lavoro oer definire un linguaggio a markup per uso generale. Deriva da SGML, che è un linguaggio di mark-up dichiarativo dell ISO (International Standardization Organization).<br>
+                    L'XML è un linguaggio a marcatori (markup), cioè composto da istruzioni, chiamati tag o marcatori, ch edescrivono la struttura e la forma di un documento; ogni marcatore identifica un elemento o un componente del documento.
+                </div>
+                <br>
+                <div class="testo ml-xl-5 mr-xl-5">
+                    Le sue principali caratteristiche del formato XML sono:
+                    <ul>
+                        <li>è facilmente leggibile da qualunque persona;</li>
+                        <li>è indipendenet dal tipo di piattaformm ahardware e software su cui viene utilizzato;</li>
+                        <li>permette la rappresentazione di qualsiasi tipo di documento e di struttura;</li>
+                        <li>è uno standard di pubblico dominio;</li>
+                        <li>una applicazione in grado di elaborare dati in formato XML viene definita elaboratore XML.</li>
+                    </ul>
+                </div>
+
+                <br>
+                
+                <div class="Def">-Linguaggi e grammatiche</div>
+                <div class="testo ml-xl-5 mr-xl-5">
+                    Per stabilire quali tag possono essere utilizzati e come li devono essere usati, ci deve essere una grammatica, cioè un insieme di regole che indica quali elementi possono essere utilizzati e con quale struttura devono essere strutturati i documenti.<br>
+                    Se un documento XML rispetta le regole definite dalla grammatica, si dice che è valido. <br><br>
+                    Ci sono due tipi di regole:
+                    <ul>
+                        <li>regole sintattiche (o metasintattiche) che definiscono come si devono scrivere le informazioni all'interno dei documenti; se un documento rispetta queste regole, si dice che il documento è ben formato (well-formed);</li>
+                        <li>regole semantiche che definiscono cosa si può scrivere all'interno del documento XML; se un documento rispetta sia le regole sintattiche sia quelle semantiche, si dice che il documento è valido.</li>
+                    </ul>
+                </div>
+                
+                <br>
+                
+                <div class="Def">-Struttura di un documento XML</div>
+                <div class="testo ml-xl-5 mr-xl-5">
+                    Un documento XML è strutturato in modo gerarchico. È formato da elementi, ossia dei componenti logici del documento che può contenere una parte di testo oppure altri elementi, che in questo si chiamano "sotto-elementi". Ad ogni elemento possono essere associati degli attributi che ne descrivono delle caratteristiche o delle proprietà; questi attributi sono formati da un nome a cui viene associato un valore. <br>
+                    Gli elementi sono rappresentati attraverso dei tag che racchiudono il contenuto dell'elemento, mentre i sotto-elementi sonodei tag contenuti in altri tag. <br><br>
+                    Un documento XML è formato da due parti:
+                    <ol>
+                        <li><strong>prologo:</strong> contiene una dichiarazione XML (che contiene informazione sulla versione e sul set di caratteri) e occasionalmente un riferimento ad altri documenti che definiscono la struttura;</li>
+                        <li><strong>corpo:</strong> è il documento XML vero e proprio.</li>
+                    </ol>    
+                    
+                    <br><br>
+
+                    <div class="row d-flex justify-content-center" data-aos="zoom-out">
+                        <div class="col-12">
+                            <pre class="Codice">
+                                <code>
+        <span class="gray">&lt?</span><span class="blue">xml</span><span class="lightB"> version</span><span class="white">=</span><span class="red">"1.0"</span><span class="lightB"> encoding</span><span class="white">=</span><span class="red">"UTF-8"</span><span class="gray">?&gt</span>
+        <span class="gray">&lt!</span><span class="blue">DOCTYPE root-element</span><span class="white"> SYSTEM "nome file"</span><span class="gray">&gt</span>
+                                    
+        <span class="gray">&lt</span><span class="blue">root</span><span class="gray">&gt</span>
+            <span class="gray">&lt</span><span class="blue">child</span><span class="gray">&gt</span>
+                <span class="white">...</span>
+            <span class="gray">&lt/</span><span class="blue">child</span><span class="gray">&gt</span>
+            <span class="gray">&lt</span><span class="blue">child</span><span class="gray">&gt</span>
+                <span class="white">...</span>
+            <span class="gray">&lt/</span><span class="blue">child</span><span class="gray">&gt</span>
+        <span class="gray">&lt/</span><span class="blue">root</span><span class="gray">&gt</span>
+                                </code>
+                            </pre>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-between">
+                <div class="sepX"></div>
+                <div class="sep2X"></div>
+            </div>
+
+            <!-- FINE INTRODUZIONE + TITOLO XML -->
+        </div>
+        <!-- FINE CONTENUTI -->
 
         <!-- INIZIO FOOTER -->
         <footer class="footer">
