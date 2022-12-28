@@ -141,7 +141,7 @@ html {
     background-position: center;
     background-color: black!important;
     background-size: 40%;
-    background-position: 50% 15%;
+    background-position: 50% 13%;
 }
 
 .contXML {
@@ -150,7 +150,7 @@ html {
     background-position: center;
     background-color: black;
     background-size: 50%;
-    background-position: 50% 15%;
+    background-position: 50% 4%;
 }
 
 .contJS {
@@ -159,7 +159,7 @@ html {
     background-position: center;
     background-color: black;
     background-size: 50%;
-    background-position: 50% 15%;
+    background-position: 50% 20%;
 }
 
 .testo {
@@ -202,7 +202,7 @@ html {
     width: 200px;
     background-color: black;
     color: white;
-    border: 2px solid black;
+    border: 2px solid white;
     transition: 1s;
 }
 
@@ -359,7 +359,7 @@ html {
     -webkit-text-fill-color: transparent;
     animation: textclip 2s linear infinite;
     display: inline-block;
-    font-size: 90px;
+    font-size: 350%;
     display: flex;
     justify-content: center;
     font-weight: bolder;
@@ -399,7 +399,7 @@ html {
 
 .Def {
     color: white;
-    font-size: 30px;
+    font-size: 35px;
     font-weight: bolder;
     text-decoration: underline;
     margin-bottom: 10px;
@@ -539,7 +539,12 @@ html {
 }
 
 .yellow {
-    color: #ffff3f;
+    color: #fff200;
+    font-weight: bold;
+}
+
+.lightY {
+    color: #ffff5f;
     font-weight: bold;
 }
 
@@ -549,17 +554,22 @@ html {
 }
 
 .violet {
-    color: violet;
+    color: rgb(222, 0, 222);
     font-weight: bold;
 }
 
 .lightB {
-    color: rgb(0, 255, 213);
+    color: rgb(0, 229, 255);
+    font-weight: bold;
+}
+
+.blue2 {
+    color: darkcyan;
     font-weight: bold;
 }
 
 .red {
-    color: red;
+    color: rgb(255, 36, 36);
     font-weight: bold;
 }
 
@@ -568,12 +578,17 @@ html {
     font-weight: bold;
 }
 
+.green {
+    color: rgb(0, 231, 0);
+    font-weight: bold;
+}
+
 .Codice{
     background: rgb(41, 41, 41);
-    opacity: 0.7;
     border-radius: 10px;
     display: block;
     width: 100%;
+    font-size: 18px;
 }
 
 pre {
@@ -585,5 +600,5 @@ pre {
     bottom: 0px;
     right: 0px;
     display: none;
-    padding:0px;
+    padding: 0px;
 }

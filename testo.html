@@ -1,0 +1,264 @@
+<div class="container">
+    <!-- INIZIO INTRODUZIONE + TITOLO XML -->
+    <div class="TitoloXML" data-aos="flip-up">
+        <p>L'XML</p>
+    </div>
+    <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+        <div class="Def">Cos'è l'XML, com'è nato e quali sono le sue principali caratteristiche?</div>
+        <div class="testo ml-xl-5 mr-xl-5">
+            <p>L'XML è un linguaggio che permette la rappresentazione di documenti e dati su supporto digitale.<br>
+            Sviluppato dal World Wide Web Consortium, nel 1996 è stato formato un gruppo di lavoro oer definire un linguaggio a markup per uso generale. Deriva da SGML, che è un linguaggio di mark-up dichiarativo dell ISO (International Standardization Organization).<br>
+            L'XML è un linguaggio a marcatori (markup), cioè composto da istruzioni, chiamati tag o marcatori, ch edescrivono la struttura e la forma di un documento; ogni marcatore identifica un elemento o un componente del documento.</p>
+        </div>
+        <br>
+        <div class="testo ml-xl-5 mr-xl-5">
+            <p>Le sue principali caratteristiche del formato XML sono:
+            <ul>
+                <li>è facilmente leggibile da qualunque persona;</li>
+                <li>è indipendenet dal tipo di piattaformm ahardware e software su cui viene utilizzato;</li>
+                <li>permette la rappresentazione di qualsiasi tipo di documento e di struttura;</li>
+                <li>è uno standard di pubblico dominio;</li>
+                <li>una applicazione in grado di elaborare dati in formato XML viene definita elaboratore XML.</li>
+            </ul></p>
+        </div>
+    </div>
+
+    <br>
+     
+    <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+        <div class="Def">-Linguaggi e grammatiche</div>
+        <div class="testo ml-xl-5 mr-xl-5">
+            <p>Per stabilire quali tag possono essere utilizzati e come li devono essere usati, ci deve essere una grammatica, cioè un insieme di regole che indica quali elementi possono essere utilizzati e con quale struttura devono essere strutturati i documenti.<br>
+            Se un documento XML rispetta le regole definite dalla grammatica, si dice che è valido. <br><br>
+            Ci sono due tipi di regole:
+            <ul>
+                <li>regole sintattiche (o metasintattiche) che definiscono come si devono scrivere le informazioni all'interno dei documenti; se un documento rispetta queste regole, si dice che il documento è ben formato (well-formed);</li>
+                <li>regole semantiche che definiscono cosa si può scrivere all'interno del documento XML; se un documento rispetta sia le regole sintattiche sia quelle semantiche, si dice che il documento è valido.</li>
+            </ul></p>
+        </div>
+    </div>
+        
+    <br>
+    
+    <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+        <div class="Def">-Struttura di un documento XML</div>
+        <div class="testo ml-xl-5 mr-xl-5">
+            <p>Un documento XML è strutturato in modo gerarchico. È formato da elementi, ossia dei componenti logici del documento che può contenere una parte di testo oppure altri elementi, che in questo si chiamano "sotto-elementi". Ad ogni elemento possono essere associati degli attributi che ne descrivono delle caratteristiche o delle proprietà; questi attributi sono formati da un nome a cui viene associato un valore. <br>
+            Gli elementi sono rappresentati attraverso dei tag che racchiudono il contenuto dell'elemento, mentre i sotto-elementi sonodei tag contenuti in altri tag. <br><br>
+            Un documento XML è formato da due parti:
+            <ol>
+                <li><strong>prologo:</strong> contiene una dichiarazione XML (che contiene informazione sulla versione e sul set di caratteri) e occasionalmente un riferimento ad altri documenti che definiscono la struttura;</li>
+                <li><strong>corpo:</strong> è il documento XML vero e proprio.</li>
+            </ol></p>   
+            
+            <br><br>
+
+            <div class="row d-flex justify-content-center" data-aos="zoom-out">
+                <div class="col-12">
+                    <pre class="Codice">
+                        <code>
+<span class="gray">&lt?</span><span class="blue">xml</span><span class="lightB"> version</span><span class="white">=</span><span class="red">"1.0"</span><span class="lightB"> encoding</span><span class="white">=</span><span class="red">"UTF-8"</span><span class="gray">?&gt</span>    
+                            
+<span class="gray">&lt</span><span class="blue">root</span><span class="gray">&gt</span>
+    <span class="gray">&lt</span><span class="blue">child</span><span class="gray">&gt</span>
+        <span class="white">...</span>
+    <span class="gray">&lt/</span><span class="blue">child</span><span class="gray">&gt</span>
+    <span class="gray">&lt</span><span class="blue">child</span><span class="gray">&gt</span>
+        <span class="white">...</span>
+    <span class="gray">&lt/</span><span class="blue">child</span><span class="gray">&gt</span>
+<span class="gray">&lt/</span><span class="blue">root</span><span class="gray">&gt</span>
+                        </code>
+                    </pre>
+                </div>
+            </div> 
+        </div>
+    </div>
+    <!-- FINE INTRODUZIONE + TITOLO XML -->
+
+    <div class="d-flex justify-content-between">
+        <div class="sepX"></div>
+        <div class="sep2X"></div>
+    </div>
+
+    <!-- INIZIO DTD -->
+    <div>
+        <div class="Def mt-5 d-flex justify-content-center" data-aos="fade-down" data-aos-duration="1000">Il DTD (Document Type Definition)</div>
+        <div class="testo ml-xl-5 mr-xl-5" data-aos="fade-right">
+            <p>Il DTD, ovvero Il Document Type Definition, è un liguaggio, o meglio, uno strumento di validazione, per definire la grammatica che descrive i elementi presenti in un documento XML. 
+            Per applicare un DTD a un documento XML nel prologo bisogna inserire questa dichiarazione:
+            <br>
+            <br>
+            <div class="row d-flex justify-content-center" data-aos="zoom-out">
+                <div class="col-12">
+                    <pre class="Codice">
+                        <code>
+<span class="gray">&lt!</span><span class="blue">DOCTYPE message</span><span class="white"> SYSTEM "message.dtd"</span><span class="gray">&gt</span> 
+                        </code>
+                    </pre>
+                </div>
+            </div>
+
+            Un documento DTD è formato da un elenco di dichiarazioni che descrivono la struttura del documento. Queste dichiarazioni definiscono:
+            <ul>
+                <li>gli elementi di un documento XML;</li>
+                <li>il modello di contenuto di ogni elemento, cioè gli elementi che può contenere e le sue relazioni;</li>
+                <li>gli attributi associati a ogni elemento, il loro tipo e il loro valore.</li>
+            </ul></p>
+
+            <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                <div class="Def">-Struttura di un DTD</div>
+                <div class="testo ml-xl-5 mr-xl-5">
+                    Per dichiarare un elemento si utilizza la parola chiave ELEMENT che, dopo di esso, ha bisogno del nome dell'elemento stesso e una serie di parametri che verranno spiegati di seguito. <br>
+                    Invece, per dichiarare un attributo dell'elemento, si utilizza la parola chiave ATTLIST che, dopo di esso, ha bisogno del nome dell'attributo e una serie di parametri che verrannno anche spiegati di seguito. <br><br>
+
+                    <div class="row d-flex justify-content-center" data-aos="zoom-out">
+                        <div class="col-12">
+                            <pre class="Codice">
+                                <code>
+<span class="gray">&lt!</span><span class="blue">ELEMENT</span><span class="white"> catalogo (film*)</span><span class="gray">&gt</span> 
+                                </code>
+                            </pre>
+                        </div>
+                    </div>
+                    In questo esempio, abbiamo la dichiarazione dell'elemento "catalogo" che può contenere al suo interno 0 o più elementi. Questo si può capire dal simbolo presente dopo la parola film e abbiamo 3 posssibilità:
+                    <ol>
+                        <li><strong>? :</strong> zero o 1;</li>
+                        <li><strong>+ :</strong> 1 o più;</li>
+                        <li><strong>* :</strong> zero o più.</li>
+                    </ol>
+
+                    <div class="row d-flex justify-content-center" data-aos="zoom-out">
+                        <div class="col-12">
+                            <pre class="Codice">
+                                <code>
+<span class="gray">&lt!</span><span class="blue">ELEMENT</span><span class="white"> formato </span><span class="blue">EMPTY</span><span class="gray">&gt</span>
+<span class="gray">&lt!</span><span class="blue">ATTLIST</span><span class="white"> formato value (VHS | DVD) </span><span class="blue">#REQUIRED</span><span class="gray">&gt</span>          
+                                </code>
+                            </pre>
+                        </div>
+                    </div>
+
+                    In questo altro esempio, abbiamo un dichiarazione dell'elemento "formato"; a differenza di quella di "catalogo", troviamo la parola <strong>EMPTY</strong>, cioè indica l'elemento vuoto. Al suo posto possiamo trovare la parola <strong>ANY</strong>, cioè indica che si può solo inserire testo o elementi, ovviamente dichiarati nel DTD. <br>
+                    Dopo alla dichiarazione dell'elemento, abbiamo anche la dichiarazione dei suoi attributi, dove troviamo che i valori possibili sono solo due. <br> 
+                    In fondo troviamo la parola <strong>"#REQUIRED"</strong>, cioè l'attributo deve essere presente; altra parola possibile in fondo può essere <strong>"#INPLIED"</strong>, cioè l'attributo è opzionale. <br>
+                    <br>
+
+                    <div class="row d-flex justify-content-center" data-aos="zoom-out">
+                        <div class="col-12">
+                            <pre class="Codice">
+                                <code>
+<span class="gray">&lt!</span><span class="blue">ELEMENT</span><span class="white"> originale </span><span class="blue">EMPTY</span><span class="gray">&gt</span>
+<span class="gray">&lt!</span><span class="blue">ATTLIST</span><span class="white"> originale value (si | no) </span><span class="red">"si"</span><span class="gray">&gt</span> 
+                                </code>
+                            </pre>
+                        </div>
+                    </div>
+                    In questo ultimo esempio, abbiamo una dichiarazione dell'elemento "originale", identica a quella di "formato". <br>
+                    Dopo di che abbiamo una dichiarazione di un attributo dell'elemento di sopra, che ha di nuovo due valori possibili. Un particolare da notare è il valore alla fine riportato tra virgolette che indica il valore di default. <br>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+        <div class="Def">-Esempio di un XML valido per il suo DTD</div>
+        <div class="testo ml-xl-6 mr-xl-5 d-xl-flex justify-content-between">
+            <div class="col-xl-6 col-md-10 col-sm-10">
+                <div class="row d-flex justify-content-center" data-aos="zoom-out">
+                    <div class="col-12">
+                        <pre class="Codice">
+                            <code>
+<span class="gray">&lt?</span><span class="blue">xml</span><span class="lightB"> version</span><span class="white">=</span><span class="red">"1.0"</span><span class="lightB"> encoding</span><span class="white">=</span><span class="red">"UTF-8"</span><span class="gray">?&gt</span>
+<span class="gray">&lt!</span><span class="blue">DOCTYPE catalogo</span><span class="white"> SYSTEM "4C_Paseri_CatalogoFilm.dtd"</span><span class="gray">&gt</span>          
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-6">
+                <div class="row d-flex justify-content-center" data-aos="zoom-out">
+                    <div class="col-12">
+                        <pre class="Codice">
+                            <code>
+<span class="gray">&lt!</span><span class="blue">ELEMENT</span><span class="white"> originale </span><span class="blue">EMPTY</span><span class="gray">&gt</span>
+<span class="gray">&lt!</span><span class="blue">ATTLIST</span><span class="white"> originale value (si | no) </span><span class="red">"si"</span><span class="gray">&gt</span> 
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- FINE DTD -->
+
+    <div class="d-flex justify-content-between">
+        <div class="sepX"></div>
+        <div class="sep2X"></div>
+    </div>
+
+    <!-- INIZIO FETCH -->
+    <div>
+        <div class="Def mt-5 d-flex justify-content-center" data-aos="fade-down" data-aos-duration="1000">Il metodo fetch</div>
+        <div class="testo ml-xl-5 mr-xl-5" data-aos="fade-right">
+            La <strong>Fetch</strong> è un metodo che, come per il JSON, ci permette di mandare una richiesta al server e caricare informazioni ogni volta che ne abbiamo bisogno. A differenza di quanto avviene con il JSON, per l'XML, prima din utilizzare concretamente i dati, serviranno dei passaggi in più.<br><br>
+            Per usare la fetch servono 3 "parole chiavi":
+            <ul>
+                <li>fetch(URL): ha bisogno dell'URL da raggiungere per estrapolare le informazioni;</li>
+                <li>.then(): il primo then() serve per trasformare le informazioni prese tramite l'URL e poi convertirlo in text;</li>
+                <li>.then(): il secondo then() serve per prendere i suoi dati./li>
+            </ul>
+            <br>
+            Oltre alla fetch, che in poche parole estrapola solamente le informazioni dal server, abbiamo bisogno del DOMParser, un interfaccia che ci permette di parsare codice XML da una stringa.
+            <br>
+            <br>
+        </div>
+    </div>
+
+    <div class="row d-flex justify-content-center" data-aos="zoom-out">
+        <div class="col-12">
+            <pre class="Codice">
+                <code>
+<span class="blue">const</span><span class="lightY"> carica</span><span class="white">=</span><span class="yellow">()</span><span class="blue">=></span><span class="yellow">{</span>
+    <span class="lightY">fetch</span><span class="violet">(</span><span class="red">"https://raw.githubusercontent.com/icobasco/sample_data_files/master/4C_catalogoFilm.xml"</span><span class="violet">)</span>       
+    <span class="lightY">.then</span><span class="violet">(</span><span class="blue">(</span><span class="lightB">catalogo</span><span class="blue">) => </span><span class="lightB">catalogo</span><span class="lightY">.text</span><span class="blue">()</span><span class="violet">)</span>
+    <span class="lightY">.then</span><span class="violet">(</span><span class="blue">(</span><span class="lightB">datixml</span><span class="blue">) => {</span>
+        <span class="blue">let </span><span class="lightB">mioXML</span><span class="white"> = </span><span class="blue">new</span><span class="green"> DOMParser</span><span class="yellow">()</span><span class="white">;</span>
+        <span class="blue">let </span><span class="lightB">parseXML</span><span class="white"> = </span><span class="lightB">mioXML</span><span class="lightY">.parseFromString</span><span class="yellow">(</span><span class="lightB">datixml</span><span class="white">, </span><span class="red">"text/xml"</span><span class="yellow">)</span>
+        <span class="blue">let </span><span class="lightB">titoli</span><span class="white"> = </span><span class="yellow">(</span><span class="lightB">parseXML</span><span class="lightY">.querySelectorAll</span><span class="violet">(</span><span class="red">"titolo"</span><span class="violet">)</span><span class="yellow">)</span>
+        <span class="blue">let </span><span class="lightB">genere</span><span class="white"> = </span><span class="yellow">(</span><span class="lightB">parseXML</span><span class="lightY">.querySelectorAll</span><span class="violet">(</span><span class="red">"genere"</span><span class="violet">)</span><span class="yellow">)</span>
+        <span class="blue">let </span><span class="lightB">anno</span><span class="white"> = </span><span class="yellow">(</span><span class="lightB">parseXML</span><span class="lightY">.querySelectorAll</span><span class="violet">(</span><span class="red">"anno"</span><span class="violet">)</span><span class="yellow">)</span>
+        <span class="violet">for </span><span class="yellow">(</span><span class="blue">let </span><span class="lightB">i </span><span class="white">= 0;</span><span class="lightB"> i </span><span class="white">&lt </span><span class="lightB">titoli</span><span class="blue">.length</span><span class="white">;</span><span class="lightB"> i</span><span class="white">++</span><span class="yellow">) {</span>
+            <span class="blue">let </span><span class="lightB">elemento1</span><span class="white"> = </span><span class="lightB">document</span><span class="yellow">.createElement</span><span class="violet">(</span><span class="red">"div"</span><span class="violet">)</span>
+            <span class="lightB">elemento1.innerHTML</span><span class="white"> = </span><span class="lightB">titoli</span><span class="violet">[</span><span class="lightB">i</span><span class="violet">]</span><span class="lightB">.innerHTML</span>
+            <span class="lightB">document</span><span class="lightY">.getElementById</span><span class="violet">(</span><span class="red">"title"</span><span class="violet">)</span><span class="lightY">.appendChild</span><span class="violet">(</span><span class="lightB">elemento1</span><span class="violet">)</span>
+        <span class="yellow">}</span>
+        <span class="violet">for </span><span class="yellow">(</span><span class="blue">let </span><span class="lightB">i </span><span class="white">= 0;</span><span class="lightB"> i </span><span class="white">&lt </span><span class="lightB">titoli</span><span class="blue">.length</span><span class="white">;</span><span class="lightB"> i</span><span class="white">++</span><span class="yellow">) {</span>
+            <span class="blue">let </span><span class="lightB">elemento2</span><span class="white"> = </span><span class="lightB">document</span><span class="yellow">.createElement</span><span class="violet">(</span><span class="red">"div"</span><span class="violet">)</span>
+            <span class="lightB">elemento2.innerHTML</span><span class="white"> = </span><span class="lightB">genere</span><span class="violet">[</span><span class="lightB">i</span><span class="violet">]</span><span class="blue2">.attributes</span><span class="lightB">.value.textContent</span>
+            <span class="lightB">document</span><span class="lightY">.getElementById</span><span class="violet">(</span><span class="red">"genere"</span><span class="violet">)</span><span class="lightY">.appendChild</span><span class="violet">(</span><span class="lightB">elemento2</span><span class="violet">)</span>
+        <span class="yellow">}</span>
+        <span class="violet">for </span><span class="yellow">(</span><span class="blue">let </span><span class="lightB">i </span><span class="white">= 0;</span><span class="lightB"> i </span><span class="white">&lt </span><span class="lightB">titoli</span><span class="blue">.length</span><span class="white">;</span><span class="lightB"> i</span><span class="white">++</span><span class="yellow">) {</span>
+            <span class="blue">let </span><span class="lightB">elemento3</span><span class="white"> = </span><span class="lightB">document</span><span class="yellow">.createElement</span><span class="violet">(</span><span class="red">"div"</span><span class="violet">)</span>
+            <span class="lightB">elemento3.innerHTML</span><span class="white"> = </span><span class="lightB">anno</span><span class="violet">[</span><span class="lightB">i</span><span class="violet">]</span><span class="blue2">.attributes</span><span class="lightB">.value.textContent</span>
+            <span class="lightB">document</span><span class="lightY">.getElementById</span><span class="violet">(</span><span class="red">"anno"</span><span class="violet">)</span><span class="lightY">.appendChild</span><span class="violet">(</span><span class="lightB">elemento3</span><span class="violet">)</span>
+        <span class="yellow">}</span>
+    <span class="blue">}</span><span class="violet">)</span>
+<span class="yellow">}</span>
+                </code>
+            </pre>
+        </div>
+    </div>   
+
+    <!-- FINE FETCH -->            
+</div>
+
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+    <child>
+        ...
+    </child>
+    <child>
+        ...
+    </child>
+</root>
