@@ -131,8 +131,8 @@ html {
     background-repeat: no-repeat;
     background-position: center;
     background-color: black;
-    background-size: 40%;
-    background-position: 50% 15%;
+    background-size: 30%;
+    background-position: 50% 4%;
 }
 
 .contJSON {
@@ -158,8 +158,8 @@ html {
     background-repeat: no-repeat;
     background-position: center;
     background-color: black;
-    background-size: 50%;
-    background-position: 50% 20%;
+    background-size: 30%;
+    background-position: 50% 12%!important;
 }
 
 .testo {
@@ -583,6 +583,11 @@ html {
     font-weight: bold;
 }
 
+.ligthG {
+    color: rgb(0, 214, 78);
+    font-weight: bold;
+}
+
 .Codice{
     background: rgb(41, 41, 41);
     border-radius: 10px;
@@ -601,4 +606,16 @@ pre {
     right: 0px;
     display: none;
     padding: 0px;
+}
+
+.notaBene {
+    border: 2px solid red;
+    color: white;
+    border-radius: 50px;
+}
+
+.aiuto {
+    border: 2px solid #0051ff;
+    color: white;
+    border-radius: 50px;
 }

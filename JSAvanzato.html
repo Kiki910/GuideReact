@@ -9,6 +9,17 @@
     <link rel="stylesheet" href="./css/style.css">
     <script src="./js/script.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script>
+        window.addEventListener("scroll",function(){
+            if(window.pageYOffset > 200) {
+                document.getElementById("tornasu").style.display="block";
+            }
+            else {
+                document.getElementById("tornasu").style.display="none";
+            }
+        });
+    </script>
 </head>
 <body class="contJS">
     <div class="container-fluid">
@@ -51,20 +62,118 @@
 
         <!-- INIZIO CONTENUTI -->
         <div class="container">
-            <!-- INIZIO INTRODUZIONE + TITOLO XML -->
-            <div class="TitoloJS" data-aos="flip-up">a
+            <!-- INIZIO INTRODUZIONE + TITOLO JS -->
+            <div class="TitoloJS" data-aos="flip-up">
                 <p>JS Avanzato</p>
             </div>
             <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
-                <div class="Def">Cos'è JS Avanzato e quali sono le sue principali caratteristiche?</div>
+                <div class="Def">Cos'è JavaScript Avanzato?</div>
                 <div class="testo ml-xl-5 mr-xl-5">
-                    
-                </div>
-                <br>
-                <div class="testo ml-xl-5 mr-xl-5">
-                    
+                    <p>JavaScript Avanzato è un modulo che ci permette di mettere in atto l'ES6 (ossia EcmaScript, ultima versione di JavaScript). <br>
+                    Per iniziare, bisogna avere un minimo di conoscenza di JavaScript. JavaScript è un linguaggio di programmazione utilizzato nella programmazione Web lato client, per la creazione di effetti dinamici attraverso delle funzioni di script invocate da eventi dall'utente, ad esempio attraverso un click del mouse su un button.
+                    </p>
                 </div>
             </div>
+            <!-- FINE INTRODUZIONE + TITOLO JS -->
+        
+            <!-- INIZIO TEMPLATE STRING -->
+            <div>
+                <div class="Def mt-5 d-flex justify-content-center" data-aos="fade-down" data-aos-duration="1000">Template String</div>
+                <div class="testo ml-xl-5 mr-xl-5" data-aos="fade-right">
+                    La Template String è una sintassi avanzata molto interessante perché ci permette di creare streinghe complesse formate da parti fisse e parti variabili 
+                </div>
+            </div>
+
+            <br>
+        
+            <div class="row d-flex justify-content-center" data-aos="zoom-in">
+                <div class="col-12">
+                    <pre class="Codice">
+                        <code>
+        <span class="blue">const</span><span class="lightY"> stampa</span><span class="white"> = </span><span class="yellow">()</span><span class="blue"> => </span><span class="yellow">{</span>
+            <span class="blue">let </span><span class="lightB">nome</span><span class="white"> = </span><span class="red">"Kevin"</span>
+            <span class="blue">let </span><span class="lightB">cognome</span><span class="white"> = </span><span class="red">"Paseri"</span>
+            
+            <span class="lightB">console</span><span class="lightY">.log</span><span class="violet">(</span><span class="red">"Benvenuto "</span><span class="white"> + </span><span class="blue">nome</span><span class="white"> + </span><span class="red">" "</span><span class="white"> + </span><span class="blue">cognome</span><span class="red">"</span><span class="violet">)</span>
+
+            <span class="green">// in questo esempio, la Template String ci da pochi vantaggi perché è come utilizzare una stringa standard</span>      
+            
+            <span class="lightB">console</span><span class="lightY">.log</span><span class="violet">(</span><span class="red">'Benvenuto </span><span class="blue">${nome} ${cognome}</span><span class="red">'</span><span class="violet">)</span>
+        
+            <span class="green">// in questo esempio, invece, la Template String ci viene molto comoda perchè risente meno di errore nella concatenzione di stringhe</span>
+        <span class="yellow">}</span>    
+                        </code>
+                    </pre>
+                </div>
+            </div> 
+            <!-- FINE TEMPLATE STRING -->
+
+            <div class="d-flex justify-content-between">
+                <div class="sepJS"></div>
+                <div class="sep2JS"></div>
+            </div>
+
+            <!-- INIZIO MAP -->
+            <a name="MAP"></a>
+            <div>
+                <div class="Def mt-5 d-flex justify-content-center" data-aos="fade-down" data-aos-duration="1000">Funzione map()</div>
+                <div class="testo ml-xl-5 mr-xl-5" data-aos="fade-right">
+                    La funzione map() è una funzione molto utilizzata in JavaScript perchè permette di ritornare un nuovo array. Praticamente la map() chiama una funzione una volta per ogni elemento in un array, senza modificarne l'arry originale. Molto importante è l'utilizzo di questa funzione quando si utilizza un JSON, ad esempio; questo perché ci permette di ciclare tutto il contenuto dei dati che abbiamo estrapolato dal server.
+                </div>
+            </div>
+
+            <br>
+        
+            <div class="row d-flex justify-content-center" data-aos="zoom-in">
+                <div class="col-12">
+                    <pre class="Codice">
+                        <code>
+        <span class="blue">const</span><span class="blue2"> URL</span><span class="white"> = </span><span class="red">"https://raw.githubusercontent.com/itisrivoira/obelix/main/lista_locali.json"</span>
+
+        <span class="blue">const</span><span class="lightY"> connessione</span><span class="white">=</span><span class="violet">())</span><span class="blue"> => </span><span class="violet">{</span>
+            <span class="lightY">fetch</span><span class="blue">(</span><span class="blue2">URL</span><span class="blue">)</span>
+            <span class="lightY">.then</span><span class="blue">(</span><span class="yellow">(</span><span class="lightB">LocaliText</span><span class="yellow">)</span><span class="blue"> => </span><span class="lightB">LocaliText</span><span class="lightY">.json</span><span class="yellow">()</span><span class="blue">)</span>
+            <span class="lightY">.then</span><span class="blue">(</span><span class="yellow">(</span><span class="lightB">LocaliJSON</span><span class="yellow">)</span><span class="blue"> => </span><span class="yellow">{</span>
+                <span class="lightB">LocaliJSON</span><span class="lightY">.map</span><span class="violet">(</span><span class="blue">(</span><span class="lightB">elemento</span><span class="white">, </span><span class="blue2">indice</span><span class="blue">) => {</span>
+                    <span class="lightB">console</span><span class="lightY">.log</span><span class="blue">(</span><span class="lightB">elemento.nome</span><span class="blue">)</span>
+                <span class="blue">}</span><span class="violet">)</span>
+            <span class="yellow">}</span><span class="blue">)</span>
+        <span class="violet">]</span>
+                        </code>
+                    </pre>
+                </div>
+            </div> 
+            <!-- FINE MAP -->
+
+            <div class="d-flex justify-content-between">
+                <div class="sepJS"></div>
+                <div class="sep2JS"></div>
+            </div>
+
+            <!-- INIZIO DESTRUTTURAZIONE -->
+            <div>
+                <div class="Def mt-5 d-flex justify-content-center" data-aos="fade-down" data-aos-duration="1000">La destrutturazione</div>
+                <div class="testo ml-xl-5 mr-xl-5" data-aos="fade-right">
+                    La destrutturazione ci permette di "spacchettare" un array o un oggetto in variabili distinte; in poche parole, possiamo dividere i dati di un array o di un oggetto in varibile separate.
+                </div>
+            </div>
+
+            <br>
+        
+            <div class="row d-flex justify-content-center" data-aos="zoom-in">
+                <div class="col-12">
+                    <pre class="Codice">
+                        <code>
+        <span class="blue">const</span><span class="blue2"> colori</span><span class="white"> = </span><span class="yellow">[</span><span class="red">"rosso"</span><span class="white">, </span><span class="red">"giallo"</span><span class="white">, </span><span class="red">"blu"</span><span class="white">, </span><span class="red">"verde"</span><span class="white">, </span><span class="red">"bianco"</span><span class="white">, </span><span class="red">"azzurro"</span><span class="white">, </span><span class="red">"nero"</span><span class="yellow">]</span><span class="white">;</span>
+
+        <span class="blue">const</span><span class="yellow"> [</span><span class="blue2">colore1</span><span class="white">, </span><span class="blue2">colore2</span><span class="white">, </span><span class="blue2">colore3</span><span class="yellow">]</span><span class="white"> = </span><span class="blue2">colori</span>
+
+        <span class="lightB">console</span><span class="lightY">.log</span><span class="yellow">(</span><span class="blue2">colore1</span><span class="white">, </span><span class="blue2">colore2</span><span class="white">, </span><span class="blue2">colore3</span><span class="yellow">)</span><span class="white">;</span>   <span class="green">// come risultato otteniamo: rosso, giallo, blu</span>
+                        </code>
+                    </pre>
+                </div>
+            </div> 
+            <!-- FINE DESTRUTTURAZIONE -->
         </div>
 
         <!-- INIZIO FOOTER -->
@@ -91,7 +200,10 @@
         <!-- FINE FOOTER -->
     </div>
 
-
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>

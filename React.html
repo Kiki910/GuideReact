@@ -9,6 +9,17 @@
     <link rel="stylesheet" href="./css/style.css">
     <script src="./js/script.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script>
+        window.addEventListener("scroll",function(){
+            if(window.pageYOffset > 200) {
+                document.getElementById("tornasu").style.display="block";
+            }
+            else {
+                document.getElementById("tornasu").style.display="none";
+            }
+        });
+    </script>
 </head>
 <body class="contReact">
     <div class="container-fluid">
@@ -47,7 +58,692 @@
 
         <p class="d-sm-block d-xl-none d-md-block">
             <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-         </p>
+        </p>
+
+        <!-- INIZIO CONTENUTI -->
+        <div class="container">
+            <!-- INIZIO INTRODUZIONE + TITOLO REACT -->
+            <div class="TitoloReact" data-aos="flip-up">
+                <p>REACT</p>
+            </div>
+            <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                <div class="Def">Cos'è React?</div>
+                <div class="testo ml-xl-5 mr-xl-5">
+                    <p>React è una libreria JavaScript per la creazione di interfacce utente, ossia per la creazione di SPA(single Page Application). React venne sviluppato all'interno di Facebook nel 2013, ma ora si è estesa molto ed è una libreria open-source sostenuta da molti programmatori. <br>
+                    La funzionalità principale è lo sviluppo di applicazioni dinamiche che non hanno bisogno di ricaricare la pagina; molto importante è anche la possibilità di vedere le modifiche effettuate sul codice in tempo reale in modo da avere uno sviluppo flessibile, ma soprattutto più rapido.</p>
+                </div>
+            </div>
+            <!-- FINE INTRODUZIONE + TITOLO REACT -->
+
+            <!-- INIZIO INSTALLAZIONE -->
+            <div>
+                <div class="Def mt-5 d-flex justify-content-center" data-aos="fade-down" data-aos-duration="1000">Installazione</div>
+                <div class="testo ml-xl-5 mr-xl-5" data-aos="fade-right">
+                    Per poter iniziare a lavorare con React, occorre installare npm e nodejs. Per evitare problemi con l'ultima versione, utilizziamo direttamente i seguenti comandi da terminale:
+                </div>
+            </div>
+
+            <br>
+        
+            <div class="row d-flex justify-content-center" data-aos="zoom-in">
+                <div class="col-12">
+                    <pre class="Codice">
+                        <code>
+    <span class="red">Comando 1)</span>     <span class="blue">sudo npm install -g n</span>
+
+    <span class="red">Comando 2)</span>     <span class="blue">sudo n stable</span>
+
+    <span class="red">Comando 3)</span>     <span class="blue">creiamo il nostro progetto</span>    
+                        </code>
+                    </pre>
+                </div>
+            </div> 
+            <!-- FINE INSTALLAZIONE -->
+
+            <!-- INIZIO CREAZIONE E AVVIO PROGETTO -->
+            <div>
+                <div class="Def mt-5 d-flex justify-content-center" data-aos="fade-down" data-aos-duration="1000">Creazione a avvio progetto</div>
+                <div class="testo ml-xl-5 mr-xl-5" data-aos="fade-right">
+                    Per creare un progetto occorre scrivere questo comando nel terminale:
+                </div>
+            </div>
+
+            <br>
+        
+            <div class="row d-flex justify-content-center" data-aos="zoom-in">
+                <div class="col-12">
+                    <pre class="Codice">
+                        <code>
+    <span class="red">Comando creazione progetto --></span>     <span class="blue">npx create-react-app</span><span class="lightB"> nomeprogetto</span>    
+                        </code>
+                    </pre>
+                </div>
+            </div> 
+
+            <div>
+                <div class="testo ml-xl-5 mr-xl-5" data-aos="fade-right">
+                    In questo modo, nella directory in cui noi abbiamo aperto il terminale, abbiamo una cartella nuova del nostro progetto. <br>
+                    All'interno di questa cartella, abbiamo 3 sotto-cartelle, che sono:
+                    <ul>
+                        <li><strong>node_modules: </strong>contiene i moduli che possono essere locali o globali;</li>
+                        <li><strong>public: </strong>contiene alcuni file pubblici e non si deve toccare;</li>
+                        <li><strong>src: </strong>contiene i file principali della nostra applicazione, come ad esempio App.js, App.css, index.js...</li>
+                    </ul>
+                    Oltre a queste cartelle, abbiamo anche dei file. Tra questi, il più importante è il seguente:
+                    <ul>
+                        <li><strong>package.json: </strong>contiene dati importanti relativi al progetto, come nome, versione, dipendenze che installiamo e gli scripts che servono per far partire il progetto.</li>
+                    </ul>
+                    <br>
+                    Ora ci occorre solo più far partire il progetto. Per fare questo, abbiamo bisogno del seguente comando:
+                </div>
+            </div>
+
+            <br>
+        
+            <div class="row d-flex justify-content-center" data-aos="zoom-in">
+                <div class="col-12">
+                    <pre class="Codice">
+                        <code>
+    <span class="red">Comando avvio progetto --></span>     <span class="blue">npm start</span>
+                        </code>
+                    </pre>
+                </div>
+            </div> 
+
+            <div>
+                <div class="testo ml-xl-5 mr-xl-5" data-aos="fade-right">
+                    Attraverso questo comando, non facciamo altro che aprire la pagina nel browser.
+                </div>
+            </div>
+
+            <div>
+                <div class="notaBene ml-xl-5 mr-xl-5 mt-4" data-aos="fade-right">
+                    <div class="row-12 red d-flex justify-content-center mt-2"><h3><strong>NOTA BENE!</strong></h3></div>
+                    <div class="row-12 testo ml-5 mr-5 mb-2 d-xl-flex justify-content-center">
+                        Se accidentalmente si rimuove la cartella node_modules, il comando per rimettere le cose a posto è il seguente:
+                    </div>
+                    <div class="row d-flex justify-content-center" data-aos="zoom-in">
+                        <div class="col-10">
+                            <pre class="Codice">
+                                <code>
+    <span class="red">Comando --></span>     <span class="blue">npm install</span>
+                                </code>
+                            </pre>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+
+            <div>
+                <div class="notaBene ml-xl-5 mr-xl-5 mt-4" data-aos="fade-right">
+                    <div class="row-12 red d-flex justify-content-center mt-2"><h3><strong>Visual Studio Code</strong></h3></div>
+                    <div class="row-12 testo ml-5 mr-5 mb-2 d-xl-flex justify-content-center">
+                        Se si utilizza Visual Studio Code, molto utile è l'estensione per l'aiuto nell'utilizzo di React. La seguente estensione è:
+                    </div>
+                    <div class="row d-flex justify-content-center" data-aos="zoom-in">
+                        <div class="col-10">
+                            <pre class="Codice">
+                                <code>
+    <span class="red">Estensione --></span>     <span class="blue">ES7+ React/Redux/React-Native snippets</span>
+                                </code>
+                            </pre>
+                        </div>
+                    </div>
+                    
+                    <div class="row-12 testo ml-5 mr-5 mb-2 d-xl-flex justify-content-center">
+                        Sempre se si utilizza Visual Studio Code per scrivere i codici in React, molto utile per l'aiuto nella scrittura del codice, occorre modificare delle preferenze nelle impostazioni:
+                    </div>
+                    <div class="row d-flex justify-content-center" data-aos="zoom-in">
+                        <div class="col-10">
+                            <pre class="Codice">
+                                <code>
+    <span class="red">Percorso --></span>     <span class="blue">File</span><span class="white"> / </span><span class="blue">Preferences</span><span class="white"> / </span><span class="blue">Settings</span><span class="white"> / </span><span class="blue">Icona in alto a destra (impostazioni JSON)</span>   
+
+    <span class="red">Codice --></span>      <span class="yellow">{</span>
+                        <span class="lightB">"emmet.includeLanguages": </span><span class="violet">{</span>
+                            <span class="lightB">"javascript": </span><span class="red">"html"</span>
+                        <span class="violet">}</span>
+                    <span class="yellow">}</span>
+                                </code>
+                            </pre>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="aiuto ml-xl-5 mr-xl-5 mt-4" data-aos="fade-right">
+                        <div class="row-12 blue d-flex justify-content-center mt-2"><h3><strong>PICCOLO AIUTO!</strong></h3></div>
+                        <div class="row-12 testo ml-5 mr-5 mb-2 d-xl-flex justify-content-center">
+                            Per aiutarti ad inizio scrittura del codice di un file in React, è possibile scrivere la funzione base in due modi. <br> <br>
+                            Per scrivere la funzione base con la arrow [ => ], bisogn ascrivere il seguente comando:
+                        </div>
+                        <div class="row d-flex justify-content-center" data-aos="zoom-in">
+                            <div class="col-10">
+                                <pre class="Codice">
+                                    <code>
+        <span class="red">Comando --></span>        <span class="blue">rafce</span>
+
+        <span class="red">Risultato --> </span>     <span class="violet">import</span><span class="lightB"> React</span><span class="violet"> from</span><span class="red">'react'</span>
+                           
+                           <span class="blue">const</span><span class="lightY"> App</span><span class="white"> = </span><span class="yellow">()</span><span class="blue"> => </span><span class="yellow">{</span> 
+                               <span class="violet">return (</span>
+                                   <span class="gray">&lt</span><span class="blue">div</span><span class="gray">&gt</span><span class="white">App</span><span class="gray">&lt</span><span class="blue">div</span><span class="gray">&gt</span>
+                               <span class="violet">)</span>    
+                           <span class="yellow">}</span> 
+
+                           <span class="violet">export default</span><span class="lightY">App</span>      
+                                    </code>
+                                </pre>
+                            </div>
+                        </div>
+                        
+                        <div class="row-12 testo ml-5 mr-5 mb-2 d-xl-flex justify-content-center">
+                            Per scrivere la funzione base con la function, bisogn ascrivere il seguente comando:
+                        </div>
+                        <div class="row d-flex justify-content-center" data-aos="zoom-in">
+                            <div class="col-10">
+                                <pre class="Codice">
+                                    <code>
+        <span class="red">Comando --></span>        <span class="blue">rfce</span>
+
+        <span class="red">Risultato --> </span>     <span class="violet">import</span><span class="lightB"> React</span><span class="violet"> from</span><span class="red">'react'</span>
+                           
+                           <span class="blue">function</span><span class="lightY"> App</span><span class="yellow">()</span><span class="yellow"> {</span> 
+                               <span class="violet">return (</span>
+                                   <span class="gray">&lt</span><span class="blue">div</span><span class="gray">&gt</span><span class="white">App</span><span class="gray">&lt</span><span class="blue">div</span><span class="gray">&gt</span>
+                               <span class="violet">)</span>    
+                           <span class="yellow">}</span> 
+
+                           <span class="violet">export default</span><span class="lightY">App</span>      
+                                    </code>
+                                </pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- FINE CREAZIONE E AVVIO PROGETTO -->
+
+            <div class="d-flex justify-content-between">
+                <div class="sepR"></div>
+                <div class="sep2R"></div>
+            </div>
+
+            <!-- INIZIO SPREAD -->
+            <div>
+                <div class="Def mt-5 d-flex justify-content-center" data-aos="fade-down" data-aos-duration="1000">Operatore spred()</div>
+                <div class="testo ml-xl-5 mr-xl-5" data-aos="fade-right">
+                    Molto spesso, associato alla funzione map() spiegata nella sezione <strong>JS Avanzato </strong>, viene utilizzato l'operatore spread. Questo operatore è facilmente individuabile attraverso l'utilizzo dei 3 punti <strong>[ ... ]</strong>. Questo operatore serve per fare una copia perfetta di un array.
+                </div>
+            </div>
+
+            <br>
+        
+            <div class="row d-flex justify-content-center" data-aos="zoom-in">
+                <div class="col-12">
+                    <pre class="Codice">
+                        <code>
+        <span class="violet">import</span><span class="lightB"> React</span><span class="white">, </span><span class="yellow">{</span><span class="lightB"> useState </span><span class="yellow">}</span><span class="violet"> from</span><span class="red"> 'react'</span>
+        <span class="violet">import</span><span class="red"> "./App.css"</span>
+        
+        <span class="blue">const</span><span class="blue2"> URL</span><span class="white"> = </span><span class="red">"https://raw.githubusercontent.com/itisrivoira/obelix/main/lista_locali.json"</span>
+
+        <span class="blue">const</span><span class="lightY"> App</span><span class="white"> = </span><span class="yellow">()</span><span class="blue"> => </span><span class="yellow">{</span>
+            <span class="blue">const</span><span class="violet">[</span><span class="blue2">locali</span><span class="lightY"> setLocali</span><span class="violet">]</span><span class="white"> = </span><span class="lightY"> useState</span><span class="violet">(<span class="blue2">[]</span>)</span>
+
+            <span class="blue">const</span><span class="lightY"> connessione</span><span class="white">=</span><span class="violet">())</span><span class="blue"> => </span><span class="violet">{</span>
+                <span class="lightY">fetch</span><span class="blue">(</span><span class="blue2">URL</span><span class="blue">)</span>
+                <span class="lightY">.then</span><span class="blue">(</span><span class="yellow">(</span><span class="lightB">LocaliText</span><span class="yellow">)</span><span class="blue"> => </span><span class="lightB">LocaliText</span><span class="lightY">.json</span><span class="yellow">()</span><span class="blue">)</span>
+                <span class="lightY">.then</span><span class="blue">(</span><span class="yellow">(</span><span class="lightB">LocaliJSON</span><span class="yellow">)</span><span class="blue"> => </span><span class="yellow">{</span>
+                    <span class="lightB">LocaliJSON</span><span class="lightY">.map</span><span class="violet">(</span><span class="blue">(</span><span class="lightB">elemento</span><span class="white">, </span><span class="blue2">indice</span><span class="blue">) => {</span>
+                        <span class="lightY">setLocali</span><span class="yellow">(</span><span class="violet">(<span class="lightB">locali</span>)</span><span class="blue"> => </span><span class="violet">[</span><span class="white">...</span><span class="lightB">locali</span><span class="white">, </span><span class="gray">&lt<span class="blue">div</span>&gt</span><span class="blue">{<span class="lightB">elemento.citta</span>   }</span><span class="gray">&lt/<span class="blue">div</span>&gt</span>
+                    <span class="blue">}</span><span class="violet">)</span>
+                <span class="yellow">}</span><span class="blue">)</span>
+            <span class="violet">]</span>
+
+            <span class="violet">return (</span>
+                <span class="gray">&lt</span><span class="blue">div</span><span class="gray">&gt</span>
+                    <span class="gray">&lt</span><span class="blue">div</span><span class="lightB"> className</span><span class="white">=</span><span class="red">"container"</span><span class="gray">&gt</span>
+                        <span class="gray">&lt</span><span class="blue">div </span><span class="lightB">className</span><span class="white">=</span><span class="red">"button" </span><span class="lightB">onClick</span><span class="white">=</span><span class="blue">{<span class="lightY">connessione</span>}</span><span class="gray">&gt</span><span class="white">CONNESSIONE JSON</span><span class="gray">&lt/</span><span class="blue">div</span><span class="gray">&gt</span>
+                    <span class="gray">&lt/</span><span class="blue">div</span><span class="gray">&gt</span>
+                    <span class="blue">{<span class="blue2">locali</span>}</span>
+                <span class="gray">&lt/</span><span class="blue">div</span><span class="gray">&gt</span>
+            <span class="violet">)</span>
+        <span class="yellow">}</span>
+
+        <span class="violet">export default </span><span class="lightY">App</span>
+                        </code>
+                    </pre>
+                </div>
+            </div> 
+            <!-- FINE SPREAD -->
+
+            <div class="d-flex justify-content-between">
+                <div class="sepR"></div>
+                <div class="sep2R"></div>
+            </div>
+
+            <!-- INIZIO HOOKS -->
+            <div>
+                <div class="Def mt-5 d-flex justify-content-center" data-aos="fade-down" data-aos-duration="1000">Gli hooks</div>
+                <div class="testo ml-xl-5 mr-xl-5" data-aos="fade-right">
+                    Gli hooks ci permettono di agganciarci alle funzionalità di React come lo stato e il ciclo.
+                </div>
+            </div>
+
+            <br>
+
+            <div>
+                <div class="Def mt-5" data-aos="fade-down" data-aos-duration="1000">useState()</div>
+                <div class="testo ml-xl-5 mr-xl-5" data-aos="fade-right">
+                    Lo useState() è un hook che ci permettere di modificare lo stato di funzione in un componente; lo stato si riferisce a dati o proprietà che servono nell'applicazione. <br><br>
+                    Per utilizzarlo occorre innanzitutto importarlo. Per fare ciò dobbiamo scrivere questo:
+
+                    <div class="row d-flex justify-content-center" data-aos="zoom-in">
+                        <div class="col-12">
+                            <pre class="Codice">
+                                <code>
+        <span class="violet">import</span><span class="lightB"> React</span><span class="white">, </span><span class="yellow">{<span class="lightB"> useState </span>}</span><span class="violet"> from</span><span class="red"> 'react'</span>
+                                </code>
+                            </pre>
+                        </div>
+                    </div>
+
+                    <br>
+
+                    Invece, per "dichiararlo" si deve scrivere questo:
+
+                    <div class="row d-flex justify-content-center" data-aos="zoom-in">
+                        <div class="col-12">
+                            <pre class="Codice">
+                                <code>
+        <span class="blue">const</span><span class="violet"> [<span class="blue2">locali</span><span class="white">, </span><span class="lightY">setLocali</span>]</span><span class="white"> = </span><span class="lightY">useState</span><span class="violet">(<span class="blue">[]</span>)</span>
+                                </code>
+                            </pre>
+                        </div>
+                    </div>
+
+                    <br>
+
+                    Per stampare il contenuto dell'array, ossia il primo parametro, e per modificare lo stato dobbiamo fare così:
+
+                    <div class="row d-flex justify-content-center" data-aos="zoom-in">
+                        <div class="col-12">
+                            <pre class="Codice">
+                                <code>
+        <span class="red">Per stampare nel return --> </span>   <span class="blue">{<span class="blue2">locali</span>}</span>
+
+        <span class="red">Per aggiornare lo stato --> </span>   <span class="lightY">setLocali</span><span class="yellow">(</span><span class="violet">(<span class="lightB">locali</span>)</span><span class="blue"> => </span><span class="violet">[</span><span class="white">contenuto per aggiornare lo stato</span><span class="violet">]</span><span class="yellow">)</span>
+                                </code>
+                            </pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <br>
+        
+            <div class="Def" data-aos="fade-right">Esempio dell'utilizzo dello useState()</div>
+
+            <div class="row d-flex justify-content-center" data-aos="zoom-in">
+                <div class="col-11">
+                    <pre class="Codice">
+                        <code>
+        <span class="violet">import</span><span class="lightB"> React</span><span class="white">, </span><span class="yellow">{</span><span class="lightB"> useState </span><span class="yellow">}</span><span class="violet"> from</span><span class="red"> 'react'</span>
+        <span class="violet">import</span><span class="red"> "./App.css"</span>
+        
+        <span class="blue">const</span><span class="blue2"> URL</span><span class="white"> = </span><span class="red">"https://raw.githubusercontent.com/itisrivoira/obelix/main/lista_locali.json"</span>
+
+        <span class="blue">const</span><span class="lightY"> App</span><span class="white"> = </span><span class="yellow">()</span><span class="blue"> => </span><span class="yellow">{</span>
+            <span class="blue">const</span><span class="violet">[</span><span class="blue2">locali</span><span class="lightY"> setLocali</span><span class="violet">]</span><span class="white"> = </span><span class="lightY"> useState</span><span class="violet">(<span class="blue2">[]</span>)</span>
+
+            <span class="blue">const</span><span class="lightY"> connessione</span><span class="white">=</span><span class="violet">()</span><span class="blue"> => </span><span class="violet">{</span>
+                <span class="lightY">fetch</span><span class="blue">(</span><span class="blue2">URL</span><span class="blue">)</span>
+                <span class="lightY">.then</span><span class="blue">(</span><span class="yellow">(</span><span class="lightB">LocaliText</span><span class="yellow">)</span><span class="blue"> => </span><span class="lightB">LocaliText</span><span class="lightY">.json</span><span class="yellow">()</span><span class="blue">)</span>
+                <span class="lightY">.then</span><span class="blue">(</span><span class="yellow">(</span><span class="lightB">LocaliJSON</span><span class="yellow">)</span><span class="blue"> => </span><span class="yellow">{</span>
+                    <span class="lightB">LocaliJSON</span><span class="lightY">.map</span><span class="violet">(</span><span class="blue">(</span><span class="lightB">elemento</span><span class="white">, </span><span class="blue2">indice</span><span class="blue">) => {</span>
+                        <span class="lightY">setLocali</span><span class="yellow">(</span><span class="violet">(<span class="lightB">locali</span>)</span><span class="blue"> => </span><span class="violet">[</span><span class="white">...</span><span class="lightB">locali</span><span class="white">, </span><span class="gray">&lt<span class="blue">div</span>&gt</span><span class="blue">{<span class="lightB">elemento.citta</span>   }</span><span class="gray">&lt/<span class="blue">div</span>&gt</span>
+                    <span class="blue">}</span><span class="violet">)</span>
+                <span class="yellow">}</span><span class="blue">)</span>
+            <span class="violet">]</span>
+
+            <span class="violet">return (</span>
+                <span class="gray">&lt</span><span class="blue">div</span><span class="gray">&gt</span>
+                    <span class="gray">&lt</span><span class="blue">div</span><span class="lightB"> className</span><span class="white">=</span><span class="red">"container"</span><span class="gray">&gt</span>
+                        <span class="gray">&lt</span><span class="blue">div </span><span class="lightB">className</span><span class="white">=</span><span class="red">"button" </span><span class="lightB">onClick</span><span class="white">=</span><span class="blue">{<span class="lightY">connessione</span>}</span><span class="gray">&gt</span><span class="white">CONNESSIONE JSON</span><span class="gray">&lt/</span><span class="blue">div</span><span class="gray">&gt</span>
+                    <span class="gray">&lt/</span><span class="blue">div</span><span class="gray">&gt</span>
+                    <span class="blue">{<span class="blue2">locali</span>}</span>
+                <span class="gray">&lt/</span><span class="blue">div</span><span class="gray">&gt</span>
+            <span class="violet">)</span>
+        <span class="yellow">}</span>
+
+        <span class="violet">export default </span><span class="lightY">App</span>
+                        </code>
+                    </pre>
+                </div>
+            </div> 
+
+            <div>
+                <div class="Def mt-5" data-aos="fade-down" data-aos-duration="1000">useEffect()</div>
+                <div class="testo ml-xl-5 mr-xl-5" data-aos="fade-right">
+                    Lo useEffect() è un hook che ci permettere di sincronizzare un componente cin un sistema esterno. In poche parole possiamo utilizzare lo useEffect() per richiamare una sola volta una funzione all'interno dell'applicazione.<br><br>
+                    Per utilizzarlo occorre innanzitutto importarlo. Per fare ciò dobbiamo scrivere questo:
+
+                    <div class="row d-flex justify-content-center" data-aos="zoom-in">
+                        <div class="col-12">
+                            <pre class="Codice">
+                                <code>
+        <span class="violet">import</span><span class="lightB"> React</span><span class="white">, </span><span class="yellow">{<span class="lightB"> useEffect </span>}</span><span class="violet"> from</span><span class="red"> 'react'</span>
+                                </code>
+                            </pre>
+                        </div>
+                    </div>
+
+                    <br>
+
+                    Invece, per "dichiararlo" si deve scrivere questo:
+
+                    <div class="row d-flex justify-content-center" data-aos="zoom-in">
+                        <div class="col-12">
+                            <pre class="Codice">
+                                <code>
+        <span class="lightY">useEffect</span><span class="violet">(</span><span class="blue">() => {</span>
+            <span class="blue2">first</span>
+
+            <span class="violet">return</span><span class="yellow"> ()</span><span class="yellow">()</span><span class="blue"> => </span><span class="yellow">{</span>
+                <span class="blue2">second</span>
+            <span class="yellow">}</span>
+        <span class="blue">}</span><span class="white">, </span><span class="blue">[<span class="lightB">third</span>]</span><span class="violet">)</span>
+
+        <span class="red">Per semplicità si utilizza in questo modo:</span>
+        
+        <span class="lightY">useEffect</span><span class="violet">(</span><span class="blue">() => {</span>
+            <span class="lightB">funzione</span><span class="blue">()</span>
+        <span class="blue">}</span><span class="white">, </span><span class="blue">[]</span><span class="violet">)</span>
+                                </code>
+                            </pre>
+                        </div>
+                    </div>
+
+                    <br>
+                </div>
+            </div>
+
+            <br>
+        
+            <div class="Def" data-aos="fade-right">Esempio dell'utilizzo dello useEffect()</div>
+
+            <div class="row d-flex justify-content-center" data-aos="zoom-in">
+                <div class="col-11">
+                    <pre class="Codice">
+                        <code>
+        <span class="violet">import</span><span class="lightB"> React</span><span class="white">, </span><span class="yellow">{</span><span class="lightB"> useState </span><span class="yellow">}</span><span class="violet"> from</span><span class="red"> 'react'</span>
+        <span class="violet">import</span><span class="red"> "./App.css"</span>
+        
+        <span class="blue">const</span><span class="blue2"> URL</span><span class="white"> = </span><span class="red">"https://raw.githubusercontent.com/itisrivoira/obelix/main/lista_locali.json"</span>
+
+        <span class="blue">const</span><span class="lightY"> App</span><span class="white"> = </span><span class="yellow">()</span><span class="blue"> => </span><span class="yellow">{</span>
+            <span class="blue">const</span><span class="violet">[</span><span class="blue2">locali</span><span class="lightY"> setLocali</span><span class="violet">]</span><span class="white"> = </span><span class="lightY"> useState</span><span class="violet">(<span class="blue2">[]</span>)</span>
+
+            <span class="lightY">useEffect</span><span class="violet">(</span><span class="blue">() => {</span>
+                <span class="lightB">connessione</span><span class="blue">()</span>
+            <span class="blue">}</span><span class="white">, </span><span class="blue">[]</span><span class="violet">)</span>
+
+            <span class="blue">const</span><span class="lightY"> connessione</span><span class="white">=</span><span class="violet">()</span><span class="blue"> => </span><span class="violet">{</span>
+                <span class="lightY">fetch</span><span class="blue">(</span><span class="blue2">URL</span><span class="blue">)</span>
+                <span class="lightY">.then</span><span class="blue">(</span><span class="yellow">(</span><span class="lightB">LocaliText</span><span class="yellow">)</span><span class="blue"> => </span><span class="lightB">LocaliText</span><span class="lightY">.json</span><span class="yellow">()</span><span class="blue">)</span>
+                <span class="lightY">.then</span><span class="blue">(</span><span class="yellow">(</span><span class="lightB">LocaliJSON</span><span class="yellow">)</span><span class="blue"> => </span><span class="yellow">{</span>
+                    <span class="lightB">LocaliJSON</span><span class="lightY">.map</span><span class="violet">(</span><span class="blue">(</span><span class="lightB">elemento</span><span class="white">, </span><span class="blue2">indice</span><span class="blue">) => {</span>
+                        <span class="lightY">setLocali</span><span class="yellow">(</span><span class="violet">(<span class="lightB">locali</span>)</span><span class="blue"> => </span><span class="violet">[</span><span class="white">...</span><span class="lightB">locali</span><span class="white">, </span><span class="gray">&lt<span class="blue">div</span>&gt</span><span class="blue">{<span class="lightB">elemento.citta</span>   }</span><span class="gray">&lt/<span class="blue">div</span>&gt</span>
+                    <span class="blue">}</span><span class="violet">)</span>
+                <span class="yellow">}</span><span class="blue">)</span>
+            <span class="violet">]</span>
+
+            <span class="violet">return (</span>
+                <span class="gray">&lt</span><span class="blue">div</span><span class="gray">&gt</span>
+                    <span class="gray">&lt</span><span class="blue">div</span><span class="lightB"> className</span><span class="white">=</span><span class="red">"container"</span><span class="gray">&gt</span>
+                        <span class="gray">&lt</span><span class="blue">div </span><span class="lightB">className</span><span class="white">=</span><span class="red">"button" </span><span class="lightB">onClick</span><span class="white">=</span><span class="blue">{<span class="lightY">connessione</span>}</span><span class="gray">&gt</span><span class="white">CONNESSIONE JSON</span><span class="gray">&lt/</span><span class="blue">div</span><span class="gray">&gt</span>
+                    <span class="gray">&lt/</span><span class="blue">div</span><span class="gray">&gt</span>
+                    <span class="blue">{<span class="blue2">locali</span>}</span>
+                <span class="gray">&lt/</span><span class="blue">div</span><span class="gray">&gt</span>
+            <span class="violet">)</span>
+        <span class="yellow">}</span>
+
+        <span class="violet">export default </span><span class="lightY">App</span>
+                        </code>
+                    </pre>
+                </div>
+            </div> 
+            <!-- FINE HOOKS -->
+
+            <div class="d-flex justify-content-between">
+                <div class="sepR"></div>
+                <div class="sep2R"></div>
+            </div>
+
+            <!-- INIZIO COMPONENTI -->
+            <div>
+                <div class="Def mt-5 d-flex justify-content-center" data-aos="fade-down" data-aos-duration="1000">I componenti</div>
+                <div class="testo ml-xl-5 mr-xl-5" data-aos="fade-right">
+                    Quando si lavora in React, ci vieni molto più semplice suddividere l'applicazione in componenti in modo da avere un codice più semplice e più leggibile.
+                </div>
+            </div>
+
+            <br>
+
+            <div class="testo ml-xl-5 mr-xl-5 d-xl-flex justify-content-between" data-aos="fade-right">
+                <div class="col-xl-6 col-md-10 col-sm-10">
+                    <div class="row d-flex justify-content-center" data-aos="zoom-in">
+                        <div class="col-12">
+                            <pre class="Codice">
+                                <code>
+    <span class="red"><h2><strong>  App.js</strong></h2></span>
+    <span class="violet">import</span><span class="lightB"> React</span><span class="violet"> from</span><span class="red"> 'react'</span>
+    <span class="violet">import</span><span class="red"> "./App.css"</span>
+    <span class="violet">import <span class="lightB">Header</span> from</span><span class="red"> "./Header"</span>
+    
+    <span class="blue">const</span><span class="lightY"> App</span><span class="white"> = </span><span class="yellow">()</span><span class="blue"> => </span><span class="yellow">{</span>
+
+        <span class="violet">return (</span>
+            <span class="gray">&lt</span><span class="blue">div</span><span class="gray">&gt</span>
+                <span class="gray">&lt<span class="ligthG">Header</span>/&gt</span>
+            <span class="gray">&lt/</span><span class="blue">div</span><span class="gray">&gt</span>
+        <span class="violet">)</span>
+    <span class="yellow">}</span>
+
+    <span class="violet">export default </span><span class="lightY">App</span>
+                                </code>
+                            </pre>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-6">
+                    <div class="row d-flex justify-content-center" data-aos="zoom-in">
+                        <div class="col-12">
+                            <pre class="Codice">
+                                <code>
+    <span class="red"><h2><strong>  Header.js</strong></h2></span>
+    <span class="violet">import</span><span class="lightB"> React</span><span class="violet"> from</span><span class="red"> 'react'</span>
+    <span class="violet">import</span><span class="red"> "./Header.css"</span>
+    
+    <span class="blue">const</span><span class="lightY"> Header</span><span class="white"> = </span><span class="yellow">()</span><span class="blue"> => </span><span class="yellow">{</span>
+
+        <span class="violet">return (</span>
+            <span class="gray">&lt</span><span class="blue">div</span><span class="lightB"> className</span><span class="white">=</span><span class="red">'header'</span><span class="gray">&gt</span>
+                <span class="gray">&lt</span><span class="blue">div</span><span class="gray">&gt</span>
+                    <span class="gray">&lt</span><span class="blue">a</span><span class="lightB"> target</span><span class="white">=</span><span class="blue">{<span class="red">new</span>}</span><span class="lightB"> href</span><span class="white">=</span><span class="red">"https://comune.saluzzo.cn.it/"</span><span class="gray">&gt</span><span class="white">TURISMO</span>
+                        <span class="gray">&lt</span><span class="blue">img</span><span class="lightB"> className</span><span class="white">=</span><span class="red">'Logo'</span><span class="lightB"> src</span><span class="white">=</span><span class="red">"https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Coat_of_arms_of_Saluzzo.svg/1200px-Coat_of_arms_of_Saluzzo.svg.png"</span><span class="gray"> /&gt</span>           
+                    <span class="gray">&lt/</span><span class="blue">a</span><span class="gray">&gt</span>
+                <span class="gray">&lt/</span><span class="blue">div</span><span class="gray">&gt</span>
+            <span class="gray">&lt/</span><span class="blue">div</span><span class="gray">&gt</span>
+            <span class="gray">&lt</span><span class="blue">div</span><span class="lightB"> className</span><span class="white">=</span><span class="red">'link'</span><span class="gray">&gt</span>
+                <span class="gray">&lt</span><span class="blue">div</span><span class="gray">&gt</span>
+                    <span class="gray">&lt</span><span class="blue">a</span><span class="lightB"> target</span><span class="white">=</span><span class="blue">{<span class="red">new</span>}</span><span class="lightB"> href</span><span class="white">=</span><span class="red">"https://comune.saluzzo.cn.it/servizio/biblioteca/"</span><span class="gray">&gt</span><span class="white">BIBLIOTECA</span><span class="gray">&lt/</span><span class="blue">a</span><span class="gray">&gt</span>
+                <span class="gray">&lt/</span><span class="blue">div</span><span class="gray">&gt</span>
+                <span class="gray">&lt</span><span class="blue">div</span><span class="gray">&gt</span>
+                    <span class="gray">&lt</span><span class="blue">a</span><span class="lightB"> target</span><span class="white">=</span><span class="blue">{<span class="red">new</span>}</span><span class="lightB"> href</span><span class="white">=</span><span class="red">"https://comune.saluzzo.cn.it/servizio/scuole/"</span><span class="gray">&gt</span><span class="white">SCUOLE</span><span class="gray">&lt/</span><span class="blue">a</span><span class="gray">&gt</span>
+                <span class="gray">&lt/</span><span class="blue">div</span><span class="gray">&gt</span>
+                <span class="gray">&lt</span><span class="blue">div</span><span class="gray">&gt</span>
+                    <span class="gray">&lt</span><span class="blue">a</span><span class="lightB"> target</span><span class="white">=</span><span class="blue">{<span class="red">new</span>}</span><span class="lightB"> href</span><span class="white">=</span><span class="red">"https://comune.saluzzo.cn.it/servizio/turismo/"</span><span class="gray">&gt</span><span class="white">TURISMO</span><span class="gray">&lt/</span><span class="blue">a</span><span class="gray">&gt</span>
+                <span class="gray">&lt/</span><span class="blue">div</span><span class="gray">&gt</span>
+                <span class="gray">&lt</span><span class="blue">div</span><span class="gray">&gt</span>
+                    <span class="gray">&lt</span><span class="blue">a</span><span class="lightB"> target</span><span class="white">=</span><span class="blue">{<span class="red">new</span>}</span><span class="lightB"> href</span><span class="white">=</span><span class="red">"https://comune.saluzzo.cn.it/servizi/tutti-i-servizi-in-ordine-alfabetico/"</span><span class="gray">&gt</span><span class="white">SERVIZI</span><span class="gray">&lt/</span><span class="blue">a</span><span class="gray">&gt</span>
+                <span class="gray">&lt/</span><span class="blue">div</span><span class="gray">&gt</span>
+            <span class="gray">&lt/</span><span class="blue">div</span><span class="gray">&gt</span>
+        <span class="violet">)</span>
+    <span class="yellow">}</span>
+
+    <span class="violet">export default </span><span class="lightY">Header</span>
+                                </code>
+                            </pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- FINE COMPONENTI -->
+
+            <div class="d-flex justify-content-between">
+                <div class="sepR"></div>
+                <div class="sep2R"></div>
+            </div>
+
+            <!-- INIZIO PASSAGGIO PARAMETRI -->
+            <div>
+                <div class="Def mt-5 d-flex justify-content-center" data-aos="fade-down" data-aos-duration="1000">Passaggio parametri</div>
+                <div class="testo ml-xl-5 mr-xl-5" data-aos="fade-right">
+                    Quando si lavora in React, ci vieni molto più semplice suddividere l'applicazione in componenti in modo da avere un codice più semplice e più leggibile.
+                </div>
+            </div>
+
+            <br>
+
+            <div class="testo ml-xl-5 mr-xl-5 d-xl-flex justify-content-between" data-aos="fade-right">
+                <div class="col-xl-6 col-md-10 col-sm-10">
+                    <div class="row d-flex justify-content-center" data-aos="zoom-in">
+                        <div class="col-12">
+                            <pre class="Codice">
+                                <code>
+    <span class="red"><h2><strong>  App.js</strong></h2></span>
+    <span class="violet">import</span><span class="lightB"> React</span><span class="violet"> from</span><span class="red"> 'react'</span>
+    <span class="violet">import</span><span class="red"> "./App.css"</span>
+    <span class="violet">import <span class="lightB">Header</span> from</span><span class="red"> "./Header"</span>
+    
+    <span class="blue">const</span><span class="lightY"> App</span><span class="white"> = </span><span class="yellow">()</span><span class="blue"> => </span><span class="yellow">{</span>
+
+        <span class="blue">let</span><span class="lightB"> mieiParametri</span><span class="white">=</span><span class="violet">{</span>
+            <span class="lightB">logo</span><span class="white">:</span><span class="blue">{</span>
+                <span class="lightB">pathLogo</span><span class="white">:</span><span class="red">https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Coat_of_arms_of_Saluzzo.svg/1200px-Coat_of_arms_of_Saluzzo.svg.png</span><span class="white">,</span>
+                <span class="lightB">percorso</span><span class="white">:</span><span class="red">https://comune.saluzzo.cn.it/</span>
+            <span class="blue">}</span><span class="white">,</span>
+            <span class="lightB">link1</span><span class="white">:</span><span class="blue">{</span>
+                <span class="lightB">url</span><span class="white">:</span><span class="red">https://comune.saluzzo.cn.it/servizio/biblioteca/</span><span class="white">,</span>
+                <span class="lightB">anchor</span><span class="white">:</span><span class="red">BIBLIOTECA</span>
+            <span class="blue">}</span><span class="white">,</span>
+            <span class="lightB">link2</span><span class="white">:</span><span class="blue">{</span>
+                <span class="lightB">url</span><span class="white">:</span><span class="red">https://comune.saluzzo.cn.it/servizio/scuole/</span><span class="white">,</span>
+                <span class="lightB">anchor</span><span class="white">:</span><span class="red">SCUOLE</span>
+            <span class="blue">}</span><span class="white">,</span>
+            <span class="lightB">link3</span><span class="white">:</span><span class="blue">{</span>
+                <span class="lightB">url</span><span class="white">:</span><span class="red">https://comune.saluzzo.cn.it/servizio/turismo/</span><span class="white">,</span>
+                <span class="lightB">anchor</span><span class="white">:</span><span class="red">TURISMO</span>
+            <span class="blue">}</span><span class="white">,</span>
+            <span class="lightB">link4</span><span class="white">:</span><span class="blue">{</span>
+                <span class="lightB">url</span><span class="white">:</span><span class="red">https://comune.saluzzo.cn.it/servizi/tutti-i-servizi-in-ordine-alfabetico/</span><span class="white">,</span>
+                <span class="lightB">anchor</span><span class="white">:</span><span class="red">SERVIZI</span>
+            <span class="blue">}</span>
+        <span class="violet">}</span>
+        <span class="violet">return (</span>
+            <span class="gray">&lt</span><span class="blue">div</span><span class="gray">&gt</span>
+                <span class="gray">&lt<span class="ligthG">Header</span><span class="lightB"> valori</span><span class="white">=</span><span class="blue">{<span class="lightB">mieiParametri</span>}</span>/&gt</span>
+            <span class="gray">&lt/</span><span class="blue">div</span><span class="gray">&gt</span>
+        <span class="violet">)</span>
+    <span class="yellow">}</span>
+
+    <span class="violet">export default </span><span class="lightY">App</span>
+                                </code>
+                            </pre>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-6">
+                    <div class="row d-flex justify-content-center" data-aos="zoom-in">
+                        <div class="col-12">
+                            <pre class="Codice">
+                                <code>
+    <span class="red"><h2><strong>  Header.js</strong></h2></span>
+    <span class="violet">import</span><span class="lightB"> React</span><span class="violet"> from</span><span class="red"> 'react'</span>
+    <span class="violet">import</span><span class="red"> "./Header.css"</span>
+    
+    <span class="blue">const</span><span class="lightY"> Header</span><span class="white"> = </span><span class="yellow">(<span class="lightB">props</span>)</span><span class="blue"> => </span><span class="yellow">{</span>
+
+        <span class="violet">return (</span>
+            <span class="gray">&lt</span><span class="blue">div</span><span class="lightB"> className</span><span class="white">=</span><span class="red">'header'</span><span class="gray">&gt</span>
+                <span class="gray">&lt</span><span class="blue">div</span><span class="gray">&gt</span>
+                    <span class="gray">&lt</span><span class="blue">a</span><span class="lightB"> target</span><span class="white">=</span><span class="blue">{<span class="red">new</span>}</span><span class="lightB"> href</span><span class="white">=</span><span class="blue">{<span class="lightB">props.valori.logo.percorso</span>}</span><span class="gray">&gt</span><span class="white">TURISMO</span>
+                        <span class="gray">&lt</span><span class="blue">img</span><span class="lightB"> className</span><span class="white">=</span><span class="red">'Logo'</span><span class="lightB"> src</span><span class="white">=</span><span class="blue">{<span class="lightB">props.valori.logo.pathLogo</span>}</span><span class="gray"> /&gt</span>           
+                    <span class="gray">&lt/</span><span class="blue">a</span><span class="gray">&gt</span>
+                <span class="gray">&lt/</span><span class="blue">div</span><span class="gray">&gt</span>
+            <span class="gray">&lt/</span><span class="blue">div</span><span class="gray">&gt</span>
+            <span class="gray">&lt</span><span class="blue">div</span><span class="lightB"> className</span><span class="white">=</span><span class="red">'link'</span><span class="gray">&gt</span>
+                <span class="gray">&lt</span><span class="blue">div</span><span class="gray">&gt</span>
+                    <span class="gray">&lt</span><span class="blue">a</span><span class="lightB"> target</span><span class="white">=</span><span class="blue">{<span class="red">new</span>}</span><span class="lightB"> href</span><span class="white">=</span><span class="blue">{<span class="lightB">props.valori.link1.url</span>}</span><span class="gray">&gt</span><span class="white"><span class="blue">{<span class="lightB">props.valori.link1.anchor</span>}</span></span><span class="gray">&lt/</span><span class="blue">a</span><span class="gray">&gt</span>
+                <span class="gray">&lt/</span><span class="blue">div</span><span class="gray">&gt</span>
+                <span class="gray">&lt</span><span class="blue">div</span><span class="gray">&gt</span>
+                    <span class="gray">&lt</span><span class="blue">a</span><span class="lightB"> target</span><span class="white">=</span><span class="blue">{<span class="red">new</span>}</span><span class="lightB"> href</span><span class="white">=</span><span class="blue">{<span class="lightB">props.valori.link2.url</span>}</span><span class="gray">&gt</span><span class="white"><span class="blue">{<span class="lightB">props.valori.link2.anchor</span>}</span></span><span class="gray">&lt/</span><span class="blue">a</span><span class="gray">&gt</span>
+                <span class="gray">&lt/</span><span class="blue">div</span><span class="gray">&gt</span>
+                <span class="gray">&lt</span><span class="blue">div</span><span class="gray">&gt</span>
+                    <span class="gray">&lt</span><span class="blue">a</span><span class="lightB"> target</span><span class="white">=</span><span class="blue">{<span class="red">new</span>}</span><span class="lightB"> href</span><span class="white">=</span><span class="blue">{<span class="lightB">props.valori.link3.url</span>}</span><span class="gray">&gt</span><span class="white"><span class="blue">{<span class="lightB">props.valori.link3.anchor</span>}</span></span><span class="gray">&lt/</span><span class="blue">a</span><span class="gray">&gt</span>
+                <span class="gray">&lt/</span><span class="blue">div</span><span class="gray">&gt</span>
+                <span class="gray">&lt</span><span class="blue">div</span><span class="gray">&gt</span>
+                    <span class="gray">&lt</span><span class="blue">a</span><span class="lightB"> target</span><span class="white">=</span><span class="blue">{<span class="red">new</span>}</span><span class="lightB"> href</span><span class="white">=</span><span class="blue">{<span class="lightB">props.valori.link4.url</span>}</span><span class="gray">&gt</span><span class="white"><span class="blue">{<span class="lightB">props.valori.link4.anchor</span>}</span></span><span class="gray">&lt/</span><span class="blue">a</span><span class="gray">&gt</span>
+                <span class="gray">&lt/</span><span class="blue">div</span><span class="gray">&gt</span>
+            <span class="gray">&lt/</span><span class="blue">div</span><span class="gray">&gt</span>
+        <span class="violet">)</span>
+    <span class="yellow">}</span>
+
+    <span class="violet">export default </span><span class="lightY">Header</span>
+                                </code>
+                            </pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- FINE PASSAGGIO PARAMETRI -->
+        </div>
+
+
+        <!-- FINE CONTENUTI -->
+
+         <!-- INIZIO SPREAD da fare -->
+         <!-- <div>
+            <div class="Def mt-5 d-flex justify-content-center" data-aos="fade-down" data-aos-duration="1000">Operatore spred()</div>
+            <div class="testo ml-xl-5 mr-xl-5" data-aos="fade-right">
+                
+            </div>
+        </div>
+
+        <br>
+    
+        <div class="row d-flex justify-content-center" data-aos="zoom-in">
+            <div class="col-12">
+                <pre class="Codice">
+                    <code>
+    <span class="blue">const</span><span class="blue2"> URL</span><span class="white"> = </span><span class="red">"https://raw.githubusercontent.com/itisrivoira/obelix/main/lista_locali.json"</span>
+
+    <span class="blue">const</span><span class="lightY"> connessione</span><span class="white">=</span><span class="violet">())</span><span class="blue"> => </span><span class="violet">{</span>
+        <span class="lightY">fetch</span><span class="blue">(</span><span class="blue2">URL</span><span class="blue">)</span>
+        <span class="lightY">.then</span><span class="blue">(</span><span class="yellow">(</span><span class="lightB">LocaliText</span><span class="yellow">)</span><span class="blue"> => </span><span class="lightB">LocaliText</span><span class="lightY">.json</span><span class="yellow">()</span><span class="blue">)</span>
+        <span class="lightY">.then</span><span class="blue">(</span><span class="yellow">(</span><span class="lightB">LocaliJSON</span><span class="yellow">)</span><span class="blue"> => </span><span class="yellow">{</span>
+            <span class="lightB">LocaliJSON</span><span class="lightY">.map</span><span class="violet">(</span><span class="blue">(</span><span class="lightB">elemento</span><span class="white">, </span><span class="blue2">indice</span><span class="blue">) => {</span>
+                <span class="lightB">console</span><span class="lightY">.log</span><span class="blue">(</span><span class="lightB">elemento.nome</span><span class="blue">)</span>
+            <span class="blue">}</span><span class="violet">)</span>
+        <span class="yellow">}</span><span class="blue">)</span>
+    <span class="violet">]</span>
+                    </code>
+                </pre>
+            </div>
+        </div>  -->
+        <!-- FINE SPREAD -->
         
         <!-- INIZIO FOOTER -->
         <footer class="footer">
@@ -73,7 +769,10 @@
         <!-- FINE FOOTER -->
     </div>
 
-
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>   
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>

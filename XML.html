@@ -22,13 +22,7 @@
     </script>
 </head>
 <body class="contXML">
-    <a name="Inizio"></a>
     <div class="container-fluid">   
-        <a href="#Inizio">
-            <div id="tornasu">
-                <img src="./images/FrecciaSu.png" class="tornasu" width="50%" title="Torna a inizio pagina">
-            </div>
-        </a>
         <!-- INIZIO NAVBAR -->
         <nav class="navbar navbar-expand-lg navbar navB">
             <div class="LogoTitolo">
@@ -170,59 +164,59 @@
                         <li>il modello di contenuto di ogni elemento, cioè gli elementi che può contenere e le sue relazioni;</li>
                         <li>gli attributi associati a ogni elemento, il loro tipo e il loro valore.</li>
                     </ul></p>
+                </div>
 
-                    <div>
-                        <div class="Def mt-5 d-flex justify-content-center" data-aos="fade-down" data-aos-duration="1000">-Struttura di un DTD</div>
-                        <div class="testo ml-xl-5 mr-xl-5" data-aos="fade-right">
-                            Per dichiarare un elemento si utilizza la parola chiave ELEMENT che, dopo di esso, ha bisogno del nome dell'elemento stesso e una serie di parametri che verranno spiegati di seguito. <br>
-                            Invece, per dichiarare un attributo dell'elemento, si utilizza la parola chiave ATTLIST che, dopo di esso, ha bisogno del nome dell'attributo e una serie di parametri che verrannno anche spiegati di seguito. <br><br>
-        
-                            <div class="row d-flex justify-content-center" data-aos="zoom-in">
-                                <div class="col-12">
-                                    <pre class="Codice">
-                                        <code>
-        <span class="gray">&lt!</span><span class="blue">ELEMENT</span><span class="white"> catalogo (film*)</span><span class="gray">&gt</span> 
-                                        </code>
-                                    </pre>
-                                </div>
+                <div>
+                    <div class="Def mt-5 d-flex justify-content-center" data-aos="fade-down" data-aos-duration="1000">-Struttura di un DTD</div>
+                    <div class="testo ml-xl-5 mr-xl-5" data-aos="fade-right">
+                        Per dichiarare un elemento si utilizza la parola chiave ELEMENT che, dopo di esso, ha bisogno del nome dell'elemento stesso e una serie di parametri che verranno spiegati di seguito. <br>
+                        Invece, per dichiarare un attributo dell'elemento, si utilizza la parola chiave ATTLIST che, dopo di esso, ha bisogno del nome dell'attributo e una serie di parametri che verrannno anche spiegati di seguito. <br><br>
+    
+                        <div class="row d-flex justify-content-center" data-aos="zoom-in">
+                            <div class="col-12">
+                                <pre class="Codice">
+                                    <code>
+    <span class="gray">&lt!</span><span class="blue">ELEMENT</span><span class="white"> catalogo (film*)</span><span class="gray">&gt</span> 
+                                    </code>
+                                </pre>
                             </div>
-                            In questo esempio, abbiamo la dichiarazione dell'elemento "catalogo" che può contenere al suo interno 0 o più elementi. Questo si può capire dal simbolo presente dopo la parola film e abbiamo 3 posssibilità:
-                            <ol>
-                                <li><strong>? :</strong> zero o 1;</li>
-                                <li><strong>+ :</strong> 1 o più;</li>
-                                <li><strong>* :</strong> zero o più.</li>
-                            </ol>
-        
-                            <div class="row d-flex justify-content-center" data-aos="zoom-in">
-                                <div class="col-12">
-                                    <pre class="Codice">
-                                        <code>
-        <span class="gray">&lt!</span><span class="blue">ELEMENT</span><span class="white"> formato </span><span class="blue">EMPTY</span><span class="gray">&gt</span>
-        <span class="gray">&lt!</span><span class="blue">ATTLIST</span><span class="white"> formato value (VHS | DVD) </span><span class="blue">#REQUIRED</span><span class="gray">&gt</span>          
-                                        </code>
-                                    </pre>
-                                </div>
-                            </div>
-        
-                            In questo altro esempio, abbiamo un dichiarazione dell'elemento "formato"; a differenza di quella di "catalogo", troviamo la parola <strong>EMPTY</strong>, cioè indica l'elemento vuoto. Al suo posto possiamo trovare la parola <strong>ANY</strong>, cioè indica che si può solo inserire testo o elementi, ovviamente dichiarati nel DTD. <br>
-                            Dopo alla dichiarazione dell'elemento, abbiamo anche la dichiarazione dei suoi attributi, dove troviamo che i valori possibili sono solo due. <br> 
-                            In fondo troviamo la parola <strong>"#REQUIRED"</strong>, cioè l'attributo deve essere presente; altra parola possibile in fondo può essere <strong>"#INPLIED"</strong>, cioè l'attributo è opzionale. Un ulteriore cosa è quello di trovare in fondo la parola <strong>#FIXED</strong>; questo si usa quando un attributo deve avere un valore prefissato.<br>
-                            <br>
-        
-                            <div class="row d-flex justify-content-center" data-aos="zoom-in">
-                                <div class="col-12">
-                                    <pre class="Codice">
-                                        <code>
-        <span class="gray">&lt!</span><span class="blue">ELEMENT</span><span class="white"> originale </span><span class="blue">EMPTY</span><span class="gray">&gt</span>
-        <span class="gray">&lt!</span><span class="blue">ATTLIST</span><span class="white"> originale value (si | no) </span><span class="red">"si"</span><span class="gray">&gt</span> 
-                                        </code>
-                                    </pre>
-                                </div>
-                            </div>
-                            In questo ultimo esempio, abbiamo una dichiarazione dell'elemento "originale", identica a quella di "formato". <br>
-                            Dopo di che abbiamo una dichiarazione di un attributo dell'elemento di sopra, che ha di nuovo due valori possibili. Un particolare da notare è il valore alla fine riportato tra virgolette che indica il valore di default. <br>
-                        
                         </div>
+                        In questo esempio, abbiamo la dichiarazione dell'elemento "catalogo" che può contenere al suo interno 0 o più elementi. Questo si può capire dal simbolo presente dopo la parola film e abbiamo 3 posssibilità:
+                        <ol>
+                            <li><strong>? :</strong> zero o 1;</li>
+                            <li><strong>+ :</strong> 1 o più;</li>
+                            <li><strong>* :</strong> zero o più.</li>
+                        </ol>
+    
+                        <div class="row d-flex justify-content-center" data-aos="zoom-in">
+                            <div class="col-12">
+                                <pre class="Codice">
+                                    <code>
+    <span class="gray">&lt!</span><span class="blue">ELEMENT</span><span class="white"> formato </span><span class="blue">EMPTY</span><span class="gray">&gt</span>
+    <span class="gray">&lt!</span><span class="blue">ATTLIST</span><span class="white"> formato value (VHS | DVD) </span><span class="blue">#REQUIRED</span><span class="gray">&gt</span>          
+                                    </code>
+                                </pre>
+                            </div>
+                        </div>
+    
+                        In questo altro esempio, abbiamo un dichiarazione dell'elemento "formato"; a differenza di quella di "catalogo", troviamo la parola <strong>EMPTY</strong>, cioè indica l'elemento vuoto. Al suo posto possiamo trovare la parola <strong>ANY</strong>, cioè indica che si può solo inserire testo o elementi, ovviamente dichiarati nel DTD. <br>
+                        Dopo alla dichiarazione dell'elemento, abbiamo anche la dichiarazione dei suoi attributi, dove troviamo che i valori possibili sono solo due. <br> 
+                        In fondo troviamo la parola <strong>"#REQUIRED"</strong>, cioè l'attributo deve essere presente; altra parola possibile in fondo può essere <strong>"#INPLIED"</strong>, cioè l'attributo è opzionale. Un ulteriore cosa è quello di trovare in fondo la parola <strong>#FIXED</strong>; questo si usa quando un attributo deve avere un valore prefissato.<br>
+                        <br>
+    
+                        <div class="row d-flex justify-content-center" data-aos="zoom-in">
+                            <div class="col-12">
+                                <pre class="Codice">
+                                    <code>
+    <span class="gray">&lt!</span><span class="blue">ELEMENT</span><span class="white"> originale </span><span class="blue">EMPTY</span><span class="gray">&gt</span>
+    <span class="gray">&lt!</span><span class="blue">ATTLIST</span><span class="white"> originale value (si | no) </span><span class="red">"si"</span><span class="gray">&gt</span> 
+                                    </code>
+                                </pre>
+                            </div>
+                        </div>
+                        In questo ultimo esempio, abbiamo una dichiarazione dell'elemento "originale", identica a quella di "formato". <br>
+                        Dopo di che abbiamo una dichiarazione di un attributo dell'elemento di sopra, che ha di nuovo due valori possibili. Un particolare da notare è il valore alla fine riportato tra virgolette che indica il valore di default. <br>
+                    
                     </div>
                 </div>
             </div>
