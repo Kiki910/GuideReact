@@ -44,6 +44,9 @@
                     <a class="nav-link text" href="index.html">HOME</a>
                 </li>
                 <li class="nav-item active d-flex justify-content-center">
+                    <a class="nav-link activetext" href="JSON.html">JSON</a>
+                </li>
+                <li class="nav-item active d-flex justify-content-center">
                     <a class="nav-link text" href="XML.html">XML</a>
                 </li>
                 <li class="nav-item active d-flex justify-content-center">
@@ -65,11 +68,25 @@
 
         <div class="container">
             <!-- INIZIO INTRODUZIONE + TITOLO JSON -->
-            <div class="ContTitJSON">
-                <div class="TitoloJSON" data-aos="flip-up">
-                    <p>JSON</p>
+            <div class="ContTitJSONXL d-xl-block d-none">
+                <div class="TitoloJSONXL" data-aos="flip-up">
+                    <p class="TitJSONXL">JSON</p>
                 </div>
             </div>
+
+            <div class="ContTitJSON d-xl-none">
+                <div class="TitoloJSON" data-aos="flip-up">
+                    <p class="TitJSON">JSON</p>
+                </div>
+            </div>
+
+            <div>
+                <a class="ContFreccia" href="#Contenuti">
+                    <img class="FrecciaGiu" src="./images/FrecciaGIU.png" alt="Freccia Giu" title="Clicca per scendere a vedere i contenuti">
+                </a>
+            </div>
+
+            <a name="Contenuti"></a>
             <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
                 <div class="Def">Cos'è il JSON e come si presenta il suo formato?</div>
                 <div class="testo ml-xl-5 mr-xl-5">
@@ -88,59 +105,48 @@
             <!-- FINE INTRODUZIONE + TITOLO JSON -->
 
             <!-- INIZIO SINTASSI -->
-            <div class="mr-5 ml-5">
-                <div data-aos="zoom-in-down">
-                    <div class="pos-f-t">
-                        <button class="navbar-toggler button" type="button" data-toggle="collapse" data-target="#Object" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-                            Sintassi OBJECT
-                        </button>
-                        <div class="collapse" id="Object">
-                            <div class="bg p-4">
-                                <div class="imgJSON">
-                                    <img src="./images/ObjetJSON.png" alt="Object JSON" title="Objet JSON" width="90%">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+            <div class="testo ml-xl-5 mr-xl-5 d-flex justify-content-center">
+                <p>Un oggetto è una serie non ordinata di nomi/valori. Un oggetto inizia con <strong>'{'</strong> [parentesi graffa sinistra] e finisce con <strong>'}'</strong> [parentesi graffa destra]. Ogni nome è seguito da <strong>':'</strong> [due punti] e la coppia di nome/valore sono separata da una <strong>','</strong> [virgola]</p>
+            </div>
+            <div class="imgJSON">
+                <img src="./images/ObjetJSON.png" alt="Object JSON" title="Objet JSON" width="80%">
+            </div>
 
-                    <div class="pos-f-t">
-                        <button class="navbar-toggler button" type="button" data-toggle="collapse" data-target="#Array" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-                            Sintassi ARRAY
-                        </button>
-                        <div class="collapse" id="Array">
-                            <div class="bg p-4">
-                                <div class="imgJSON">
-                                    <img src="./images/ArrayJSON.png" alt="Array JSON" title="Array JSON" width="90%">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+            <div class="testo ml-xl-5 mr-xl-5 mt-5 d-flex justify-content-center">
+                <p>Un array è una raccolta ordinata di valori. Un array comincia con <strong>'['</strong> [parentesi quadra sinistra] e finisce con <strong>']'</strong> [parentesi quadra destra]. I valori sono separati da <strong>','</strong> [virgola].</p>
+            </div>
+            <div class="imgJSON">
+                <img src="./images/ArrayJSON.png" alt="Array JSON" title="Array JSON" width="80%">
+            </div>
 
-                    <div class="pos-f-t">
-                        <button class="navbar-toggler button" type="button" data-toggle="collapse" data-target="#Value" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-                            Sintassi VALUE
-                        </button>
-                        <div class="collapse" id="Value">
-                            <div class="bg p-4">
-                                <div class="imgJSON">
-                                    <img src="./images/ValueJSON.png" alt="Value JSON" title="Value JSON" width="90%">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+            <div class="testo ml-xl-5 mr-xl-5 mt-5 d-flex justify-content-center">
+                <p>Un valore può essere una stringa tra virgolette, o un numero, o vero <strong>TRUE</strong> o falso <strong>FALSE</strong> o nullo <strong>NULL</strong>, o un oggetto o un array. Queste strutture possono essere annidate.</p>
+            </div>
+            <div class="imgJSON">
+                <img src="./images/ValueJSON.png" alt="Value JSON" title="Value JSON" width="80%">
+            </div>
 
-                    <div class="pos-f-t">
-                        <button class="navbar-toggler button" type="button" data-toggle="collapse" data-target="#String" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-                            Sintassi STRING
-                        </button>
-                        <div class="collapse" id="String">
-                            <div class="bg p-4">
-                                <div class="imgJSON">
-                                    <img src="./images/StringJSON.png" alt="String JSON" title="String JSON" width="90%">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+            <div class="testo ml-xl-5 mr-xl-5 mt-5 d-flex justify-content-center">
+                <p>Una stringa è una raccolta di zero o più caratteri <strong>Unicode</strong> tra virgolette; per le sequenze di escape utilizza la barra rovesciata. Un singolo carattere è rappresentato come una stringa di caratteri di lunghezza uno. Una stringa è molto simile ad una stringa C o Java.</p>
+            </div>
+            <div class="imgJSON">
+                <img src="./images/StringJSON.png" alt="String JSON" title="String JSON" width="80%">
+            </div>
+
+            <div class="testo ml-xl-5 mr-xl-5 mt-5 d-flex justify-content-center">
+                <p>Un numero è molto simile ad un numero C o Java, a parte il fatto che i formati ottali e esadecimali non sono utilizzati.</p>
+            </div>
+            <div class="imgJSON">
+                <img src="./images/NumberJSON.png" alt="Number JSON" title="Number JSON" width="80%">
+            </div>
+
+            <div class="testo ml-xl-5 mr-xl-5 mt-5 d-flex justify-content-center">
+                <p>I caratteri di spaziatura possono essere inseriti in mezzo a qualsiasi coppia di token.</p>
+            </div>
+            <div class="imgJSON">
+                <img src="./images/WhitespaceJSON.png" alt="Whitespace JSON" title="Whitespace JSON" width="80%">
+            </div>
+            <!-- 
 
                     <div class="pos-f-t">
                         <button class="navbar-toggler button" type="button" data-toggle="collapse" data-target="#Number" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -168,7 +174,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
             <!-- FINE SINTASSI -->
             
             <div class="d-flex justify-content-between">
@@ -220,8 +226,17 @@
         
         <!-- INIZIO FOOTER -->
         <footer class="footer">
-            <div class="row-12 d-flex justify-content-center">
-                <p>2022 | Paseri Kevin | 4C ITIS Rivoira</p>
+            <div class="Copyright mt-3">
+                <p>&copy; Paseri Kevin | Sito APPUNTI TPSIT. All rights reserved.</p>
+            </div>
+
+            <div>
+                <a href="https://www.instagram.com/_kevinpaseri_/?next=%2F" target="new">
+                    <img class="LoghiFooter" src="./images/Instagram.png" alt="Instagram" title="Apri profilo _kevinpaseri_">
+                </a>
+                <a href="https://github.com/Kiki910/GuideReact" target="new">
+                    <img class="LoghiFooter" src="./images/Github.png" alt="Github" title="Apri profilo Kiki910">
+                </a>
             </div>
             
             <div class="row d-flex justify-content-center">

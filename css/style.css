@@ -7,6 +7,21 @@
     }
 }
 
+.ContFreccia {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+.FrecciaGiu {
+    width: 10%!important;
+}
+
+.FrecciaGiu:hover {
+    transition: 0.5s;
+    width: 15%!important;
+}
+
 html {
     scroll-behavior: smooth;
   }
@@ -42,7 +57,6 @@ html {
 .navB {
     height: 120px;
     justify-content: space-between;
-    border-bottom: 2px solid white;
     position: fixed;
     top: 0;
     left: 0;
@@ -67,13 +81,27 @@ html {
 }
 
 .text:hover {
-    color: black;
-    background-color: white;
+    color: rgba(255, 255, 255, 0.389);
+    transition: 1s!important;
+    text-decoration: underline rgba(255, 255, 255, 0.389) 2px!important;
+}
+
+.activetext {
+    color: rgba(255, 255, 255, 0.389);
+    font-weight: bold;
+    width:  170px;
+    height: 30px;
+    text-align: center;
+    margin-top: 25px;
+    border-radius: 40px;
+    font-size: 25px;
+    text-decoration: underline rgba(255, 255, 255, 0.389) 2px!important;
+}
+
+.activetext:hover {
+    color: white;
     transition: 1s;
-    text-decoration: underline 3px;
-    animation-name: rotate;
-    animation-duration: 0.5s;
-    animation-direction: reverse;
+    text-decoration: underline white 2px!important;
 }
 
 .Link {
@@ -87,6 +115,7 @@ html {
     margin-bottom: 200px;
     width: 100%;
     background-size: 100%;
+    opacity: 0.5!important;
 }
 
 .imm {
@@ -97,6 +126,17 @@ html {
     align-items: center;
     font-weight: bolder;
     font-size: 300%;
+}
+
+.Intro {
+    color: white;
+    font-weight: bold!important;
+}
+
+.Intro:hover {
+    color: white;
+    transition: 1s;
+    font-size: 70px;
 }
 
 .textVAI {
@@ -127,7 +167,6 @@ html {
 }
 
 .contReact {
-    background-image: url("../images/React.png");
     background-repeat: no-repeat;
     background-position: center;
     background-color: black;
@@ -136,7 +175,6 @@ html {
 }
 
 .contJSON {
-    background-image: url("../images/JSON.png");
     background-repeat: no-repeat;
     background-position: center;
     background-color: black!important;
@@ -145,7 +183,6 @@ html {
 }
 
 .contXML {
-    background-image: url("../images/XML.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-color: black;
@@ -154,7 +191,6 @@ html {
 }
 
 .contJS {
-    background-image: url("../images/JSAv.png");
     background-repeat: no-repeat;
     background-position: center;
     background-color: black;
@@ -187,9 +223,9 @@ html {
     border-radius: 50px;
     height: 50px;
     width: 200px;
-    background-color: white;
-    border: 2px solid black;
-    color: black;
+    background-color: black;
+    border: 2px solid white;
+    color: white;
     align-items: center;
     display: flex;
     justify-content: center;
@@ -200,9 +236,9 @@ html {
     border-radius: 50px;
     height: 50px;
     width: 200px;
-    background-color: black;
-    color: white;
-    border: 2px solid white;
+    background-color: white;
+    color: black;
+    border: 2px solid black;
     transition: 1s;
 }
 
@@ -210,7 +246,7 @@ html {
     border-radius: 50px;
     height: 50px;
     width: 200px;
-    background-color: white;
+    background-color: black;
     border: 2px solid orangered;
     color: orangered;
     align-items: center;
@@ -225,7 +261,7 @@ html {
     width: 200px;
     background-color: orangered;
     color: white;
-    border: 2px solid orangered;
+    border: 2px solid black;
     transition: 1s;
 }
 
@@ -233,7 +269,7 @@ html {
     border-radius: 50px;
     height: 50px;
     width: 200px;
-    background-color: white;
+    background-color: black;
     border: 2px solid yellow;
     color: yellow;
     align-items: center;
@@ -248,7 +284,7 @@ html {
     width: 200px;
     background-color: yellow;
     color: black;
-    border: 2px solid yellow;
+    border: 2px solid black;
     transition: 1s;
 }
 
@@ -256,7 +292,7 @@ html {
     border-radius: 50px;
     height: 50px;
     width: 200px;
-    background-color: white;
+    background-color: black;
     border: 2px solid rgb(13, 177, 231);
     color: rgb(13, 177, 231);
     align-items: center;
@@ -271,7 +307,7 @@ html {
     width: 200px;
     background-color: rgb(13, 177, 231);
     color: white;
-    border: 2px solid rgb(13, 177, 231);
+    border: 2px solid black;
     transition: 1s;
 }
 
@@ -289,6 +325,51 @@ html {
 }
 
 /* INIZIO JSON */
+
+.ContTitJSONXL {
+    background-image: url("../images/JSON.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: black;
+    background-size: 50%;
+    background-position: 50% 12%!important;
+    height: 600px!important;
+}
+
+.TitoloJSONXL {
+    text-transform: uppercase;
+    background-image: linear-gradient(
+        -225deg,
+        #050402 0%,
+        #4e4e4e 29%,
+        #848484 67%,
+        #a1a1a1 100%
+    );
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 2s linear infinite;
+    display: inline-block;
+    font-size: 880%;
+    display: flex;
+    justify-content: center;
+    font-weight: bolder;
+}
+
+.ContTitJSON {
+    background-image: url("../images/JSON.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: black;
+    background-size: 50%;
+    background-position: 50% 12%!important;
+    height: 250px!important;
+}
 
 .TitoloJSON {
     text-transform: uppercase;
@@ -309,10 +390,63 @@ html {
     -webkit-text-fill-color: transparent;
     animation: textclip 2s linear infinite;
     display: inline-block;
-    font-size: 90px;
+    font-size: 440%;
     display: flex;
     justify-content: center;
     font-weight: bolder;
+}
+
+.TitJSONXL {
+    margin-top: 17%;
+}
+
+.TitJSON {
+    margin-top: 14%;
+}
+
+.ContTitXMLXL {
+    background-image: url("../images/XML.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: black;
+    background-size: 50%!important;
+    background-position: 50% 30%!important;
+    height: 600px!important;
+}
+
+.TitoloXMLXL {
+    text-transform: uppercase;
+    background-image: linear-gradient(
+        -225deg,
+        #ff0000 0%,
+        #ff5e00 29%,
+        #ffa600 67%,
+        #ffff00 100%
+    );
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 2s linear infinite;
+    display: inline-block;
+    font-size: 880%;
+    display: flex;
+    justify-content: center;
+    font-weight: bolder;
+}
+
+.ContTitXML {
+    background-image: url("../images/XML.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: black;
+    background-size: 50%;
+    background-position: 50% 12%!important;
+    height: 250px!important;
 }
 
 .TitoloXML {
@@ -334,19 +468,72 @@ html {
     -webkit-text-fill-color: transparent;
     animation: textclip 2s linear infinite;
     display: inline-block;
-    font-size: 90px;
+    font-size: 440%;
     display: flex;
     justify-content: center;
     font-weight: bolder;
 }
 
-.TitoloJS {
+.TitXMLXL {
+    margin-top: 17%;
+}
+
+.TitXML {
+    margin-top: 14%;
+}
+
+.ContTitJSAvXL {
+    background-image: url("../images/JSAv.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: black;
+    background-size: 50%!important;
+    background-position: 50% 30%!important;
+    height: 600px!important;
+}
+
+.TitoloJSAvXL {
     text-transform: uppercase;
     background-image: linear-gradient(
         -225deg,
-        #ff8800 0%,
-        #ffea00 29%,
-        #fffb00 67%,
+        #ff4400 0%,
+        #ff7b00 29%,
+        #ffc400 67%,
+        #c3ff00 100%
+    );
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 2s linear infinite;
+    display: inline-block;
+    font-size: 880%;
+    display: flex;
+    justify-content: center;
+    font-weight: bolder;
+}
+
+.ContTitJSAv {
+    background-image: url("../images/JSAv.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: black;
+    background-size: 50%;
+    background-position: 50% 12%!important;
+    height: 250px!important;
+}
+
+.TitoloJSAv {
+    text-transform: uppercase;
+    background-image: linear-gradient(
+        -225deg,
+        #ff4400 0%,
+        #ff7b00 29%,
+        #ffc400 67%,
         #c3ff00 100%
     );
     background-size: auto auto;
@@ -365,7 +552,25 @@ html {
     font-weight: bolder;
 }
 
-.TitoloReact {
+.TitJSAvXL {
+    margin-top: 17%;
+}
+
+.TitJSAv {
+    margin-top: 17%;
+}
+
+.ContTitREACTXL {
+    background-image: url("../images/React.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: black;
+    background-size: 50%!important;
+    background-position: 50% 30%!important;
+    height: 600px!important;
+}
+
+.TitoloREACTXL {
     text-transform: uppercase;
     background-image: linear-gradient(
         -225deg,
@@ -384,10 +589,53 @@ html {
     -webkit-text-fill-color: transparent;
     animation: textclip 2s linear infinite;
     display: inline-block;
-    font-size: 90px;
+    font-size: 880%;
     display: flex;
     justify-content: center;
     font-weight: bolder;
+}
+
+.ContTitREACT {
+    background-image: url("../images/React.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: black;
+    background-size: 50%;
+    background-position: 50% 12%!important;
+    height: 250px!important;
+}
+
+.TitoloREACT {
+    text-transform: uppercase;
+    background-image: linear-gradient(
+        -225deg,
+        #0004ff 0%,
+        #0051ff 29%,
+        #0095ff 67%,
+        #00fbff 100%
+    );
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 2s linear infinite;
+    display: inline-block;
+    font-size: 440%;
+    display: flex;
+    justify-content: center;
+    font-weight: bolder;
+}
+
+.TitREACTXL {
+    margin-top: 16.5%;
+}
+
+.TitREACT {
+    margin-top: 14%;
 }
 
 /* animazione per i titoli */
@@ -403,6 +651,7 @@ html {
     font-weight: bolder;
     text-decoration: underline;
     margin-bottom: 10px;
+    margin-top: 150px;
 }
 
 .testo {
@@ -618,4 +867,13 @@ pre {
     border: 2px solid #0051ff;
     color: white;
     border-radius: 50px;
+}
+
+.LoghiFooter {
+    width: 5%;
+}
+
+.LoghiFooter:hover {
+    width: 6%;
+    transition: 1s;
 }
