@@ -10,7 +10,7 @@
 .ContFreccia {
     display: flex;
     justify-content: center;
-    margin-top: 60px;
+    margin-top: 5px;
 }
 
 .FrecciaGiu {
@@ -42,8 +42,12 @@ html {
     transition: 1s;
 }
 
+.navbar-toggler {
+    margin-top: 10px;
+}
+
 .navbar-toggler:hover {
-    background-color: white;
+    background-color: white!important;
     transition: 1s;
 }
 
@@ -55,13 +59,13 @@ html {
 }
 
 .navB {
-    height: 120px;
+    height: 100px;
     justify-content: space-between;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    margin-bottom: 50px;
+    margin-bottom: 5px!important;
 }
 
 .LogoTitolo {
@@ -71,11 +75,10 @@ html {
 
 .text {
     color: white;
-    font-weight: bold;
     width:  120px;
     height: 30px;
     text-align: center;
-    margin-top: 30px;
+    margin-top: 10px;
     border-radius: 40px;
     font-size: 15px;
 }
@@ -84,17 +87,18 @@ html {
     color: rgba(255, 255, 255, 0.389);
     transition: 1s!important;
     text-decoration: underline rgba(255, 255, 255, 0.389) 2px!important;
+    transform: translateY(-10px);
 }
 
 .activetext {
-    color: rgba(255, 255, 255, 0.389);
+    color: rgba(255, 255, 255, 0.568);
     font-weight: bold;
     width:  170px;
     height: 30px;
     text-align: center;
-    margin-top: 25px;
+    margin-top: 5px;
     border-radius: 40px;
-    font-size: 25px;
+    font-size: 20px;
     text-decoration: underline rgba(255, 255, 255, 0.389) 2px!important;
 }
 
@@ -665,7 +669,7 @@ html {
     border-radius: 40px;
     margin-left: 100px;
     margin-right: 100px;
-    opacity: 0.7;
+    opacity: 0.9!important;
 }
 
 .drop {
@@ -712,7 +716,7 @@ html {
 
 .sepJ {
     background-image: -webkit-linear-gradient(top left, black 50%, darkgray);
-    height: 10px;
+    height: 7px;
     width: 50%;
     display: flex;
     justify-content: left;
@@ -721,7 +725,7 @@ html {
 
 .sep2J {
     background-image: -webkit-linear-gradient(top right, black 50%, darkgray);
-    height: 10px;
+    height: 7px;
     width: 50%;
     display: flex;
     justify-content: end;
@@ -730,7 +734,7 @@ html {
 
 .sepX {
     background-image: -webkit-linear-gradient(top left, black 50%, orangered);
-    height: 10px;
+    height: 7px;
     width: 50%;
     display: flex;
     justify-content: left;
@@ -739,7 +743,7 @@ html {
 
 .sep2X {
     background-image: -webkit-linear-gradient(top right, black 50%, orangered);
-    height: 10px;
+    height: 7px;
     width: 50%;
     display: flex;
     justify-content: end;
@@ -748,7 +752,7 @@ html {
 
 .sepJS {
     background-image: -webkit-linear-gradient(top left, black 50%, yellow);
-    height: 10px;
+    height: 7px;
     width: 50%;
     display: flex;
     justify-content: left;
@@ -757,7 +761,7 @@ html {
 
 .sep2JS {
     background-image: -webkit-linear-gradient(top right, black 50%, yellow);
-    height: 10px;
+    height: 7px;
     width: 50%;
     display: flex;
     justify-content: end;
@@ -766,7 +770,7 @@ html {
 
 .sepR {
     background-image: -webkit-linear-gradient(top left, black 50%, #0095ff);
-    height: 10px;
+    height: 7px;
     width: 50%;
     display: flex;
     justify-content: left;
@@ -775,7 +779,7 @@ html {
 
 .sep2R {
     background-image: -webkit-linear-gradient(top right, black 50%, #0095ff);
-    height: 10px;
+    height: 7px;
     width: 50%;
     display: flex;
     justify-content: end;

@@ -5,21 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Paseri Kevin - JSON</title>
+    <title>JSON</title>
     <link rel="stylesheet" href="./css/style.css">
     <script src="./js/script.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <script>
-        window.addEventListener("scroll",function(){
-            if(window.pageYOffset > 200) {
-                document.getElementById("tornasu").style.display="block";
-            }
-            else {
-                document.getElementById("tornasu").style.display="none";
-            }
-        });
-    </script>
 </head>
 <body class="contJSON">
     <div class="container-fluid">
@@ -27,11 +17,8 @@
         <nav class="navbar navbar-expand-lg navbar navB">
             <div class="LogoTitolo">
                 <a href="https://www.denina.it/" target="new">
-                    <img class="logo align-self-center" src="./images/LogoKP.png" width="30%" alt="Logo Kevin Paseri" title="Logo KEVIN PASERI | Cliccare per andare alla pagina del Denina - Pellico - Rivoira">
+                    <img class="logo align-self-center" src="./images/LogoKP.jpg" width="15%" alt="Logo Kevin Paseri" title="Logo KEVIN PASERI | Cliccare per andare alla pagina del Denina - Pellico - Rivoira">
                 </a>
-            </div>
-            <div class="titolo d-flex justify-content-center">
-                <font>Guida Tecnica</font>
             </div>
             <div class="Link"></div>
             <button class="navbar-toggler border-light" style="width: 80%; margin-left: 10%;" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-label="Toggle navigation">
@@ -105,76 +92,47 @@
             <!-- FINE INTRODUZIONE + TITOLO JSON -->
 
             <!-- INIZIO SINTASSI -->
-            <div class="testo ml-xl-5 mr-xl-5 d-flex justify-content-center">
+            <div data-aos="flip-up" class="testo ml-xl-5 mr-xl-5 d-flex justify-content-center">
                 <p>Un oggetto è una serie non ordinata di nomi/valori. Un oggetto inizia con <strong>'{'</strong> [parentesi graffa sinistra] e finisce con <strong>'}'</strong> [parentesi graffa destra]. Ogni nome è seguito da <strong>':'</strong> [due punti] e la coppia di nome/valore sono separata da una <strong>','</strong> [virgola]</p>
             </div>
-            <div class="imgJSON">
+            <div data-aos="fade-up" class="imgJSON">
                 <img src="./images/ObjetJSON.png" alt="Object JSON" title="Objet JSON" width="80%">
             </div>
 
-            <div class="testo ml-xl-5 mr-xl-5 mt-5 d-flex justify-content-center">
+            <div data-aos="flip-up" class="testo ml-xl-5 mr-xl-5 mt-5 d-flex justify-content-center">
                 <p>Un array è una raccolta ordinata di valori. Un array comincia con <strong>'['</strong> [parentesi quadra sinistra] e finisce con <strong>']'</strong> [parentesi quadra destra]. I valori sono separati da <strong>','</strong> [virgola].</p>
             </div>
-            <div class="imgJSON">
+            <div data-aos="fade-up" class="imgJSON">
                 <img src="./images/ArrayJSON.png" alt="Array JSON" title="Array JSON" width="80%">
             </div>
 
-            <div class="testo ml-xl-5 mr-xl-5 mt-5 d-flex justify-content-center">
+            <div data-aos="flip-up" class="testo ml-xl-5 mr-xl-5 mt-5 d-flex justify-content-center">
                 <p>Un valore può essere una stringa tra virgolette, o un numero, o vero <strong>TRUE</strong> o falso <strong>FALSE</strong> o nullo <strong>NULL</strong>, o un oggetto o un array. Queste strutture possono essere annidate.</p>
             </div>
-            <div class="imgJSON">
+            <div data-aos="fade-up" class="imgJSON">
                 <img src="./images/ValueJSON.png" alt="Value JSON" title="Value JSON" width="80%">
             </div>
 
-            <div class="testo ml-xl-5 mr-xl-5 mt-5 d-flex justify-content-center">
+            <div data-aos="flip-up" class="testo ml-xl-5 mr-xl-5 mt-5 d-flex justify-content-center">
                 <p>Una stringa è una raccolta di zero o più caratteri <strong>Unicode</strong> tra virgolette; per le sequenze di escape utilizza la barra rovesciata. Un singolo carattere è rappresentato come una stringa di caratteri di lunghezza uno. Una stringa è molto simile ad una stringa C o Java.</p>
             </div>
-            <div class="imgJSON">
+            <div data-aos="fade-up" class="imgJSON">
                 <img src="./images/StringJSON.png" alt="String JSON" title="String JSON" width="80%">
             </div>
 
-            <div class="testo ml-xl-5 mr-xl-5 mt-5 d-flex justify-content-center">
+            <div data-aos="flip-up" class="testo ml-xl-5 mr-xl-5 mt-5 d-flex justify-content-center">
                 <p>Un numero è molto simile ad un numero C o Java, a parte il fatto che i formati ottali e esadecimali non sono utilizzati.</p>
             </div>
-            <div class="imgJSON">
+            <div data-aos="fade-up" class="imgJSON">
                 <img src="./images/NumberJSON.png" alt="Number JSON" title="Number JSON" width="80%">
             </div>
 
-            <div class="testo ml-xl-5 mr-xl-5 mt-5 d-flex justify-content-center">
+            <div data-aos="flip-up" class="testo ml-xl-5 mr-xl-5 mt-5 d-flex justify-content-center">
                 <p>I caratteri di spaziatura possono essere inseriti in mezzo a qualsiasi coppia di token.</p>
             </div>
-            <div class="imgJSON">
+            <div data-aos="fade-up" class="imgJSON">
                 <img src="./images/WhitespaceJSON.png" alt="Whitespace JSON" title="Whitespace JSON" width="80%">
             </div>
-            <!-- 
-
-                    <div class="pos-f-t">
-                        <button class="navbar-toggler button" type="button" data-toggle="collapse" data-target="#Number" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-                            Sintassi NUMBER
-                        </button>
-                        <div class="collapse" id="Number">
-                            <div class="bg p-4">
-                                <div class="imgJSON">
-                                    <img src="./images/NumberJSON.png" alt="Number JSON" title="Number JSON" width="90%">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="pos-f-t">
-                        <button class="navbar-toggler button" type="button" data-toggle="collapse" data-target="#Whitespace" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-                            Sintassi WHITESPACE
-                        </button>
-                        <div class="collapse" id="Whitespace">
-                            <div class="bg p-4">
-                                <div class="imgJSON">
-                                    <img src="./images/WhitespaceJSON.png" alt="Whitespace JSON" title="Whitespace JSON" width="90%">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div> -->
             <!-- FINE SINTASSI -->
             
             <div class="d-flex justify-content-between">
