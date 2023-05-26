@@ -71,6 +71,7 @@ html {
 .LogoTitolo {
     text-align: center;
     width: 100%;
+    margin-top: 50px;
 }
 
 .text {
@@ -84,15 +85,32 @@ html {
 }
 
 .text:hover {
-    color: rgba(255, 255, 255, 0.389);
     transition: 1s!important;
-    text-decoration: underline rgba(255, 255, 255, 0.389) 2px!important;
-    transform: translateY(-10px);
+    font-weight: bold;
+    color: white;
+}
+
+.hover-underline-animation {
+  position: relative;
+  color: black;
+  padding-bottom: 20px;
+}
+
+.hover-underline-animation:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #000000;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
 }
 
 .activetext {
-    color: rgba(255, 255, 255, 0.568);
-    font-weight: bold;
+    color: white;
     width:  170px;
     height: 30px;
     text-align: center;
@@ -110,6 +128,213 @@ html {
 
 .Link {
     margin-right: 22%;
+}
+
+.introImm {
+    display: inline-block;
+    width: 35%;
+    height: 600px;
+    margin-left: 100px;
+}
+
+.introImmMD {
+    display: inline-block;
+    justify-content: center;
+    width: 100%;
+    height: 600px;
+}
+
+.introTit {
+    display: inline-block;
+    justify-content: center;
+    width: 55%;
+    height: 600px;
+    margin-top: 100px;
+}
+
+.introTitMD {
+    display: inline-block;
+    justify-content: center;
+    width: 100%;
+    height: 600px;
+    margin-top: 0px;
+}
+
+.tit {
+    display: flex;
+    justify-content: center;
+    align-items: center!important;
+    color: white;
+    font-size: 60px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.titMD {
+    display: flex;
+    justify-content: center;
+    align-items: center!important;
+    color: white;
+    font-size: 60px;
+    width: 100%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.buttMD {
+    display: inline-block;
+    justify-content: center;
+    width: 100%;
+}
+
+button {
+    --glow-color: rgb(1, 139, 219);
+    --glow-spread-color: rgba(0, 65, 163, 0.781);
+    --enhanced-glow-color: rgb(206, 227, 255);
+    --btn-color: rgb(6, 0, 95);
+    border: .25em solid var(--glow-color);
+    cursor: pointer;
+    padding: 1em 3em;
+    color: var(--glow-color);
+    font-size: 15px;
+    font-weight: bold;
+    background-color: var(--btn-color);
+    border-radius: 1em;
+    outline: none;
+    box-shadow: 0 0 1em .25em var(--glow-color),
+           0 0 4em 1em var(--glow-spread-color),
+           inset 0 0 .75em .25em var(--glow-color);
+    text-shadow: 0 0 .5em var(--glow-color);
+    position: relative;
+    transition: all 0.3s;
+    width: 350px;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px!important;
+    margin-left: 20%!important;
+    border-radius: 50px!important;
+   }
+   
+   button::after {
+    pointer-events: none;
+    content: "";
+    position: absolute;
+    top: -100%;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--glow-spread-color);
+    filter: blur(2.5em);
+    opacity: 1;
+    transform: perspective(1.5em) rotateX(-35deg) scale(1, .6);
+   }
+   
+   button:hover {
+    color: var(--btn-color);
+    background-color: var(--glow-color);
+    box-shadow: 0 0 1em .25em var(--glow-color),
+           0 0 4em 2em var(--glow-spread-color),
+           inset 0 0 .75em .25em var(--glow-color);
+   }
+   
+   button:active {
+    box-shadow: 0 0 0.6em 0.25em var(--glow-color),
+      0 0 2.5em 2em var(--glow-spread-color),
+      inset 0 0 0.5em 0.25em var(--glow-color);
+    transform: scale(0.95);
+   }
+
+
+
+   button2 {
+    --glow-color: rgb(1, 139, 219);
+    --glow-spread-color: rgba(0, 65, 163, 0.781);
+    --enhanced-glow-color: rgb(206, 227, 255);
+    --btn-color: rgb(6, 0, 95);
+    border: .25em solid var(--glow-color);
+    cursor: pointer;
+    padding: 1em 3em;
+    color: var(--glow-color);
+    font-size: 15px;
+    font-weight: bold;
+    background-color: var(--btn-color);
+    border-radius: 1em;
+    outline: none;
+    box-shadow: 0 0 1em .25em var(--glow-color),
+           0 0 4em 1em var(--glow-spread-color),
+           inset 0 0 .75em .25em var(--glow-color);
+    text-shadow: 0 0 .5em var(--glow-color);
+    position: relative;
+    transition: all 0.3s;
+    width: 350px;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px!important;
+    margin-left: 20%!important;
+    border-radius: 50px!important;
+  }
+  
+  button2::after {
+    pointer-events: none;
+    content: "";
+    position: absolute;
+    top: 120%;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--glow-spread-color);
+    filter: blur(2.5em);
+    opacity: 1;
+    transform: perspective(1.5em) rotateX(35deg) scale(1, 0.6);
+  }
+
+  button2 svg {
+    transform: translateX(10px);
+    transition: transform .3s ease-in-out;
+  }
+  
+  button2:hover {
+    color: var(--btn-color);
+    background-color: var(--glow-color);
+    box-shadow: 0 0 1em 0.25em var(--glow-color),
+      0 0 4em 2em var(--glow-spread-color),
+      inset 0 0 0.75em 0.25em var(--glow-color);
+  }
+  
+  button2:active {
+    box-shadow: 0 0 0.6em 0.25em var(--glow-color),
+      0 0 2.5em 2em var(--glow-spread-color),
+      inset 0 0 0.5em 0.25em var(--glow-color);
+    transform: scale(0.95);
+  }
+  
+  button2:hover svg {
+    transform: translateX(20px) rotate(90deg) scale(1.5)!important;
+  }
+  
+  
+
+.autore {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 20px;
+}
+
+.autoreMD {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 20px;
+}
+
+.sottoAutoreMD {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 15px;
+}
+
+.immIntro {
+    margin-left: 200px;
 }
 
 .sfondoHome {
@@ -162,6 +387,670 @@ html {
     transition: 1s;
     text-decoration: underline 3px;
 }
+
+/* card */
+.card1 {
+    position: relative;
+    width: 450px;
+    height: 500px;
+    color: black;
+    background: black;
+    overflow: hidden;
+    border-top-right-radius: 50px!important;
+  }
+  
+  .temporary_text {
+    font-weight: bold;
+    font-size: 50px!important;
+    padding: 6px 12px;
+    color: black;
+    background-color: black;
+  }
+  
+  .card_title {
+    font-weight: bold;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .card_content {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+      /* edit the width to fit card */
+    width: 100%;
+    padding: 20px;
+    background: #f2f2f2;
+    border-top-left-radius: 20px;
+      /* edit here to change the height of the content box */
+    transform: translateY(150px);
+    transition: transform .25s;
+  }
+  
+  .card_content::before {
+    content: '';
+    position: absolute;
+    top: -47px;
+    right: -45px;
+    width: 100px;
+    height: 100px;
+    transform: rotate(-175deg);
+    border-radius: 50%;
+    box-shadow: inset 48px 48px #f2f2f2;
+  }
+  
+  .card_title {
+    color: #131313;
+    line-height: 15px;
+  }
+  
+  .card_subtitle {
+    display: block;
+    font-size: 15px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+  }
+  
+  .card_description {
+    font-size: 14px;
+    opacity: 0;
+    transition: opacity .5s;
+    height: 150px;
+  }
+  
+  .card1:hover .card_content {
+    transform: translateY(0);
+  }
+  
+  .card1:hover .card_description {
+    opacity: 1;
+    transition-delay: .25s;
+  }
+
+/* Button card JSON */
+buttonJSON {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    background: transparent;
+    padding: 0;
+    font-size: inherit;
+    font-family: inherit;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+   
+buttonJSON.learn-more {
+    width: 400px;
+    height: auto;
+}
+   
+buttonJSON.learn-more .circle {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: relative;
+    display: block;
+    margin: 0;
+    width: 3rem;
+    height: 3rem;
+    background: #616161;
+    border-radius: 1.625rem;
+}
+   
+buttonJSON.learn-more .circle .icon {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: #fff;
+}
+   
+buttonJSON.learn-more .circle .icon.arrow {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    left: 0.625rem;
+    width: 1.125rem;
+    height: 0.125rem;
+    background: none;
+}
+   
+buttonJSON.learn-more .circle .icon.arrow::before {
+    position: absolute;
+    content: "";
+    top: -0.29rem;
+    right: 0.0625rem;
+    width: 0.625rem;
+    height: 0.625rem;
+    border-top: 0.125rem solid #fff;
+    border-right: 0.125rem solid #fff;
+
+    transform: rotate(45deg);
+}
+   
+buttonJSON.learn-more .button-text {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0.75rem 0;
+    margin: 0 0 0 1.85rem;
+    color: white;
+    font-weight: 700;
+    line-height: 1.6;
+    text-align: center;
+    text-transform: uppercase;
+    margin-left: 200px;
+   }
+   
+buttonJSON:hover .circle {
+    width: 100%;
+}
+   
+buttonJSON:hover .circle .icon.arrow {
+    background: #fff;
+    transform: translate(1rem, 0);
+}
+   
+buttonJSON:hover .button-text {
+    color: #fff;
+}
+
+/* Button card XML */
+buttonXML {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    background: transparent;
+    padding: 0;
+    font-size: inherit;
+    font-family: inherit;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+   
+buttonXML.learn-more {
+    width: 400px;
+    height: auto;
+}
+   
+buttonXML.learn-more .circle {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: relative;
+    display: block;
+    margin: 0;
+    width: 3rem;
+    height: 3rem;
+    background: orangered;
+    border-radius: 1.625rem;
+}
+   
+buttonXML.learn-more .circle .icon {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: #fff;
+}
+   
+buttonXML.learn-more .circle .icon.arrow {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    left: 0.625rem;
+    width: 1.125rem;
+    height: 0.125rem;
+    background: none;
+}
+   
+buttonXML.learn-more .circle .icon.arrow::before {
+    position: absolute;
+    content: "";
+    top: -0.29rem;
+    right: 0.0625rem;
+    width: 0.625rem;
+    height: 0.625rem;
+    border-top: 0.125rem solid #fff;
+    border-right: 0.125rem solid #fff;
+
+    transform: rotate(45deg);
+}
+   
+buttonXML.learn-more .button-text {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0.75rem 0;
+    margin: 0 0 0 1.85rem;
+    color: white;
+    font-weight: 700;
+    line-height: 1.6;
+    text-align: center;
+    text-transform: uppercase;
+    margin-left: 200px;
+   }
+   
+buttonXML:hover .circle {
+    width: 100%;
+}
+   
+buttonXML:hover .circle .icon.arrow {
+    background: #fff;
+    transform: translate(1rem, 0);
+}
+   
+buttonXML:hover .button-text {
+    color: #fff;
+}
+
+/* Button card JS AVANZATO */
+buttonJS {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    background: transparent;
+    padding: 0;
+    font-size: inherit;
+    font-family: inherit;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+   
+buttonJS.learn-more {
+    width: 400px;
+    height: auto;
+}
+   
+buttonJS.learn-more .circle {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: relative;
+    display: block;
+    margin: 0;
+    width: 3rem;
+    height: 3rem;
+    background: yellow;
+    border-radius: 1.625rem;
+}
+   
+buttonJS.learn-more .circle .icon {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: #fff;
+}
+   
+buttonJS.learn-more .circle .icon.arrow {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    left: 0.625rem;
+    width: 1.125rem;
+    height: 0.125rem;
+    background: none;
+}
+   
+buttonJS.learn-more .circle .icon.arrow::before {
+    position: absolute;
+    content: "";
+    top: -0.29rem;
+    right: 0.0625rem;
+    width: 0.625rem;
+    height: 0.625rem;
+    border-top: 0.125rem solid #fff;
+    border-right: 0.125rem solid #fff;
+
+    transform: rotate(45deg);
+}
+   
+buttonJS.learn-more .button-text {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0.75rem 0;
+    margin: 0 0 0 1.85rem;
+    color: white;
+    font-weight: 700;
+    line-height: 1.6;
+    text-align: center;
+    text-transform: uppercase;
+    margin-left: 200px;
+   }
+   
+buttonJS:hover .circle {
+    width: 100%;
+}
+   
+buttonJS:hover .circle .icon.arrow {
+    background: #fff;
+    transform: translate(1rem, 0);
+}
+   
+buttonJS:hover .button-text {
+    color: #fff;
+}
+
+/* Button card REACT */
+buttonREACT {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    background: transparent;
+    padding: 0;
+    font-size: inherit;
+    font-family: inherit;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+   
+buttonREACT.learn-more {
+    width: 400px;
+    height: auto;
+}
+   
+buttonREACT.learn-more .circle {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: relative;
+    display: block;
+    margin: 0;
+    width: 3rem;
+    height: 3rem;
+    background: #0004ff;
+    border-radius: 1.625rem;
+}
+   
+buttonREACT.learn-more .circle .icon {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: #fff;
+}
+   
+buttonREACT.learn-more .circle .icon.arrow {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    left: 0.625rem;
+    width: 1.125rem;
+    height: 0.125rem;
+    background: none;
+}
+   
+buttonREACT.learn-more .circle .icon.arrow::before {
+    position: absolute;
+    content: "";
+    top: -0.29rem;
+    right: 0.0625rem;
+    width: 0.625rem;
+    height: 0.625rem;
+    border-top: 0.125rem solid #fff;
+    border-right: 0.125rem solid #fff;
+
+    transform: rotate(45deg);
+}
+   
+buttonREACT.learn-more .button-text {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0.75rem 0;
+    margin: 0 0 0 1.85rem;
+    color: white;
+    font-weight: 700;
+    line-height: 1.6;
+    text-align: center;
+    text-transform: uppercase;
+    margin-left: 200px;
+   }
+   
+buttonREACT:hover .circle {
+    width: 100%;
+}
+   
+buttonREACT:hover .circle .icon.arrow {
+    background: #fff;
+    transform: translate(1rem, 0);
+}
+   
+buttonREACT:hover .button-text {
+    color: #fff;
+}
+
+/* Button card MONGO */
+buttonMONGO {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    background: transparent;
+    padding: 0;
+    font-size: inherit;
+    font-family: inherit;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+   
+buttonMONGO.learn-more {
+    width: 400px;
+    height: auto;
+}
+   
+buttonMONGO.learn-more .circle {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: relative;
+    display: block;
+    margin: 0;
+    width: 3rem;
+    height: 3rem;
+    background: green;
+    border-radius: 1.625rem;
+}
+   
+buttonMONGO.learn-more .circle .icon {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: #fff;
+}
+   
+buttonMONGO.learn-more .circle .icon.arrow {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    left: 0.625rem;
+    width: 1.125rem;
+    height: 0.125rem;
+    background: none;
+}
+   
+buttonMONGO.learn-more .circle .icon.arrow::before {
+    position: absolute;
+    content: "";
+    top: -0.29rem;
+    right: 0.0625rem;
+    width: 0.625rem;
+    height: 0.625rem;
+    border-top: 0.125rem solid #fff;
+    border-right: 0.125rem solid #fff;
+
+    transform: rotate(45deg);
+}
+   
+buttonMONGO.learn-more .button-text {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0.75rem 0;
+    margin: 0 0 0 1.85rem;
+    color: white;
+    font-weight: 700;
+    line-height: 1.6;
+    text-align: center;
+    text-transform: uppercase;
+    margin-left: 200px;
+   }
+   
+buttonMONGO:hover .circle {
+    width: 100%;
+}
+   
+buttonMONGO:hover .circle .icon.arrow {
+    background: #fff;
+    transform: translate(1rem, 0);
+}
+   
+buttonMONGO:hover .button-text {
+    color: #fff;
+}
+
+/* Button card JAVA */
+buttonJAVA {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    background: transparent;
+    padding: 0;
+    font-size: inherit;
+    font-family: inherit;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+   
+buttonJAVA.learn-more {
+    width: 400px;
+    height: auto;
+}
+   
+buttonJAVA.learn-more .circle {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: relative;
+    display: block;
+    margin: 0;
+    width: 3rem;
+    height: 3rem;
+    background: red;
+    border-radius: 1.625rem;
+}
+   
+buttonJAVA.learn-more .circle .icon {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: #fff;
+}
+   
+buttonJAVA.learn-more .circle .icon.arrow {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    left: 0.625rem;
+    width: 1.125rem;
+    height: 0.125rem;
+    background: none;
+}
+   
+buttonJAVA.learn-more .circle .icon.arrow::before {
+    position: absolute;
+    content: "";
+    top: -0.29rem;
+    right: 0.0625rem;
+    width: 0.625rem;
+    height: 0.625rem;
+    border-top: 0.125rem solid #fff;
+    border-right: 0.125rem solid #fff;
+
+    transform: rotate(45deg);
+}
+   
+buttonJAVA.learn-more .button-text {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0.75rem 0;
+    margin: 0 0 0 1.85rem;
+    color: white;
+    font-weight: 700;
+    line-height: 1.6;
+    text-align: center;
+    text-transform: uppercase;
+    margin-left: 200px;
+   }
+   
+buttonJAVA:hover .circle {
+    width: 100%;
+}
+   
+buttonJAVA:hover .circle .icon.arrow {
+    background: #fff;
+    transform: translate(1rem, 0);
+}
+   
+buttonJAVA:hover .button-text {
+    color: #fff;
+}
+
+.cardRow {
+    display: flex;
+    justify-content: space-between;
+}
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+
 
 .footer {
     text-align: center;
@@ -655,7 +1544,16 @@ html {
     font-weight: bolder;
     text-decoration: underline;
     margin-bottom: 10px;
-    margin-top: 150px;
+    margin-top: 50px;
+}
+
+.Def2 {
+    color: white;
+    font-size: 25px;
+    font-weight: bolder;
+    margin-bottom: 10px;
+    margin-top: 50px;
+    margin-left: 20px;
 }
 
 .testo {
@@ -690,7 +1588,7 @@ html {
     border-bottom: 5px solid black!important;
 }
 
-.button {
+.buttonM {
     background-color: Black!important;
     color: white!important;
     width: 80%;
@@ -702,7 +1600,7 @@ html {
     opacity: 0.7;
 }
 
-.button:hover {
+.buttonM:hover {
     background-color: white!important;
     color: black!important;
     width: 80%;
@@ -842,11 +1740,33 @@ html {
 }
 
 .Codice{
-    background: rgb(41, 41, 41);
+    background: rgba(0, 0, 0, 0.427);
     border-radius: 10px;
     display: block;
     width: 100%;
     font-size: 18px;
+    border-left: 5px solid white;
+    margin-top: 10px;
+}
+
+.CodiceRosso{
+    background: rgba(0, 0, 0, 0.427);
+    border-radius: 10px;
+    display: block;
+    width: 100%;
+    font-size: 18px;
+    border-left: 5px solid red;
+    margin-top: 10px;
+}
+
+.CodiceBlu{
+    background: rgba(0, 0, 0, 0.427);
+    border-radius: 10px;
+    display: block;
+    width: 100%;
+    font-size: 18px;
+    border-left: 5px solid #0051ff;
+    margin-top: 10px;
 }
 
 pre {

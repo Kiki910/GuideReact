@@ -17,13 +17,13 @@
         <nav class="navbar navbar-expand-lg navbar navB">
             <div class="LogoTitolo">
                 <a href="https://www.denina.it/" target="new">
-                    <img class="logo align-self-center" src="./images/LogoKP.jpg" width="15%" alt="Logo Kevin Paseri" title="Logo KEVIN PASERI | Cliccare per andare alla pagina del Denina - Pellico - Rivoira">
+                    <img class="logo align-self-center" src="./images/KP_logo.png" width="30%" alt="Logo Kevin Paseri" title="Logo KEVIN PASERI | Cliccare per andare alla pagina del Denina - Pellico - Rivoira">
                 </a>
             </div>
             <div class="Link"></div>
-            <button class="navbar-toggler border-light" style="width: 80%; margin-left: 10%;" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-label="Toggle navigation">
+            <buttonM class="navbar-toggler border-light" style="width: 80%; margin-left: 10%;" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-label="Toggle navigation">
                 <p class="menu">MENÙ</p>
-            </button>
+            </buttonM>
           
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav mr-auto">
@@ -41,6 +41,12 @@
                 </li>
                 <li class="nav-item active d-flex justify-content-center">
                     <a class="nav-link activetext" href="React.html">REACT</a>
+                </li>
+                <li class="nav-item active d-flex justify-content-center">
+                    <a class="nav-link text" href="MongoDB.html">MONGO DB</a>
+                </li>
+                <li class="nav-item active d-flex justify-content-center">
+                    <a class="nav-link text" href="Java.html">JAVA</a>
                 </li>
               </ul>
           </nav>
@@ -170,7 +176,7 @@
                     </div>
                     <div class="row d-flex justify-content-center" data-aos="zoom-in">
                         <div class="col-10">
-                            <pre class="Codice">
+                            <pre class="CodiceRosso">
                                 <code>
     <span class="red">Comando --></span>     <span class="blue">npm install</span>
                                 </code>
@@ -188,7 +194,7 @@
                     </div>
                     <div class="row d-flex justify-content-center" data-aos="zoom-in">
                         <div class="col-10">
-                            <pre class="Codice">
+                            <pre class="CodiceRosso">
                                 <code>
     <span class="red">Estensione --></span>     <span class="blue">ES7+ React/Redux/React-Native snippets</span>
                                 </code>
@@ -201,7 +207,7 @@
                     </div>
                     <div class="row d-flex justify-content-center" data-aos="zoom-in">
                         <div class="col-10">
-                            <pre class="Codice">
+                            <pre class="CodiceRosso">
                                 <code>
     <span class="red">Percorso --></span>     <span class="blue">File</span><span class="white"> / </span><span class="blue">Preferences</span><span class="white"> / </span><span class="blue">Settings</span><span class="white"> / </span><span class="blue">Icona in alto a destra (impostazioni JSON)</span>   
 
@@ -225,7 +231,7 @@
                         </div>
                         <div class="row d-flex justify-content-center" data-aos="zoom-in">
                             <div class="col-10">
-                                <pre class="Codice">
+                                <pre class="CodiceBlu">
                                     <code>
         <span class="red">Comando --></span>        <span class="blue">rafce</span>
 
@@ -248,7 +254,7 @@
                         </div>
                         <div class="row d-flex justify-content-center" data-aos="zoom-in">
                             <div class="col-10">
-                                <pre class="Codice">
+                                <pre class="CodiceBlu">
                                     <code>
         <span class="red">Comando --></span>        <span class="blue">rfce</span>
 
@@ -386,10 +392,8 @@
                     </div>
                 </div>
             </div>
-
-            <br>
         
-            <div class="Def" data-aos="fade-right">Esempio dell'utilizzo dello useState()</div>
+            <div class="Def2" data-aos="fade-right">Esempio dell'utilizzo dello useState()</div>
 
             <div class="row d-flex justify-content-center" data-aos="zoom-in">
                 <div class="col-11">
@@ -428,6 +432,9 @@
                     </pre>
                 </div>
             </div> 
+
+            <br>
+            <br>
 
             <div>
                 <div class="Def mt-5" data-aos="fade-down" data-aos-duration="1000">useEffect()</div>
@@ -474,10 +481,8 @@
                     <br>
                 </div>
             </div>
-
-            <br>
         
-            <div class="Def" data-aos="fade-right">Esempio dell'utilizzo dello useEffect()</div>
+            <div class="Def2" data-aos="fade-right">Esempio dell'utilizzo dello useEffect()</div>
 
             <div class="row d-flex justify-content-center" data-aos="zoom-in">
                 <div class="col-11">
@@ -520,6 +525,42 @@
                     </pre>
                 </div>
             </div> 
+
+            <br>
+
+            <div>
+                <div class="Def mt-5" data-aos="fade-down" data-aos-duration="1000">useRef()</div>
+                <div class="testo ml-xl-5 mr-xl-5" data-aos="fade-right">
+                    Lo useRef() è un hook che permette di modificare delle caratteristiche di elementi di React. Viene utilizzato al posto del <strong>querySelector</strong> di JavaScript.<br/>
+                    Per utilizzarlo occorre prima importarlo e lo facciamo nel seguente modo:
+
+                    <div class="row d-flex justify-content-center" data-aos="zoom-in">
+                        <div class="col-12">
+                            <pre class="Codice">
+                                <code>
+        <span class="violet">import</span><span class="lightB"> React</span><span class="white">, </span><span class="yellow">{<span class="lightB"> useRef </span>}</span><span class="violet"> from</span><span class="red"> 'react'</span>
+                                </code>
+                            </pre>
+                        </div>
+                    </div>
+
+                    <br>
+
+                    Invece, per "dichiararlo" si deve scrivere questo:
+
+                    <div class="row d-flex justify-content-center" data-aos="zoom-in">
+                        <div class="col-12">
+                            <pre class="Codice">
+                                <code>
+        <span class="blue">const</span><span class="lightB"> nome</span><span class="white"> = </span><span class="yellow">useRef</span><span class="violet">()</span>
+                                </code>
+                            </pre>
+                        </div>
+                    </div>
+
+                    <br>
+                </div>
+            </div>
             <!-- FINE HOOKS -->
 
             <div class="d-flex justify-content-between">
@@ -715,41 +756,39 @@
                 </div>
             </div>
             <!-- FINE PASSAGGIO PARAMETRI -->
+
+            <div class="d-flex justify-content-between">
+                <div class="sepR"></div>
+                <div class="sep2R"></div>
+            </div>
+
+            <!-- INIZIO ROUTER DOM -->
+            <div>
+                <div class="Def mt-5 d-flex justify-content-center" data-aos="fade-down" data-aos-duration="1000">React Router Dom</div>
+                <div class="testo ml-xl-5 mr-xl-5" data-aos="fade-right">
+                    React-router-dom è un modulo non di React, cioè, come si dice, non è nativo, che ci permette di passare da un componente all'altro. <br>
+                    Per poterno utilizzare, dato che non è nativo di React, occorre prima installarlo all'interno della cartella in cui vogliamo creare il nostro progetto; per farlo dovremo farlo nel seguente modo:
+                </div>
+            </div>
+
+            <br>
+
+            <div class="row d-flex justify-content-center" data-aos="zoom-in">
+                <div class="col-12">
+                    <pre class="Codice">
+                        <code>
+    <span class="red">npm</span><span class="blue"> install</span><span class="white"> react-router-dom</span>
+                        </code>
+                    </pre>
+                </div>
+            </div>
+
+            
+            <!-- FINE ROUTER DOM -->
         </div>
 
 
         <!-- FINE CONTENUTI -->
-
-         <!-- INIZIO SPREAD da fare -->
-         <!-- <div>
-            <div class="Def mt-5 d-flex justify-content-center" data-aos="fade-down" data-aos-duration="1000">Operatore spred()</div>
-            <div class="testo ml-xl-5 mr-xl-5" data-aos="fade-right">
-                
-            </div>
-        </div>
-
-        <br>
-    
-        <div class="row d-flex justify-content-center" data-aos="zoom-in">
-            <div class="col-12">
-                <pre class="Codice">
-                    <code>
-    <span class="blue">const</span><span class="blue2"> URL</span><span class="white"> = </span><span class="red">"https://raw.githubusercontent.com/itisrivoira/obelix/main/lista_locali.json"</span>
-
-    <span class="blue">const</span><span class="lightY"> connessione</span><span class="white">=</span><span class="violet">())</span><span class="blue"> => </span><span class="violet">{</span>
-        <span class="lightY">fetch</span><span class="blue">(</span><span class="blue2">URL</span><span class="blue">)</span>
-        <span class="lightY">.then</span><span class="blue">(</span><span class="yellow">(</span><span class="lightB">LocaliText</span><span class="yellow">)</span><span class="blue"> => </span><span class="lightB">LocaliText</span><span class="lightY">.json</span><span class="yellow">()</span><span class="blue">)</span>
-        <span class="lightY">.then</span><span class="blue">(</span><span class="yellow">(</span><span class="lightB">LocaliJSON</span><span class="yellow">)</span><span class="blue"> => </span><span class="yellow">{</span>
-            <span class="lightB">LocaliJSON</span><span class="lightY">.map</span><span class="violet">(</span><span class="blue">(</span><span class="lightB">elemento</span><span class="white">, </span><span class="blue2">indice</span><span class="blue">) => {</span>
-                <span class="lightB">console</span><span class="lightY">.log</span><span class="blue">(</span><span class="lightB">elemento.nome</span><span class="blue">)</span>
-            <span class="blue">}</span><span class="violet">)</span>
-        <span class="yellow">}</span><span class="blue">)</span>
-    <span class="violet">]</span>
-                    </code>
-                </pre>
-            </div>
-        </div>  -->
-        <!-- FINE SPREAD -->
         
         <!-- INIZIO FOOTER -->
         <footer class="footer">
@@ -778,6 +817,12 @@
                 </a>
                 <a class="nav-link active d-flex justify-content-center" href="./React.html">
                     <div class="text">REACT</div>
+                </a>
+                <a class="nav-link active d-flex justify-content-center" href="./MongoDB.html">
+                    <div class="text">MONGO DB</div>
+                </a>
+                <a class="nav-link active d-flex justify-content-center" href="./Java.html">
+                    <div class="text">JAVA</div>
                 </a>
             </div>
         </footer>
