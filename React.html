@@ -16,8 +16,8 @@
         <!-- INIZIO NAVBAR -->
         <nav class="navbar navbar-expand-lg navbar navB">
             <div class="LogoTitolo">
-                <a href="https://www.denina.it/" target="new">
-                    <img class="logo align-self-center" src="./images/KP_logo.png" width="30%" alt="Logo Kevin Paseri" title="Logo KEVIN PASERI | Cliccare per andare alla pagina del Denina - Pellico - Rivoira">
+                <a href="index.html">
+                    <img class="logo align-self-center" src="./images/KP_logo.png" width="16%" alt="Logo Kevin Paseri" title="Logo KEVIN PASERI">
                 </a>
             </div>
             <div class="Link"></div>
@@ -26,32 +26,34 @@
             </buttonM>
           
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav mr-auto">
-                <li class="nav-item active d-flex justify-content-center">
-                    <a class="nav-link text" href="index.html">HOME</a>
-                </li>
-                <li class="nav-item active d-flex justify-content-center">
-                    <a class="nav-link text" href="JSON.html">JSON</a>
-                </li>
-                <li class="nav-item active d-flex justify-content-center">
-                    <a class="nav-link text" href="XML.html">XML</a>
-                </li>
-                <li class="nav-item active d-flex justify-content-center">
-                    <a class="nav-link text" href="JSAvanzato.html">JS Avanzato</a>
-                </li>
-                <li class="nav-item active d-flex justify-content-center">
-                    <a class="nav-link activetext" href="React.html">REACT</a>
-                </li>
-                <li class="nav-item active d-flex justify-content-center">
-                    <a class="nav-link text" href="MongoDB.html">MONGO DB</a>
-                </li>
-                <li class="nav-item active d-flex justify-content-center">
-                    <a class="nav-link text" href="Java.html">JAVA</a>
-                </li>
-              </ul>
-          </nav>
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active d-flex justify-content-center">
+                        <a href="index.html"><buttonNav class="btn text">HOME</buttonNav></a>
+                    </li>
+                    <li class="nav-item active d-flex justify-content-center">
+                        <a href="JSON.html"><buttonNav class="btn text">JSON</buttonNav></a>
+                    </li>
+                    <li class="nav-item active d-flex justify-content-center">
+                        <a href="XML.html"><buttonNav class="btn text">XML</buttonNav></a>
+                    </li>
+                    <li class="nav-item active d-flex justify-content-center">
+                        <a href="JSAvanzato.html"><buttonNav class="btn text">JS AVANZATO</buttonNav></a>
+                    </li>
+                    <li class="nav-item active d-flex justify-content-center">
+                        <a href="React.html"><buttonNav class="btn text">REACT</buttonNav></a>
+                    </li>
+                    <li class="nav-item active d-flex justify-content-center">
+                        <a href="MongoDB.html"><buttonNav class="btn text">MONGO DB</buttonNav></a>
+                    </li>
+                    <li class="nav-item active d-flex justify-content-center">
+                        <a href="Java.html"><buttonNav class="btn text">JAVA</buttonNav></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
         <!-- FINE NAVBAR -->
 
+        <div class="spazio"></div>
         <p class="d-sm-block d-xl-none d-md-block">
             <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
         </p>
@@ -78,7 +80,34 @@
             </div>
 
             <a name="Contenuti"></a>
+
+            <!-- INIZIO INDICE -->
+            <div class="indice" data-aos="flip-right">
+                <div class="titIndice">INDICE</div>
+                <div>
+                    <ul>
+                        <li><a href="#Cos'e" class="riga">Cos'è React</a></li>
+                        <ul>
+                            <li><a href="#Inst" class="riga">Installazione</a></li>
+                            <li><a href="#Crea" class="riga">Creazione e avvio</a></li>
+                        </ul>
+                        <li><a href="#Spread" class="riga">Operatore spread()</a></li>
+                        <li><a href="#Hooks" class="riga">Hooks</a></li>
+                        <ul>
+                            <li><a href="#State" class="riga">useState()</a></li>
+                            <li><a href="#Effect" class="riga">useEffect()</a></li>
+                            <li><a href="#Ref" class="riga">useRef()</a></li>
+                        </ul>
+                        <li><a href="#Comp" class="riga">Componenti</a></li>
+                        <li><a href="#Param" class="riga">Passaggio parametri</a></li>
+                        <li><a href="#Dom" class="riga">React Router Dom</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- FINE INDICE -->
+
             <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                <a name="Cos'e"></a>
                 <div class="Def">Cos'è React?</div>
                 <div class="testo ml-xl-5 mr-xl-5">
                     <p>React è una libreria JavaScript per la creazione di interfacce utente, ossia per la creazione di SPA(single Page Application). React venne sviluppato all'interno di Facebook nel 2013, ma ora si è estesa molto ed è una libreria open-source sostenuta da molti programmatori. <br>
@@ -89,6 +118,7 @@
 
             <!-- INIZIO INSTALLAZIONE -->
             <div>
+                <a id="Inst"></a>
                 <div class="Def mt-5 d-flex justify-content-center" data-aos="fade-down" data-aos-duration="1000">Installazione</div>
                 <div class="testo ml-xl-5 mr-xl-5" data-aos="fade-right">
                     Per poter iniziare a lavorare con React, occorre installare npm e nodejs. Per evitare problemi con l'ultima versione, utilizziamo direttamente i seguenti comandi da terminale:
@@ -101,11 +131,11 @@
                 <div class="col-12">
                     <pre class="Codice">
                         <code>
-    <span class="red">Comando 1)</span>     <span class="blue">sudo npm install -g n</span>
+    <span class="white">Comando 1)</span>     <span class="blue">sudo npm install -g n</span>
 
-    <span class="red">Comando 2)</span>     <span class="blue">sudo n stable</span>
+    <span class="white">Comando 2)</span>     <span class="blue">sudo n stable</span>
 
-    <span class="red">Comando 3)</span>     <span class="blue">creiamo il nostro progetto</span>    
+    <span class="white">Comando 3)</span>     <span class="blue">creiamo il nostro progetto</span>    
                         </code>
                     </pre>
                 </div>
@@ -114,6 +144,7 @@
 
             <!-- INIZIO CREAZIONE E AVVIO PROGETTO -->
             <div>
+                <a id="Crea"></a>
                 <div class="Def mt-5 d-flex justify-content-center" data-aos="fade-down" data-aos-duration="1000">Creazione a avvio progetto</div>
                 <div class="testo ml-xl-5 mr-xl-5" data-aos="fade-right">
                     Per creare un progetto occorre scrivere questo comando nel terminale:
@@ -126,7 +157,7 @@
                 <div class="col-12">
                     <pre class="Codice">
                         <code>
-    <span class="red">Comando creazione progetto --></span>     <span class="blue">npx create-react-app</span><span class="lightB"> nomeprogetto</span>    
+    <span class="white">Comando creazione progetto --></span>     <span class="blue">npx create-react-app</span><span class="lightB"> nomeprogetto</span>    
                         </code>
                     </pre>
                 </div>
@@ -156,7 +187,7 @@
                 <div class="col-12">
                     <pre class="Codice">
                         <code>
-    <span class="red">Comando avvio progetto --></span>     <span class="blue">npm start</span>
+    <span class="white">Comando avvio progetto --></span>     <span class="blue">npm start</span>
                         </code>
                     </pre>
                 </div>
@@ -170,7 +201,7 @@
 
             <div>
                 <div class="notaBene ml-xl-5 mr-xl-5 mt-4" data-aos="fade-right">
-                    <div class="row-12 red d-flex justify-content-center mt-2"><h3><strong>NOTA BENE!</strong></h3></div>
+                    <div class="row-12 titRed d-flex justify-content-center mt-2"><h3><strong>NOTA BENE!</strong></h3></div>
                     <div class="row-12 testo ml-5 mr-5 mb-2 d-xl-flex justify-content-center">
                         Se accidentalmente si rimuove la cartella node_modules, il comando per rimettere le cose a posto è il seguente:
                     </div>
@@ -178,7 +209,7 @@
                         <div class="col-10">
                             <pre class="CodiceRosso">
                                 <code>
-    <span class="red">Comando --></span>     <span class="blue">npm install</span>
+    <span class="white">Comando --></span>     <span class="blue">npm install</span>
                                 </code>
                             </pre>
                         </div>
@@ -188,7 +219,7 @@
 
             <div>
                 <div class="notaBene ml-xl-5 mr-xl-5 mt-4" data-aos="fade-right">
-                    <div class="row-12 red d-flex justify-content-center mt-2"><h3><strong>Visual Studio Code</strong></h3></div>
+                    <div class="row-12 titRed d-flex justify-content-center mt-2"><h3><strong>Visual Studio Code</strong></h3></div>
                     <div class="row-12 testo ml-5 mr-5 mb-2 d-xl-flex justify-content-center">
                         Se si utilizza Visual Studio Code, molto utile è l'estensione per l'aiuto nell'utilizzo di React. La seguente estensione è:
                     </div>
@@ -196,7 +227,7 @@
                         <div class="col-10">
                             <pre class="CodiceRosso">
                                 <code>
-    <span class="red">Estensione --></span>     <span class="blue">ES7+ React/Redux/React-Native snippets</span>
+    <span class="white">Estensione --></span>     <span class="blue">ES7+ React/Redux/React-Native snippets</span>
                                 </code>
                             </pre>
                         </div>
@@ -209,9 +240,9 @@
                         <div class="col-10">
                             <pre class="CodiceRosso">
                                 <code>
-    <span class="red">Percorso --></span>     <span class="blue">File</span><span class="white"> / </span><span class="blue">Preferences</span><span class="white"> / </span><span class="blue">Settings</span><span class="white"> / </span><span class="blue">Icona in alto a destra (impostazioni JSON)</span>   
+    <span class="white">Percorso --></span>     <span class="blue">File</span><span class="white"> / </span><span class="blue">Preferences</span><span class="white"> / </span><span class="blue">Settings</span><span class="white"> / </span><span class="blue">Icona in alto a destra (impostazioni JSON)</span>   
 
-    <span class="red">Codice --></span>      <span class="yellow">{</span>
+    <span class="white">Codice --></span>      <span class="yellow">{</span>
                         <span class="lightB">"emmet.includeLanguages": </span><span class="violet">{</span>
                             <span class="lightB">"javascript": </span><span class="red">"html"</span>
                         <span class="violet">}</span>
@@ -233,9 +264,9 @@
                             <div class="col-10">
                                 <pre class="CodiceBlu">
                                     <code>
-        <span class="red">Comando --></span>        <span class="blue">rafce</span>
+        <span class="white">Comando --></span>        <span class="blue">rafce</span>
 
-        <span class="red">Risultato --> </span>     <span class="violet">import</span><span class="lightB"> React</span><span class="violet"> from</span><span class="red">'react'</span>
+        <span class="white">Risultato --> </span>     <span class="violet">import</span><span class="lightB"> React</span><span class="violet"> from</span><span class="red">'react'</span>
                            
                            <span class="blue">const</span><span class="lightY"> App</span><span class="white"> = </span><span class="yellow">()</span><span class="blue"> => </span><span class="yellow">{</span> 
                                <span class="violet">return (</span>
@@ -256,9 +287,9 @@
                             <div class="col-10">
                                 <pre class="CodiceBlu">
                                     <code>
-        <span class="red">Comando --></span>        <span class="blue">rfce</span>
+        <span class="white">Comando --></span>        <span class="blue">rfce</span>
 
-        <span class="red">Risultato --> </span>     <span class="violet">import</span><span class="lightB"> React</span><span class="violet"> from</span><span class="red">'react'</span>
+        <span class="white">Risultato --> </span>     <span class="violet">import</span><span class="lightB"> React</span><span class="violet"> from</span><span class="red">'react'</span>
                            
                            <span class="blue">function</span><span class="lightY"> App</span><span class="yellow">()</span><span class="yellow"> {</span> 
                                <span class="violet">return (</span>
@@ -283,6 +314,7 @@
 
             <!-- INIZIO SPREAD -->
             <div>
+                <a name="Spread"></a>
                 <div class="Def mt-5 d-flex justify-content-center" data-aos="fade-down" data-aos-duration="1000">Operatore spred()</div>
                 <div class="testo ml-xl-5 mr-xl-5" data-aos="fade-right">
                     Molto spesso, associato alla funzione map() spiegata nella sezione <strong>JS Avanzato </strong>, viene utilizzato l'operatore spread. Questo operatore è facilmente individuabile attraverso l'utilizzo dei 3 punti <strong>[ ... ]</strong>. Questo operatore serve per fare una copia perfetta di un array.
@@ -337,6 +369,7 @@
 
             <!-- INIZIO HOOKS -->
             <div>
+                <a name="Hooks"></a>
                 <div class="Def mt-5 d-flex justify-content-center" data-aos="fade-down" data-aos-duration="1000">Gli hooks</div>
                 <div class="testo ml-xl-5 mr-xl-5" data-aos="fade-right">
                     Gli hooks ci permettono di agganciarci alle funzionalità di React come lo stato e il ciclo.
@@ -346,7 +379,8 @@
             <br>
 
             <div>
-                <div class="Def mt-5" data-aos="fade-down" data-aos-duration="1000">useState()</div>
+                <a id="State"></a>
+                <div class="Def3 mt-5" data-aos="fade-down" data-aos-duration="1000">useState()</div>
                 <div class="testo ml-xl-5 mr-xl-5" data-aos="fade-right">
                     Lo useState() è un hook che ci permettere di modificare lo stato di funzione in un componente; lo stato si riferisce a dati o proprietà che servono nell'applicazione. <br><br>
                     Per utilizzarlo occorre innanzitutto importarlo. Per fare ciò dobbiamo scrivere questo:
@@ -437,7 +471,8 @@
             <br>
 
             <div>
-                <div class="Def mt-5" data-aos="fade-down" data-aos-duration="1000">useEffect()</div>
+                <a id="Effect"></a>
+                <div class="Def3 mt-5" data-aos="fade-down" data-aos-duration="1000">useEffect()</div>
                 <div class="testo ml-xl-5 mr-xl-5" data-aos="fade-right">
                     Lo useEffect() è un hook che ci permettere di sincronizzare un componente cin un sistema esterno. In poche parole possiamo utilizzare lo useEffect() per richiamare una sola volta una funzione all'interno dell'applicazione.<br><br>
                     Per utilizzarlo occorre innanzitutto importarlo. Per fare ciò dobbiamo scrivere questo:
@@ -529,9 +564,10 @@
             <br>
 
             <div>
-                <div class="Def mt-5" data-aos="fade-down" data-aos-duration="1000">useRef()</div>
+                <a id="Ref"></a>
+                <div class="Def3 mt-5" data-aos="fade-down" data-aos-duration="1000">useRef()</div>
                 <div class="testo ml-xl-5 mr-xl-5" data-aos="fade-right">
-                    Lo useRef() è un hook che permette di modificare delle caratteristiche di elementi di React. Viene utilizzato al posto del <strong>querySelector</strong> di JavaScript.<br/>
+                    Lo useRef() è un hooks che permette di modificare delle caratteristiche di elementi di React. Viene utilizzato al posto del <strong>querySelector</strong> di JavaScript.<br/>
                     Per utilizzarlo occorre prima importarlo e lo facciamo nel seguente modo:
 
                     <div class="row d-flex justify-content-center" data-aos="zoom-in">
@@ -546,7 +582,7 @@
 
                     <br>
 
-                    Invece, per "dichiararlo" si deve scrivere questo:
+                    Invece, per "dichiararlo" si deve utilizzare questa sintassi:
 
                     <div class="row d-flex justify-content-center" data-aos="zoom-in">
                         <div class="col-12">
@@ -561,8 +597,74 @@
                     <br>
                 </div>
             </div>
-            <!-- FINE HOOKS -->
 
+            <div class="Def2" data-aos="fade-right">Esempio dell'utilizzo dello useRef()</div>
+
+            <div class="row d-flex justify-content-center" data-aos="zoom-in">
+                <div class="col-11">
+                    <pre class="Codice">
+                        <code>
+        <span class="violet">import</span><span class="lightB"> React</span><span class="white">, </span><span class="yellow">{</span><span class="lightB"> useRef</span><span class="yellow">}</span><span class="violet"> from</span><span class="red"> 'react'</span>
+
+        <span class="blue">const</span><span class="lightY"> App</span><span class="white"> = </span><span class="yellow">()</span><span class="blue"> => </span><span class="yellow">{</span>
+            <span class="blue">const</span><span class="lightB"> first</span><span class="white"> = </span><span class="lightY">useRef</span><span class="violet">(<span class="blue">null</span>)</span>
+            <span class="blue">const</span><span class="lightB"> foot</span><span class="white"> = </span><span class="lightY">useRef</span><span class="violet">(<span class="blue">null</span>)</span>
+
+            <span class="blue">const</span><span class="lightY"> cambioColore</span><span class="white"> = </span><span class="violet">()</span><span class="blue"> => </span><span class="violet">{</span>
+                <span class="blue2">first</span><span class="white">.</span><span class="lightB">current</span><span class="white">.</span><span class="lightB">style</span><span class="white">.</span><span class="lightB">color</span><span class="white"> = </span><span class="red">"lightBlue"</span>
+                <span class="blue2">first</span><span class="white">.</span><span class="lightB">current</span><span class="white">.</span><span class="lightB">style</span><span class="white">.</span><span class="lightB">fontWeight</span><span class="white"> = </span><span class="red">"bold"</span>
+                <span class="blue2">first</span><span class="white">.</span><span class="lightB">current</span><span class="white">.</span><span class="lightB">style</span><span class="white">.</span><span class="lightB">fontSize</span><span class="white"> = </span><span class="red">"50px"</span>
+                <span class="blue2">first</span><span class="white">.</span><span class="lightB">current</span><span class="white">.</span><span class="lightB">style</span><span class="white">.</span><span class="lightB">backgroundColor</span><span class="white"> = </span><span class="red">"blue"</span>
+                <span class="blue2">first</span><span class="white">.</span><span class="lightB">current</span><span class="white">.</span><span class="lightB">style</span><span class="white">.</span><span class="lightB">display</span><span class="white"> = </span><span class="red">"flex"</span>
+                <span class="blue2">first</span><span class="white">.</span><span class="lightB">current</span><span class="white">.</span><span class="lightB">style</span><span class="white">.</span><span class="lightB">justifyContent</span><span class="white"> = </span><span class="red">"center"</span>
+                <span class="blue2">first</span><span class="white">.</span><span class="lightB">current</span><span class="white">.</span><span class="lightB">style</span><span class="white">.</span><span class="lightB">width</span><span class="white"> = </span><span class="red">"50%"</span>
+                <span class="blue2">first</span><span class="white">.</span><span class="lightB">current</span><span class="white">.</span><span class="lightB">style</span><span class="white">.</span><span class="lightB">borderRadius</span><span class="white"> = </span><span class="red">"50px"</span>
+            <span class="violet">}</span>
+
+            <span class="blue">const</span><span class="lightY"> cliccami</span><span class="white"> = </span><span class="violet">(<span class="lightB">event</span>)</span><span class="blue"> => </span><span class="violet">{</span>
+                <span class="lightY">alert</span><span class="blue2">(<span class="lightB">event</span><span class="white">.</span><span class="lightB">target</span><span class="white">.</span><span class="lightB">textContent</span>)</span>
+            <span class="violet">}</span>
+
+            <span class="blue">const</span><span class="lightY"> pc</span><span class="white"> = </span><span class="violet">(<span class="lightB">event</span>)</span><span class="blue"> => </span><span class="violet">{</span>
+                <span class="lightY">alert</span><span class="blue2">(<span class="lightB">event</span><span class="white">.</span><span class="lightB">target</span><span class="white">.</span><span class="lightB">dataset</span><span class="white">.</span><span class="lightB">prezzo</span>)</span>
+                <span class="lightB">console</span><span class="white">.</span><span class="lightY">log</span><span class="blue2">(<span class="lightB">event</span><span class="white">.</span><span class="lightB">target</span>)</span>
+                <span class="lightB">event</span><span class="white">.</span><span class="lightB">target</span><span class="white">.</span><span class="lightB">style</span><span class="white">.</span><span class="lightB">border</span><span class="white"> = </span><span class="red">"2px solid black"</span>
+
+                <span class="blue2">foot</span><span class="white">.</span><span class="lightB">current</span><span class="white">.</span><span class="lightB">textContent</span><span class="white"> = </span><span class="lightB">event</span><span class="white">.</span><span class="lightB">target</span><span class="white">.</span><span class="lightB">dataset</span><span class="white">.</span><span class="lightB">prezzo</span>
+            <span class="violet">}</span>
+
+            <span class="violet">return (</span>
+                <span class="gray">&lt</span><span class="gray">&gt</span>
+                    <span class="gray">&lt</span><span class="blue">div</span><span class="lightB"> ref</span><span class="white">=</span><span class="blue2">{<span class="blue">first</span>>}</span><span class="lightB"> id</span><span class="white">=</span><span class="red">"ciao"</span><span class="gray">&gt</span><span class="blue2">{<span class="red">"Kevin Paseri"</span>}</span><span class="gray">&lt/</span><span class="blue">div</span><span class="gray">&gt</span>
+                    <span class="gray">&lt</span><span class="blue">input</span><span class="lightB"> type</span><span class="white">=</span><span class="red">"button"</span><span class="lightB"> value</span><span class="white">=</span><span class="red">"COLORE"</span><span class="lightB"> onClick</span><span class="white">=</span><span class="blue2">{<span class="lightY">cambioColore</span>}</span><span class="gray">/&gt</span>
+                    
+                    <span class="gray">&lt</span><span class="blue">div</span><span class="lightB"> onClick</span><span class="white">=</span><span class="blue2">{<span class="lightY">cliccami</span>}</span><span class="gray">&gt</span>
+                        <span class="gray">&lt</span><span class="blue">p</span><span class="gray">&gt</span><span class="white">Ciao</span><span class="gray">&lt/</span><span class="blue">p</span><span class="gray">&gt</span>
+                        <span class="gray">&lt</span><span class="blue">div</span><span class="gray">&gt</span><span class="white">Kevin</span><span class="gray">&lt/</span><span class="blue">div</span><span class="gray">&gt</span>
+                        <span class="gray">&lt</span><span class="blue">p</span><span class="gray">&gt</span><span class="white">Paseri</span><span class="gray">&lt/</span><span class="blue">p</span><span class="gray">&gt</span>
+                    <span class="gray">&lt/</span><span class="blue">div</span><span class="gray">&gt</span>
+
+                    <span class="gray">&lt</span><span class="blue">div</span><span class="lightB"> onClick</span><span class="white">=</span><span class="blue2">{<span class="lightY">pc</span>}</span><span class="gray">&gt</span>
+                        <span class="gray">&lt</span><span class="blue">img</span><span class="lightB"> data-prezzo</span><span class="white">=</span><span class="red">"550.34€"</span><span class="lightB"> style</span><span class="white">=</span><span class="blue2">{<span class="yellow">{<span class="lightB">width</span><span class="white">:</span><span class="red">"10%"</span>}</span>}</span><span class="lightB"> src</span><span class="white">=</span><span class="red">"https://m.media-amazon.com/images/I/61qMeGv6WZL._AC_SL1500_.jpg"</span><span class="gray">/&gt</span>
+                        <span class="gray">&lt</span><span class="blue">img</span><span class="lightB"> data-prezzo</span><span class="white">=</span><span class="red">"5000.00€"</span><span class="lightB"> style</span><span class="white">=</span><span class="blue2">{<span class="yellow">{<span class="lightB">width</span><span class="white">:</span><span class="red">"10%"</span>}</span>}</span><span class="lightB"> src</span><span class="white">=</span><span class="red">"https://m.media-amazon.com/images/I/81QLNqChUeL._AC_SL1500_.jpg"</span><span class="gray">/&gt</span>
+                        <span class="gray">&lt</span><span class="blue">img</span><span class="lightB"> data-prezzo</span><span class="white">=</span><span class="red">"2500.99€"</span><span class="lightB"> style</span><span class="white">=</span><span class="blue2">{<span class="yellow">{<span class="lightB">width</span><span class="white">:</span><span class="red">"10%"</span>}</span>}</span><span class="lightB"> src</span><span class="white">=</span><span class="red">"https://m.media-amazon.com/images/I/71aZySz4DDL._AC_SL1500_.jpg"</span><span class="gray">/&gt</span>        
+                    <span class="gray">&lt/</span><span class="blue">div</span><span class="gray">&gt</span>
+
+                    <span class="gray">&lt</span><span class="blue">div</span><span class="lightB"> ref</span><span class="white">=</span><span class="blue2">{<span class="blue">foot</span>}</span><span class="gray">&gt</span><span class="gray">&lt/</span><span class="blue">div</span><span class="gray">&gt</span>
+                    
+                <span class="gray">&lt/</span><span class="gray">&gt</span>
+            <span class="violet">)</span>
+        <span class="yellow">}</span>
+
+        <span class="violet">export default </span><span class="lightY">App</span>
+                        </code>
+                    </pre>
+                </div>
+            </div> 
+
+            <br>
+            <!-- FINE HOOKS -->
+ 
             <div class="d-flex justify-content-between">
                 <div class="sepR"></div>
                 <div class="sep2R"></div>
@@ -570,9 +672,10 @@
 
             <!-- INIZIO COMPONENTI -->
             <div>
+                <a name="Comp"></a>
                 <div class="Def mt-5 d-flex justify-content-center" data-aos="fade-down" data-aos-duration="1000">I componenti</div>
                 <div class="testo ml-xl-5 mr-xl-5" data-aos="fade-right">
-                    Quando si lavora in React, ci vieni molto più semplice suddividere l'applicazione in componenti in modo da avere un codice più semplice e più leggibile.
+                    Molto importante e utile nell'utilizzo di React è il passaggio di componenti tra i componenti.
                 </div>
             </div>
 
@@ -584,7 +687,7 @@
                         <div class="col-12">
                             <pre class="Codice">
                                 <code>
-    <span class="red"><h2><strong>  App.js</strong></h2></span>
+    <span class="white"><h2><strong>  App.js</strong></h2></span>
     <span class="violet">import</span><span class="lightB"> React</span><span class="violet"> from</span><span class="red"> 'react'</span>
     <span class="violet">import</span><span class="red"> "./App.css"</span>
     <span class="violet">import <span class="lightB">Header</span> from</span><span class="red"> "./Header"</span>
@@ -609,7 +712,7 @@
                         <div class="col-12">
                             <pre class="Codice">
                                 <code>
-    <span class="red"><h2><strong>  Header.js</strong></h2></span>
+    <span class="white"><h2><strong>  Header.js</strong></h2></span>
     <span class="violet">import</span><span class="lightB"> React</span><span class="violet"> from</span><span class="red"> 'react'</span>
     <span class="violet">import</span><span class="red"> "./Header.css"</span>
     
@@ -656,6 +759,7 @@
 
             <!-- INIZIO PASSAGGIO PARAMETRI -->
             <div>
+                <a name="Param"></a>
                 <div class="Def mt-5 d-flex justify-content-center" data-aos="fade-down" data-aos-duration="1000">Passaggio parametri</div>
                 <div class="testo ml-xl-5 mr-xl-5" data-aos="fade-right">
                     Quando si lavora in React, ci vieni molto più semplice suddividere l'applicazione in componenti in modo da avere un codice più semplice e più leggibile.
@@ -670,7 +774,7 @@
                         <div class="col-12">
                             <pre class="Codice">
                                 <code>
-    <span class="red"><h2><strong>  App.js</strong></h2></span>
+    <span class="white"><h2><strong>  App.js</strong></h2></span>
     <span class="violet">import</span><span class="lightB"> React</span><span class="violet"> from</span><span class="red"> 'react'</span>
     <span class="violet">import</span><span class="red"> "./App.css"</span>
     <span class="violet">import <span class="lightB">Header</span> from</span><span class="red"> "./Header"</span>
@@ -717,7 +821,7 @@
                         <div class="col-12">
                             <pre class="Codice">
                                 <code>
-    <span class="red"><h2><strong>  Header.js</strong></h2></span>
+    <span class="white"><h2><strong>  Header.js</strong></h2></span>
     <span class="violet">import</span><span class="lightB"> React</span><span class="violet"> from</span><span class="red"> 'react'</span>
     <span class="violet">import</span><span class="red"> "./Header.css"</span>
     
@@ -764,6 +868,7 @@
 
             <!-- INIZIO ROUTER DOM -->
             <div>
+                <a name="Dom"></a>
                 <div class="Def mt-5 d-flex justify-content-center" data-aos="fade-down" data-aos-duration="1000">React Router Dom</div>
                 <div class="testo ml-xl-5 mr-xl-5" data-aos="fade-right">
                     React-router-dom è un modulo non di React, cioè, come si dice, non è nativo, che ci permette di passare da un componente all'altro. <br>
@@ -780,6 +885,87 @@
     <span class="red">npm</span><span class="blue"> install</span><span class="white"> react-router-dom</span>
                         </code>
                     </pre>
+                </div>
+            </div>
+
+            <div class="Def2" data-aos="fade-right">Esempio dell'utilizzo del Router Dom</div>
+
+            <div class="row d-flex justify-content-center" data-aos="zoom-in">
+                <div class="col-11">
+                    <pre class="Codice">
+                        <code>
+        <span class="violet">import</span><span class="lightB"> React</span><span class="violet"> from</span><span class="red"> 'react'</span>
+        <span class="violet">import</span><span class="yellow"> {<span class="lightB">BrowserRouter<span class="white">,</span> Route<span class="white">,</span> Routes</span>}</span><span class="violet"> from</span><span class="red"> 'react-router-dom'</span>
+        <span class="violet">import</span><span class="lightB"> Home</span><span class="violet"> from</span><span class="red"> './Home.js'</span>
+        <span class="violet">import</span><span class="lightB"> Chi</span><span class="violet"> from</span><span class="red"> './Chi.js'</span>
+        <span class="violet">import</span><span class="lightB"> Navbar</span><span class="violet"> from</span><span class="red"> './Navbar.js'</span>
+
+        <span class="blue">const</span><span class="lightY"> App</span><span class="white"> = </span><span class="yellow">()</span><span class="blue"> => </span><span class="yellow">{</span>            
+            <span class="violet">return (</span>
+                <span class="gray">&lt</span><span class="blue">div</span><span class="gray">&gt</span>
+                    <span class="gray">&lt</span><span class="ligthG">BrowserRouter</span><span class="gray">&gt</span>
+                        <span class="gray">&lt</span><span class="ligthG">Navbar</span><span class="gray">/&gt</span>
+                        <span class="gray">&lt</span><span class="ligthG">Routes</span><span class="gray">&gt</span>
+                            <span class="gray">&lt</span><span class="ligthG">Ruote</span><span class="lightB"> element</span><span class="white">=</span><span class="blue">{<span class="gray">&lt</span><span class="ligthG">Home</span><span class="gray">/&gt</span>}</span><span class="lightB"> path</span><span class="white">=</span><span class="blue">{<span class="red">'/'</span>}</span><span class="gray"> /&gt</span>
+                            <span class="gray">&lt</span><span class="ligthG">Ruote</span><span class="lightB"> element</span><span class="white">=</span><span class="blue">{<span class="gray">&lt</span><span class="ligthG">Chi</span><span class="gray">/&gt</span>}</span><span class="lightB"> path</span><span class="white">=</span><span class="blue">{<span class="red">'/chiSiamo'</span>}</span><span class="gray"> /&gt</span>
+                        <span class="gray">&lt/</span><span class="ligthG">Routes</span><span class="gray">&gt</span>
+                    <span class="gray">&lt/</span><span class="ligthG">BrowserRouter</span><span class="gray">&gt</span>
+                <span class="gray">&lt/</span><span class="blue">div</span><span class="gray">&gt</span>
+            <span class="violet">)</span>
+        <span class="yellow">}</span>
+
+        <span class="violet">export default </span><span class="lightY">App</span>
+                        </code>
+                    </pre>
+                </div>
+            </div> 
+
+            <div class="testo ml-xl-5 mr-xl-5 d-xl-flex justify-content-between" data-aos="fade-right">
+                <div class="col-xl-6 col-md-10 col-sm-10">
+                    <div class="row d-flex justify-content-center" data-aos="zoom-in">
+                        <div class="col-12">
+                            <pre class="Codice">
+                                <code>
+    <span class="white"><h2><strong>  Home.js</strong></h2></span>
+    <span class="violet">import</span><span class="lightB"> React</span><span class="violet"> from</span><span class="red"> 'react'</span>
+    <span class="violet">import</span><span class="yellow"> {<span class="blue">NavLink</span>}</span><span class="violet"> from</span><span class="red"> 'react-router-dom'</span>
+    
+    <span class="blue">const</span><span class="lightY"> Home</span><span class="white"> = </span><span class="yellow">()</span><span class="blue"> => </span><span class="yellow">{</span>
+        <span class="violet">return (</span>
+            <span class="gray">&lt</span><span class="blue">div</span><span class="gray">&gt</span>
+                <span class="gray">&lt</span><span class="ligthG">NavLink</span><span class="lightB"> to</span><span class="white">=</span><span class="blue">{<span class="red">'/chiSiamo'</span>}</span><span class="gray">&gt</span><span class="white">Pagina 'Chi Siamo'</span><span class="gray">&lt/</span><span class="ligthG">NavLink</span><span class="gray">&gt</span>
+            <span class="gray">&lt/</span><span class="blue">div</span><span class="gray">&gt</span>
+        <span class="violet">)</span>
+    <span class="yellow">}</span>
+
+    <span class="violet">export default </span><span class="lightY">Home</span>
+                                </code>
+                            </pre>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-6">
+                    <div class="row d-flex justify-content-center" data-aos="zoom-in">
+                        <div class="col-12">
+                            <pre class="Codice">
+                                <code>
+    <span class="white"><h2><strong>  Chi.js</strong></h2></span>
+    <span class="violet">import</span><span class="lightB"> React</span><span class="violet"> from</span><span class="red"> 'react'</span>
+    <span class="violet">import</span><span class="yellow"> {<span class="blue">NavLink</span>}</span><span class="violet"> from</span><span class="red"> 'react-router-dom'</span>
+    
+    <span class="blue">const</span><span class="lightY"> Chi</span><span class="white"> = </span><span class="yellow">()</span><span class="blue"> => </span><span class="yellow">{</span>
+        <span class="violet">return (</span>
+            <span class="gray">&lt</span><span class="blue">div</span><span class="gray">&gt</span>
+                <span class="gray">&lt</span><span class="ligthG">NavLink</span><span class="lightB"> to</span><span class="white">=</span><span class="blue">{<span class="red">'/'</span>}</span><span class="gray">&gt</span><span class="white">Pagina 'Home'</span><span class="gray">&lt/</span><span class="ligthG">NavLink</span><span class="gray">&gt</span>
+            <span class="gray">&lt/</span><span class="blue">div</span><span class="gray">&gt</span>
+        <span class="violet">)</span>
+    <span class="yellow">}</span>
+
+    <span class="violet">export default </span><span class="lightY">Chi</span>
+                                </code>
+                            </pre>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -827,6 +1013,12 @@
             </div>
         </footer>
         <!-- FINE FOOTER -->
+
+        <!-- INIZIO BUTTON INIZIO PAGINA -->
+        <buttonIn id="back-to-top">
+            <img class="img-fluid" src="./images/FrecciaSu.png" alt="" width="40%">
+        </buttonIN>
+        <!-- FINE BUTTON INIZIO PAGINA -->
     </div>
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>

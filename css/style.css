@@ -7,6 +7,30 @@
     }
 }
 
+.spazio {
+    height: 100px!important;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px!important;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: gray;
+    border-radius: 50px!important; /* Puoi utilizzare il valore specifico per arrotondare gli angoli della thumb */
+  }
+  
+  /* Stile della track (sfondo della scrollbar) */
+::-webkit-scrollbar-track {
+    border-radius: 50px;
+    width: 5px;
+}
+
+::-webkit-scrollbar-track-piece {
+    width: 2px;
+}
+
 .ContFreccia {
     display: flex;
     justify-content: center;
@@ -35,6 +59,12 @@ html {
    margin-top: 15px;
    font-size: 30px;
    font-weight: bold;
+   display: flex;
+   justify-content: center;
+}
+
+.margin {
+    margin-top: 200px!important;
 }
 
 .menu:hover {
@@ -58,6 +88,15 @@ html {
     font-size: 40px;
 }
 
+nav {
+    position: fixed!important;
+    top: 0!important;
+    left: 0!important;
+    width: 100%!important;
+    background: linear-gradient(black, black)!important;
+    z-index: 100!important;
+}
+
 .navB {
     height: 100px;
     justify-content: space-between;
@@ -71,23 +110,15 @@ html {
 .LogoTitolo {
     text-align: center;
     width: 100%;
-    margin-top: 50px;
 }
 
 .text {
     color: white;
-    width:  120px;
     height: 30px;
     text-align: center;
     margin-top: 10px;
     border-radius: 40px;
     font-size: 15px;
-}
-
-.text:hover {
-    transition: 1s!important;
-    font-weight: bold;
-    color: white;
 }
 
 .hover-underline-animation {
@@ -233,6 +264,7 @@ button {
     box-shadow: 0 0 1em .25em var(--glow-color),
            0 0 4em 2em var(--glow-spread-color),
            inset 0 0 .75em .25em var(--glow-color);
+    text-decoration: none!important;
    }
    
    button:active {
@@ -412,6 +444,17 @@ button {
     font-size: 50px;
     display: flex;
     justify-content: center;
+    z-index: 20;
+    color: white!important;
+  }
+
+  .card_titleSM {
+    font-weight: bold;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    z-index: 20;
+    color: white!important;
   }
   
   .card_content {
@@ -421,11 +464,12 @@ button {
       /* edit the width to fit card */
     width: 100%;
     padding: 20px;
-    background: #f2f2f2;
+    background: black;
     border-top-left-radius: 20px;
       /* edit here to change the height of the content box */
     transform: translateY(150px);
     transition: transform .25s;
+    color: white;
   }
   
   .card_content::before {
@@ -437,11 +481,11 @@ button {
     height: 100px;
     transform: rotate(-175deg);
     border-radius: 50%;
-    box-shadow: inset 48px 48px #f2f2f2;
+    box-shadow: inset 48px 48px black;
   }
   
   .card_title {
-    color: #131313;
+    color: white;
     line-height: 15px;
   }
   
@@ -541,7 +585,7 @@ buttonJSON.learn-more .button-text {
     bottom: 0;
     padding: 0.75rem 0;
     margin: 0 0 0 1.85rem;
-    color: white;
+    color: black;
     font-weight: 700;
     line-height: 1.6;
     text-align: center;
@@ -635,7 +679,7 @@ buttonXML.learn-more .button-text {
     bottom: 0;
     padding: 0.75rem 0;
     margin: 0 0 0 1.85rem;
-    color: white;
+    color: black;
     font-weight: 700;
     line-height: 1.6;
     text-align: center;
@@ -729,7 +773,7 @@ buttonJS.learn-more .button-text {
     bottom: 0;
     padding: 0.75rem 0;
     margin: 0 0 0 1.85rem;
-    color: white;
+    color: black;
     font-weight: 700;
     line-height: 1.6;
     text-align: center;
@@ -823,7 +867,7 @@ buttonREACT.learn-more .button-text {
     bottom: 0;
     padding: 0.75rem 0;
     margin: 0 0 0 1.85rem;
-    color: white;
+    color: black;
     font-weight: 700;
     line-height: 1.6;
     text-align: center;
@@ -917,7 +961,7 @@ buttonMONGO.learn-more .button-text {
     bottom: 0;
     padding: 0.75rem 0;
     margin: 0 0 0 1.85rem;
-    color: white;
+    color: black;
     font-weight: 700;
     line-height: 1.6;
     text-align: center;
@@ -1011,7 +1055,7 @@ buttonJAVA.learn-more .button-text {
     bottom: 0;
     padding: 0.75rem 0;
     margin: 0 0 0 1.85rem;
-    color: white;
+    color: black;
     font-weight: 700;
     line-height: 1.6;
     text-align: center;
@@ -1036,21 +1080,6 @@ buttonJAVA:hover .button-text {
     display: flex;
     justify-content: space-between;
 }
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-
-
 
 .footer {
     text-align: center;
@@ -1540,9 +1569,8 @@ buttonJAVA:hover .button-text {
 
 .Def {
     color: white;
-    font-size: 35px;
+    font-size: 50px;
     font-weight: bolder;
-    text-decoration: underline;
     margin-bottom: 10px;
     margin-top: 50px;
 }
@@ -1556,6 +1584,43 @@ buttonJAVA:hover .button-text {
     margin-left: 20px;
 }
 
+.Def3 {
+    color: white;
+    font-size: 35px;
+    font-weight: bolder;
+    margin-bottom: 10px;
+    margin-top: 50px;
+    margin-left: 48px;
+}
+
+.indice {
+    display: flex;
+    justify-content: center;
+    border: 2px dashed white;
+    width: 50%;
+    color: white;
+    margin-left: 25%;
+    margin-top: 150px;
+    border-radius: 10px;
+}
+
+.titIndice {
+    font-weight: bold;
+    font-size: 20px;
+    height: 100%;
+    display: flex!important;
+    justify-content: center!important;
+    text-align: center!important;
+}
+
+.riga {
+    color: white!important;
+}
+
+.riga:hover {
+    text-decoration:line-through;
+}
+
 .testo {
     color: white;
 }
@@ -1565,9 +1630,9 @@ buttonJAVA:hover .button-text {
     justify-content: center;
     background-color: white;
     border-radius: 40px;
-    margin-left: 100px;
-    margin-right: 100px;
-    opacity: 0.9!important;
+    margin-left: 150px;
+    margin-right: 150px;
+    opacity: 0.7!important;
 }
 
 .drop {
@@ -1685,67 +1750,60 @@ buttonJAVA:hover .button-text {
 }
 
 .blue {
-    color: #007fff;
-    font-weight: bold;
+    color: rgb(23,134,149);
 }
 
 .yellow {
-    color: #fff200;
-    font-weight: bold;
+    color: rgb(255,191,14);
 }
 
 .lightY {
-    color: #ffff5f;
-    font-weight: bold;
+    color: rgb(214,220,152);
 }
 
 .white {
     color: white;
-    font-weight: bold;
 }
 
 .violet {
-    color: rgb(222, 0, 222);
-    font-weight: bold;
+    color: rgb(66,88,171);
 }
 
 .lightB {
-    color: rgb(0, 229, 255);
-    font-weight: bold;
+    color: rgb(132,220,240);
 }
 
 .blue2 {
-    color: darkcyan;
-    font-weight: bold;
+    color: rgb(0, 117, 190);
 }
 
 .red {
-    color: rgb(255, 36, 36);
-    font-weight: bold;
+    color: rgb(255, 89, 0);
+}
+
+.titRed {
+    color: red;
 }
 
 .gray {
     color: gray;
-    font-weight: bold;
 }
 
 .green {
-    color: rgb(0, 231, 0);
-    font-weight: bold;
+    color: rgb(103,153,81);
 }
 
 .ligthG {
-    color: rgb(0, 214, 78);
-    font-weight: bold;
+    color: rgb(78,201,176);
 }
 
 .Codice{
-    background: rgba(0, 0, 0, 0.427);
+    background: rgb(31, 31, 31);
     border-radius: 10px;
     display: block;
     width: 100%;
     font-size: 18px;
-    border-left: 5px solid white;
+    border: 2px solid white;
     margin-top: 10px;
 }
 
@@ -1755,7 +1813,7 @@ buttonJAVA:hover .button-text {
     display: block;
     width: 100%;
     font-size: 18px;
-    border-left: 5px solid red;
+    border: 1px solid red;
     margin-top: 10px;
 }
 
@@ -1765,7 +1823,7 @@ buttonJAVA:hover .button-text {
     display: block;
     width: 100%;
     font-size: 18px;
-    border-left: 5px solid #0051ff;
+    border: 1px solid #0051ff;
     margin-top: 10px;
 }
 
@@ -1782,7 +1840,7 @@ pre {
 }
 
 .notaBene {
-    border: 2px solid red;
+    border: 1px dashed red;
     color: white;
     border-radius: 50px;
 }
@@ -1794,10 +1852,223 @@ pre {
 }
 
 .LoghiFooter {
-    width: 5%;
+    width: 3%;
 }
 
 .LoghiFooter:hover {
-    width: 6%;
+    transform: rotate3d(1, 1, 0, 360deg);
+    transition: 1s;
+}
+
+.Dom {
+    color: white;
+    font-size: 35px;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    font-family: cursive;
+    font-weight: bold;
+}
+
+.Descr {
+    color: white;
+    font-size: 15px;
+    margin-top: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+}
+
+.descrButt {
+    display: inline;
+    justify-content: center;
+    align-items: center!important;
+    margin-top: 5%;
+}
+
+.btn {
+    font-size: 17px;
+    background: transparent;
+    border: none;
+    padding: 1em 1.5em;
+    color: white;
+    text-transform: uppercase;
+    position: relative;
+    transition: .5s ease;
+    margin-left: 20px;
+}
+  
+.btn::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 1px;
+    width: 0;
+    background-color: white;
+    transition: .5s ease;
+    border-radius: 50px;
+}
+  
+.btn:hover {
+    color: white;
+    transition-delay: .5s;
+}
+  
+.btn:hover::before {
+    width: 100%;
+}
+  
+.btn::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 0;
+    width: 100%;
+    transition: .4s ease;
+    z-index: -2;
+}
+  
+.btn:hover::after {
+    height: 100%;
+    transition-delay: 0.4s;
+    color: white;
+}
+
+hr {
+    background-color: white;
+}
+
+.profilSep {
+    display: inline-flex;
+    justify-content: space-between;
+}
+
+.contDom {
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+buttonDenina {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    background: transparent;
+    padding: 0;
+    font-size: inherit;
+    font-family: inherit;
+    display: flex;
+    justify-content: center;
+}
+
+buttonDenina.learn-more {
+    width: 20rem;
+    height: auto;
+}
+
+buttonDenina.learn-more .circle {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: relative;
+    display: block;
+    margin: 0;
+    width: 3rem;
+    height: 3rem;
+    background: rgb(4,206,255);
+    border-radius: 1.625rem;
+}
+
+buttonDenina.learn-more .circle .icon {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: #fff;
+}
+
+buttonDenina.learn-more .circle .icon.arrow {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    left: 0.625rem;
+    width: 1.125rem;
+    height: 0.125rem;
+    background: none;
+}
+
+buttonDenina.learn-more .circle .icon.arrow::before {
+    position: absolute;
+    content: "";
+    top: -0.29rem;
+    right: 0.0625rem;
+    width: 0.625rem;
+    height: 0.625rem;
+    border-top: 0.125rem solid #fff;
+    border-right: 0.125rem solid #fff;
+
+    transform: rotate(45deg);
+}
+
+buttonDenina.learn-more .button-text {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0.75rem 0;
+    margin: 0 0 0 1.85rem;
+    color: black;
+    font-weight: 700;
+    line-height: 1.6;
+    text-align: center;
+    text-transform: uppercase;
+    margin-left: 200px;
+}
+
+buttonDenina:hover .circle {
+    width: 120%;
+}
+
+buttonDenina:hover .circle .icon.arrow {
+    background: #fff;
+    transform: translate(1rem, 0);
+}
+
+buttonDenina:hover .button-text {
+    color: #fff;
+}
+
+.GitImm {
+    width: 80%!important;
+}
+
+.GitImmSM {
+    width: 60%;
+}
+
+.MarginLeft {
+    margin-left: 50%!important;
+}
+
+#back-to-top {
+    display: none; /* Nasconde il pulsante per impostazione predefinita */
+    position: fixed;
+    bottom: 20px;
+    right: 0px;
+    z-index: 99;
+    font-size: 16px;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#back-to-top:hover {
+    transform: translateY(-50px);
     transition: 1s;
 }

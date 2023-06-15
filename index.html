@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HOME</title>
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="s2.css">
     <script src="./js/script.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -17,8 +16,8 @@
         <!-- INIZIO NAVBAR -->
         <nav class="navbar navbar-expand-lg navbar navB">
             <div class="LogoTitolo">
-                <a href="https://www.denina.it/" target="new">
-                    <img class="logo align-self-center" src="./images/KP_logo.png" width=30%" alt="Logo Kevin Paseri" title="Logo KEVIN PASERI | Cliccare per andare alla pagina del Denina - Pellico - Rivoira">
+                <a href="index.html">
+                    <img class="logo align-self-center" src="./images/KP_logo.png" width="16%" alt="Logo Kevin Paseri" title="Logo KEVIN PASERI">
                 </a>
             </div>
             <div class="Link"></div>
@@ -27,61 +26,65 @@
             </buttonM>
           
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav mr-auto">
-                <li class="nav-item active d-flex justify-content-center">
-                    <a class="nav-link activetext" href="index.html">HOME</a>
-                </li>
-                <li class="nav-item active d-flex justify-content-center">
-                    <a class="nav-link text" href="JSON.html">JSON</a>
-                </li>
-                <li class="nav-item active d-flex justify-content-center">
-                    <a class="nav-link text" href="XML.html">XML</a>
-                </li>
-                <li class="nav-item active d-flex justify-content-center">
-                    <a class="nav-link text" href="JSAvanzato.html">JS Avanzato</a>
-                </li>
-                <li class="nav-item active d-flex justify-content-center">
-                    <a class="nav-link text" href="React.html">REACT</a>
-                </li>
-                <li class="nav-item active d-flex justify-content-center">
-                    <a class="nav-link text" href="MongoDB.html">MONGO DB</a>
-                </li>
-                <li class="nav-item active d-flex justify-content-center">
-                    <a class="nav-link text" href="Java.html">JAVA</a>
-                </li>
-              </ul>
-          </nav>
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active d-flex justify-content-center">
+                        <a href="index.html"><buttonNav class="btn text">HOME</buttonNav></a>
+                    </li>
+                    <li class="nav-item active d-flex justify-content-center">
+                        <a href="JSON.html"><buttonNav class="btn text">JSON</buttonNav></a>
+                    </li>
+                    <li class="nav-item active d-flex justify-content-center">
+                        <a href="XML.html"><buttonNav class="btn text">XML</buttonNav></a>
+                    </li>
+                    <li class="nav-item active d-flex justify-content-center">
+                        <a href="JSAvanzato.html"><buttonNav class="btn text">JS AVANZATO</buttonNav></a>
+                    </li>
+                    <li class="nav-item active d-flex justify-content-center">
+                        <a href="React.html"><buttonNav class="btn text">REACT</buttonNav></a>
+                    </li>
+                    <li class="nav-item active d-flex justify-content-center">
+                        <a href="MongoDB.html"><buttonNav class="btn text">MONGO DB</buttonNav></a>
+                    </li>
+                    <li class="nav-item active d-flex justify-content-center">
+                        <a href="Java.html"><buttonNav class="btn text">JAVA</buttonNav></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
         <!-- FINE NAVBAR -->
+        
+        <div class="spazio"></div>
         <p class="d-sm-block d-xl-none d-md-block">
            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
         </p>
+        
         <!-- INIZIO INTRODUZIONE -->
-
-
         <div class="container d-xl-block d-none">
             <div class="box introTit">
-                <div class="tit">MY GUIDE</div>
-                <div class="autore">By Kevin Paseri</div>
-                <div>
+                <div class="tit" data-aos="fade-down-right">MY GUIDE</div>
+                <div class="autore" data-aos="fade-up-left">By Kevin Paseri</div>
+                <div data-aos="zoom-in-right">
                     <a href="myprofil.html">
                         <button>Autore</button>
                     </a>
                 </div>
-                <div>
+                <div data-aos="zoom-in-left">
                     <a href="#Vai"><button2>
                         <span>Scopri i contenuti</span>
                         <svg width="34" height="30" viewBox="0 0 74 74" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="37" cy="37" r="35.5" stroke="lightblue" stroke-width="3"></circle><path d="M25 35.5C24.1716 35.5 23.5 36.1716 23.5 37C23.5 37.8284 24.1716 38.5 25 38.5V35.5ZM49.0607 38.0607C49.6464 37.4749 49.6464 36.5251 49.0607 35.9393L39.5147 26.3934C38.9289 25.8076 37.9792 25.8076 37.3934 26.3934C36.8076 26.9792 36.8076 27.9289 37.3934 28.5147L45.8787 37L37.3934 45.4853C36.8076 46.0711 36.8076 47.0208 37.3934 47.6066C37.9792 48.1924 38.9289 48.1924 39.5147 47.6066L49.0607 38.0607ZM25 38.5L48 38.5V35.5L25 35.5V38.5Z" fill="lightblue"></path></svg>
                     </button2></a>
                 </div>
             </div>
-            <div class="box introImm ">
+            <div class="box introImm" data-aos="fade-left">
                 <a href="myprofil.html"><img src="./images/KP_logo.png" alt="Paseri Kevin" width="400"></a>
             </div>
         </div>
 
         <div class="container d-xl-none d-block">
-            <div class="box introTitMD">
-                <div class="titMD">MY GUIDE</div>
+            <div class="box introTitMD" data-aos="fade-down">
+                <a href="#Vai">
+                    <div class="titMD">MY GUIDE</div>
+                </a>
                 <a href="myprofil.html">
                     <div class="autoreMD">By Kevin Paseri</div>
                 </a>
@@ -90,7 +93,6 @@
                 </div>
             </div>
         </div>
-
         <!-- FINE INTRODUZIONE -->
 
         <!-- INIZIO CONTENUTI -->
@@ -105,163 +107,158 @@
                 
             </div>
 
-            <div class="cardRow">
-                <div class="row d-flex justify-content-center" data-aos="zoom-in">
-                    <div class="col-xl-10 d-xl-block d-none">
-                        <article class="card1">
-                            <div class="temporary_text">
-                                <img src="./images/JSON.png" alt="" width="423">
-                            </div>
-                            <div class="card_content">
-                                <span class="card_title">JSON<br></span>
-                                <span class="card_subtitle">Il JSON (JavaScript Objet Notation) è un formato per lo scambio dei dati.</span>
-                                <p class="card_description">
-                                    <a href="JSON.html">
-                                        <buttonJSON class="learn-more">
-                                            <span class="circle" aria-hidden="true">
-                                            <span class="icon arrow"></span>
-                                            </span>
-                                            <span class="button-text">SCOPRI DI PIU'</span>
-                                        </buttonJSON>
-                                    </a>
-                                </p>
-                            </div>
-                        </article>
-                    </div>
-                </div>
-    
-                <div class="row d-flex justify-content-center" data-aos="zoom-in">
-                    <div class="col-xl-10 d-xl-block d-none">
-                        <article class="card1">
-                            <div class="temporary_text">
-                                <img src="./images/XML.jpg" alt="" width="423">
-                            </div>
-                            <div class="card_content">
-                                <span class="card_title">XML<br></span>
-                                <span class="card_subtitle">L'XML è un linguaggio che permette la rappresentazione di documenti e dati su supporto digitale.</span>
-                                <p class="card_description">
-                                    <a href="XML.html">
-                                        <buttonXML class="learn-more">
-                                            <span class="circle" aria-hidden="true">
-                                                <span class="icon arrow"></span>
-                                            </span>
-                                            <span class="button-text">SCOPRI DI PIU'</span>
-                                        </buttonXML>
-                                    </a>
-                                </p>
-                            </div>
-                        </article>
-                    </div>
+           
+            <div class="row d-flex justify-content-center" data-aos="zoom-in">
+                <div class="col-xl-10 d-xl-block d-none">
+                    <article class="card1">
+                        <div class="temporary_text">
+                            <img class="img-fluid" src="./images/JSON.png" alt="Immagine JSON">
+                        </div>
+                        <div class="card_content">
+                            <span class="card_title">JSON<br></span>
+                            <span class="card_subtitle">Il JSON (JavaScript Objet Notation) è un formato per lo scambio dei dati.</span>
+                            <p class="card_description">
+                                <a href="JSON.html">
+                                    <buttonJSON class="learn-more">
+                                        <span class="circle" aria-hidden="true">
+                                        <span class="icon arrow"></span>
+                                        </span>
+                                        <span class="button-text">SCOPRI DI PIU'</span>
+                                    </buttonJSON>
+                                </a>
+                            </p>
+                        </div>
+                    </article>
                 </div>
             </div>
 
-            <div class="cardRow ">
-                <div class="row d-flex justify-content-center" data-aos="zoom-in">
-                    <div class="col-xl-10 d-xl-block d-none mt-5">
-                        <article class="card1">
-                            <div class="temporary_text">
-                                <img src="./images/JSAv.png" alt="" width="423">
-                            </div>
-                            <div class="card_content">
-                                <span class="card_title">JS AVANZATO<br></span>
-                                <span class="card_subtitle">JavaScript Avanzato è un modulo che ci permette di mettere in atto l'ES6.</span>
-                                <p class="card_description">
-                                    <a href="JSAvanzato.html">
-                                        <buttonJS class="learn-more">
-                                            <span class="circle" aria-hidden="true">
+            <div class="row d-flex justify-content-center MarginLeft" data-aos="zoom-in">
+                <div class="col-xl-10 d-xl-block d-none">
+                    <article class="card1">
+                        <div class="temporary_text">
+                            <img class="img-fluid" src="./images/XML.jpg" alt="Immagine XML">
+                        </div>
+                        <div class="card_content">
+                            <span class="card_title">XML<br></span>
+                            <span class="card_subtitle">L'XML è un linguaggio che permette la rappresentazione di documenti e dati su supporto digitale.</span>
+                            <p class="card_description">
+                                <a href="XML.html">
+                                    <buttonXML class="learn-more">
+                                        <span class="circle" aria-hidden="true">
                                             <span class="icon arrow"></span>
-                                            </span>
-                                            <span class="button-text">SCOPRI DI PIU'</span>
-                                        </buttonJS>
-                                    </a>
-                                </p>
-                            </div>
-                        </article>
-                    </div>
-                </div>
-    
-                <div class="row d-flex justify-content-center" data-aos="zoom-in">
-                    <div class="col-xl-10 d-xl-block d-none mt-5">
-                        <article class="card1">
-                            <div class="temporary_text">
-                                <img src="./images/React.png" alt="" width="423">
-                            </div>
-                            <div class="card_content">
-                                <span class="card_title">REACT<br></span>
-                                <span class="card_subtitle">React è una libreria JavaScript per la creazione di interfacce utente.</span>
-                                <p class="card_description">
-                                    <a href="React.html">
-                                        <buttonREACT class="learn-more">
-                                            <span class="circle" aria-hidden="true">
-                                                <span class="icon arrow"></span>
-                                            </span>
-                                            <span class="button-text">SCOPRI DI PIU'</span>
-                                        </buttonREACT>
-                                    </a>
-                                </p>
-                            </div>
-                        </article>
-                    </div>
+                                        </span>
+                                        <span class="button-text">SCOPRI DI PIU'</span>
+                                    </buttonXML>
+                                </a>
+                            </p>
+                        </div>
+                    </article>
                 </div>
             </div>
 
-            <div class="cardRow ">
-                <div class="row d-flex justify-content-center" data-aos="zoom-in">
-                    <div class="col-xl-10 d-xl-block d-none mt-5">
-                        <article class="card1">
-                            <div class="temporary_text">
-                                <img src="./images/MongoDB.png" alt="" width="423">
-                            </div>
-                            <div class="card_content">
-                                <span class="card_title">MONGO DB<br></span>
-                                <span class="card_subtitle">MongoDB è un database di documenti che ti offre la scalabilità e la flessibilità che desideri insieme agli indici e alle query di cui hai bisogno.</span>
-                                <p class="card_description">
-                                    <a href="MongoDB.html">
-                                        <buttonMONGO class="learn-more">
-                                            <span class="circle" aria-hidden="true">
-                                            <span class="icon arrow"></span>
-                                            </span>
-                                            <span class="button-text">SCOPRI DI PIU'</span>
-                                        </buttonMONGO>
-                                    </a>
-                                </p>
-                            </div>
-                        </article>
-                    </div>
+            <div class="row d-flex justify-content-center" data-aos="zoom-in">
+                <div class="col-xl-10 d-xl-block d-none mt-5">
+                    <article class="card1">
+                        <div class="temporary_text">
+                            <img class="img-fluid" src="./images/JSAv.png" alt="Immagine JS AVANZATO">
+                        </div>
+                        <div class="card_content">
+                            <span class="card_title">JS AVANZATO<br></span>
+                            <span class="card_subtitle">JavaScript Avanzato è un modulo che ci permette di mettere in atto l'ES6.</span>
+                            <p class="card_description">
+                                <a href="JSAvanzato.html">
+                                    <buttonJS class="learn-more">
+                                        <span class="circle" aria-hidden="true">
+                                        <span class="icon arrow"></span>
+                                        </span>
+                                        <span class="button-text">SCOPRI DI PIU'</span>
+                                    </buttonJS>
+                                </a>
+                            </p>
+                        </div>
+                    </article>
                 </div>
-    
-                <div class="row d-flex justify-content-center" data-aos="zoom-in">
-                    <div class="col-xl-10 d-xl-block d-none mt-5">
-                        <article class="card1">
-                            <div class="temporary_text">
-                                <img src="./images/Java.png" alt="" width="423">
-                            </div>
-                            <div class="card_content">
-                                <span class="card_title">JAVA<br></span>
-                                <span class="card_subtitle"> Java è un linguaggio di programmazione ad alto livello, orientato agli oggetti e a tipizzazione statica.</span>
-                                <p class="card_description">
-                                    <a href="Java.html">
-                                        <buttonJAVA class="learn-more">
-                                            <span class="circle" aria-hidden="true">
-                                                <span class="icon arrow"></span>
-                                            </span>
-                                            <span class="button-text">SCOPRI DI PIU'</span>
-                                        </buttonJAVA>
-                                    </a>
-                                </p>
-                            </div>
-                        </article>
-                    </div>
+            </div>
+
+            <div class="row d-flex justify-content-center MarginLeft" data-aos="zoom-in">
+                <div class="col-xl-10 d-xl-block d-none mt-5">
+                    <article class="card1">
+                        <div class="temporary_text">
+                            <img class="img-fluid" src="./images/React.png" alt="Immagine REACT">
+                        </div>
+                        <div class="card_content">
+                            <span class="card_title">REACT<br></span>
+                            <span class="card_subtitle">React è una libreria JavaScript per la creazione di interfacce utente.</span>
+                            <p class="card_description">
+                                <a href="React.html">
+                                    <buttonREACT class="learn-more">
+                                        <span class="circle" aria-hidden="true">
+                                            <span class="icon arrow"></span>
+                                        </span>
+                                        <span class="button-text">SCOPRI DI PIU'</span>
+                                    </buttonREACT>
+                                </a>
+                            </p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <div class="row d-flex justify-content-center" data-aos="zoom-in">
+                <div class="col-xl-10 d-xl-block d-none mt-5">
+                    <article class="card1">
+                        <div class="temporary_text">
+                            <img class="img-fluid" src="./images/MongoDB.png" alt="Immagine MONGO DB">
+                        </div>
+                        <div class="card_content">
+                            <span class="card_title">MONGO DB<br></span>
+                            <span class="card_subtitle">MongoDB è un database di documenti che ti offre la scalabilità e la flessibilità che desideri insieme agli indici e alle query di cui hai bisogno.</span>
+                            <p class="card_description">
+                                <a href="MongoDB.html">
+                                    <buttonMONGO class="learn-more">
+                                        <span class="circle" aria-hidden="true">
+                                        <span class="icon arrow"></span>
+                                        </span>
+                                        <span class="button-text">SCOPRI DI PIU'</span>
+                                    </buttonMONGO>
+                                </a>
+                            </p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <div class="row d-flex justify-content-center MarginLeft" data-aos="zoom-in">
+                <div class="col-xl-10 d-xl-block d-none mt-5">
+                    <article class="card1">
+                        <div class="temporary_text">
+                            <img class="img-fluid" src="./images/Java.png" alt="Immagine JAVA">
+                        </div>
+                        <div class="card_content">
+                            <span class="card_title">JAVA<br></span>
+                            <span class="card_subtitle"> Java è un linguaggio di programmazione ad alto livello, orientato agli oggetti e a tipizzazione statica.</span>
+                            <p class="card_description">
+                                <a href="Java.html">
+                                    <buttonJAVA class="learn-more">
+                                        <span class="circle" aria-hidden="true">
+                                            <span class="icon arrow"></span>
+                                        </span>
+                                        <span class="button-text">SCOPRI DI PIU'</span>
+                                    </buttonJAVA>
+                                </a>
+                            </p>
+                        </div>
+                    </article>
                 </div>
             </div>
 
             <div class="col-xl-10 d-xl-none d-block d-flex justify-content-center mt-5">
                 <article class="card1">
                     <div class="temporary_text">
-                        <img src="./images/JSON.png" alt="" width="423">
+                        <img class="img-fluid" src="./images/JSON.png" alt="Immagine JSON">
                     </div>
                     <div class="card_content">
-                        <span class="card_title">JSON<br></span>
+                        <span class="card_titleSM">JSON<br></span>
                         <span class="card_subtitle">Il JSON (JavaScript Objet Notation) è un formato per lo scambio dei dati.</span>
                         <p class="card_description">
                             <a href="JSON.html">
@@ -280,10 +277,10 @@
             <div class="col-xl-10 d-xl-none d-block d-flex justify-content-center mt-5">
                 <article class="card1">
                     <div class="temporary_text">
-                        <img src="./images/XML.jpg" alt="" width="423">
+                        <img class="img-fluid" src="./images/XML.jpg" alt="Immagine XML">
                     </div>
                     <div class="card_content">
-                        <span class="card_title">XML<br></span>
+                        <span class="card_titleSM">XML<br></span>
                         <span class="card_subtitle">L'XML è un linguaggio che permette la rappresentazione di documenti e dati su supporto digitale.</span>
                         <p class="card_description">
                             <a href="XML.html">
@@ -302,10 +299,10 @@
             <div class="col-xl-10 d-xl-none d-block d-flex justify-content-center mt-5">
                 <article class="card1">
                     <div class="temporary_text">
-                        <img src="./images/JSAv.png" alt="" width="423">
+                        <img class="img-fluid" src="./images/JSAv.png" alt="Immagine JS AVANZATO">
                     </div>
                     <div class="card_content">
-                        <span class="card_title">JS AVANZATO<br></span>
+                        <span class="card_titleSM">JS AVANZATO<br></span>
                         <span class="card_subtitle">JavaScript Avanzato è un modulo che ci permette di mettere in atto l'ES6.</span>
                         <p class="card_description">
                             <a href="JSAvanzato.html">
@@ -324,10 +321,10 @@
             <div class="col-xl-10 d-xl-none d-block d-flex justify-content-center mt-5">
                 <article class="card1">
                     <div class="temporary_text">
-                        <img src="./images/React.png" alt="" width="423">
+                        <img class="img-fluid" src="./images/React.png" alt="Immagine REACT">
                     </div>
                     <div class="card_content">
-                        <span class="card_title">REACT<br></span>
+                        <span class="card_titleSM">REACT<br></span>
                         <span class="card_subtitle">React è una libreria JavaScript per la creazione di interfacce utente.</span>
                         <p class="card_description">
                             <a href="React.html">
@@ -346,10 +343,10 @@
             <div class="col-xl-10 d-xl-none d-block d-flex justify-content-center mt-5">
                 <article class="card1">
                     <div class="temporary_text">
-                        <img src="./images/MongoDB.png" alt="" width="423">
+                        <img class="img-fluid" src="./images/MongoDB.png" alt="Immagine MONGO DB">
                     </div>
                     <div class="card_content">
-                        <span class="card_title">MONGO DB<br></span>
+                        <span class="card_titleSM">MONGODB<br></span>
                         <span class="card_subtitle">MongoDB è un database di documenti che ti offre la scalabilità e la flessibilità che desideri insieme agli indici e alle query di cui hai bisogno.</span>
                         <p class="card_description">
                             <a href="MongoDB.html">
@@ -368,10 +365,10 @@
             <div class="col-xl-10 d-xl-none d-block d-flex justify-content-center mt-5">
                 <article class="card1">
                     <div class="temporary_text">
-                        <img src="./images/Java.png" alt="" width="423">
+                        <img class="img-fluid" src="./images/Java.png" alt="Immagine JAVA">
                     </div>
                     <div class="card_content">
-                        <span class="card_title">JAVA<br></span>
+                        <span class="card_titleSM">JAVA<br></span>
                         <span class="card_subtitle"> Java è un linguaggio di programmazione ad alto livello, orientato agli oggetti e a tipizzazione statica.</span>
                         <p class="card_description">
                             <a href="Java.html">
@@ -426,6 +423,12 @@
             </div>
         </footer>
         <!-- FINE FOOTER -->
+        
+        <!-- INIZIO BUTTON INIZIO PAGINA -->
+        <buttonIn id="back-to-top">
+            <img class="img-fluid" src="./images/FrecciaSu.png" alt="" width="40%">
+        </buttonIN>
+        <!-- FINE BUTTON INIZIO PAGINA -->
     </div>
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>

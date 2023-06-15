@@ -16,8 +16,8 @@
         <!-- INIZIO NAVBAR -->
         <nav class="navbar navbar-expand-lg navbar navB">
             <div class="LogoTitolo">
-                <a href="https://www.denina.it/" target="new">
-                    <img class="logo align-self-center" src="./images/KP_logo.png" width="30%" alt="Logo Kevin Paseri" title="Logo KEVIN PASERI | Cliccare per andare alla pagina del Denina - Pellico - Rivoira">
+                <a href="index.html">
+                    <img class="logo align-self-center" src="./images/KP_logo.png" width="16%" alt="Logo Kevin Paseri" title="Logo KEVIN PASERI">
                 </a>
             </div>
             <div class="Link"></div>
@@ -26,32 +26,34 @@
             </buttonM>
           
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav mr-auto">
-                <li class="nav-item active d-flex justify-content-center">
-                    <a class="nav-link text" href="index.html">HOME</a>
-                </li>
-                <li class="nav-item active d-flex justify-content-center">
-                    <a class="nav-link text" href="JSON.html">JSON</a>
-                </li>
-                <li class="nav-item active d-flex justify-content-center">
-                    <a class="nav-link text" href="XML.html">XML</a>
-                </li>
-                <li class="nav-item active d-flex justify-content-center">
-                    <a class="nav-link activetext" href="JSAvanzato.html">JS Avanzato</a>
-                </li>
-                <li class="nav-item active d-flex justify-content-center">
-                    <a class="nav-link text" href="React.html">REACT</a>
-                </li>
-                <li class="nav-item active d-flex justify-content-center">
-                    <a class="nav-link text" href="MongoDB.html">MONGO DB</a>
-                </li>
-                <li class="nav-item active d-flex justify-content-center">
-                    <a class="nav-link text" href="Java.html">JAVA</a>
-                </li>
-              </ul>
-          </nav>
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active d-flex justify-content-center">
+                        <a href="index.html"><buttonNav class="btn text">HOME</buttonNav></a>
+                    </li>
+                    <li class="nav-item active d-flex justify-content-center">
+                        <a href="JSON.html"><buttonNav class="btn text">JSON</buttonNav></a>
+                    </li>
+                    <li class="nav-item active d-flex justify-content-center">
+                        <a href="XML.html"><buttonNav class="btn text">XML</buttonNav></a>
+                    </li>
+                    <li class="nav-item active d-flex justify-content-center">
+                        <a href="JSAvanzato.html"><buttonNav class="btn text">JS AVANZATO</buttonNav></a>
+                    </li>
+                    <li class="nav-item active d-flex justify-content-center">
+                        <a href="React.html"><buttonNav class="btn text">REACT</buttonNav></a>
+                    </li>
+                    <li class="nav-item active d-flex justify-content-center">
+                        <a href="MongoDB.html"><buttonNav class="btn text">MONGO DB</buttonNav></a>
+                    </li>
+                    <li class="nav-item active d-flex justify-content-center">
+                        <a href="Java.html"><buttonNav class="btn text">JAVA</buttonNav></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
         <!-- FINE NAVBAR -->
 
+        <div class="spazio"></div>
         <p class="d-sm-block d-xl-none d-md-block">
             <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
         </p>
@@ -78,7 +80,21 @@
             </div>
 
             <a name="Contenuti"></a>
+
+            <!-- INIZIO INDICE -->
+            <div class="indice" data-aos="flip-right">
+                <div class="titIndice">INDICE <br></div>
+                <ul>
+                    <li><a href="#Cos'e" class="riga">Cos'è JS Avanzato</a></li>
+                    <li><a href="#TemplString" class="riga">Template String</a></li>
+                    <li><a href="#Map" class="riga">Map()</a></li>
+                    <li><a href="#Destr" class="riga">Destrutturazione</a></li>
+                </ul>
+            </div>
+            <!-- FINE INDICE -->
+
             <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                <a name="Cos'e"></a>
                 <div class="Def">Cos'è JavaScript Avanzato?</div>
                 <div class="testo ml-xl-5 mr-xl-5">
                     <p>JavaScript Avanzato è un modulo che ci permette di mettere in atto l'ES6 (ossia EcmaScript, ultima versione di JavaScript). <br>
@@ -87,12 +103,18 @@
                 </div>
             </div>
             <!-- FINE INTRODUZIONE + TITOLO JS -->
+
+            <div class="d-flex justify-content-between">
+                <div class="sepJS"></div>
+                <div class="sep2JS"></div>
+            </div>
         
             <!-- INIZIO TEMPLATE STRING -->
             <div>
+                <a name="TemplString"></a>
                 <div class="Def mt-5 d-flex justify-content-center" data-aos="fade-down" data-aos-duration="1000">Template String</div>
                 <div class="testo ml-xl-5 mr-xl-5" data-aos="fade-right">
-                    La Template String è una sintassi avanzata molto interessante perché ci permette di creare streinghe complesse formate da parti fisse e parti variabili 
+                    La Template String è una sintassi avanzata molto interessante perché ci permette di creare stringhe complesse formate da parti fisse e parti variabili. 
                 </div>
             </div>
 
@@ -126,8 +148,8 @@
             </div>
 
             <!-- INIZIO MAP -->
-            <a name="MAP"></a>
             <div>
+                <a name="Map"></a>
                 <div class="Def mt-5 d-flex justify-content-center" data-aos="fade-down" data-aos-duration="1000">Funzione map()</div>
                 <div class="testo ml-xl-5 mr-xl-5" data-aos="fade-right">
                     La funzione map() è una funzione molto utilizzata in JavaScript perchè permette di ritornare un nuovo array. Praticamente la map() chiama una funzione una volta per ogni elemento in un array, senza modificarne l'arry originale. Molto importante è l'utilizzo di questa funzione quando si utilizza un JSON, ad esempio; questo perché ci permette di ciclare tutto il contenuto dei dati che abbiamo estrapolato dal server.
@@ -164,6 +186,7 @@
 
             <!-- INIZIO DESTRUTTURAZIONE -->
             <div>
+                <a name="Destr"></a>
                 <div class="Def mt-5 d-flex justify-content-center" data-aos="fade-down" data-aos-duration="1000">La destrutturazione</div>
                 <div class="testo ml-xl-5 mr-xl-5" data-aos="fade-right">
                     La destrutturazione ci permette di "spacchettare" un array o un oggetto in variabili distinte; in poche parole, possiamo dividere i dati di un array o di un oggetto in varibile separate.
@@ -225,6 +248,12 @@
             </div>
         </footer>
         <!-- FINE FOOTER -->
+
+        <!-- INIZIO BUTTON INIZIO PAGINA -->
+        <buttonIn id="back-to-top">
+            <img class="img-fluid" src="./images/FrecciaSu.png" alt="" width="40%">
+        </buttonIN>
+        <!-- FINE BUTTON INIZIO PAGINA -->
     </div>
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
