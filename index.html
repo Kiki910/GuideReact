@@ -14,21 +14,21 @@
 <body class="cont">
     <div class="container-fluid">
         <!-- INIZIO NAVBAR -->
-        <nav class="navbar navbar-expand-lg navbar navB">
+        <nav class="navbar navbar-expand-lg navbar navB" id="navIndex">
             <div class="LogoTitolo">
                 <a href="index.html">
                     <img class="logo align-self-center" src="./images/KP_logo.png" width="16%" alt="Logo Kevin Paseri" title="Logo KEVIN PASERI">
                 </a>
             </div>
             <div class="Link"></div>
-            <buttonM class="navbar-toggler border-light" style="width: 80%; margin-left: 10%;" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-label="Toggle navigation">
+            <buttonM class="navbar-toggler border-light menuButton" style="width: 80%; margin-left: 10%;" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-label="Toggle navigation">
                 <p class="menu">MENÙ</p>
             </buttonM>
           
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="collapse navbar-collapse back" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active d-flex justify-content-center">
-                        <a href="index.html"><buttonNav class="btn text">HOME</buttonNav></a>
+                        <a href="index.html"><buttonNav class="btn text selezione">HOME</buttonNav></a>
                     </li>
                     <li class="nav-item active d-flex justify-content-center">
                         <a href="JSON.html"><buttonNav class="btn text">JSON</buttonNav></a>
@@ -55,11 +55,11 @@
         
         <div class="spazio"></div>
         <p class="d-sm-block d-xl-none d-md-block">
-           <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+           <br><br><br><br><br><br><br>
         </p>
         
         <!-- INIZIO INTRODUZIONE -->
-        <div class="container d-xl-block d-none">
+        <div class="container d-xl-flex justify-content-between d-none">
             <div class="box introTit">
                 <div class="tit" data-aos="fade-down-right">MY GUIDE</div>
                 <div class="autore" data-aos="fade-up-left">By Kevin Paseri</div>

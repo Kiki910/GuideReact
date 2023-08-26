@@ -54,6 +54,10 @@ html {
     background-color: black;
 }
 
+.menuButton {
+    background-color: black!important;
+}
+
 .menu {
    color: white;
    margin-top: 15px;
@@ -63,13 +67,27 @@ html {
    justify-content: center;
 }
 
+buttonM {
+    background-color: black!important;
+}
+
+buttonM:hover {
+    border-radius: 50px;
+    transition: 2s!important;
+}
+
+buttonM:not(:hover) {
+    border-radius: 0px;
+    transition: 2s!important;
+}
+
 .margin {
     margin-top: 200px!important;
 }
 
 .menu:hover {
     color: black!important;
-    transition: 1s;
+    transition: 1s ease!important;
 }
 
 .navbar-toggler {
@@ -105,6 +123,14 @@ nav {
     left: 0;
     width: 100%;
     margin-bottom: 5px!important;
+}
+
+.back {
+    background-color: black;
+}
+
+.selezione {
+    font-weight: bold!important;
 }
 
 .LogoTitolo {
@@ -166,6 +192,7 @@ nav {
     width: 35%;
     height: 600px;
     margin-left: 100px;
+    margin-top: 15%;
 }
 
 .introImmMD {
@@ -1124,6 +1151,32 @@ buttonJAVA:hover .button-text {
     color: white;
 }
 
+.testoElenco {
+    color: white;
+    font-size: 30px;
+    font-weight: bolder;
+    display: flex!important;
+    justify-content: center!important;
+    margin-left: 47%;
+}
+
+.testoElencoDescr {
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.testoElencoAttenzione {
+    color: red;
+    margin-bottom: 20px;
+    margin-top: 0px;
+    font-weight: bold;
+}
+
+.imgElenco {
+    width: 100%;
+}
+
 .JSONimm {
     width: 100%;
     height: 600px;
@@ -1248,16 +1301,6 @@ buttonJAVA:hover .button-text {
 
 /* INIZIO JSON */
 
-.ContTitJSONXL {
-    background-image: url("../images/JSON.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: black;
-    background-size: 50%;
-    background-position: 50% 12%!important;
-    height: 600px!important;
-}
-
 .TitoloJSONXL {
     text-transform: uppercase;
     background-image: linear-gradient(
@@ -1281,59 +1324,7 @@ buttonJAVA:hover .button-text {
     display: flex;
     justify-content: center;
     font-weight: bolder;
-}
-
-.ContTitJSON {
-    background-image: url("../images/JSON.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: black;
-    background-size: 50%;
-    background-position: 50% 12%!important;
-    height: 250px!important;
-}
-
-.TitoloJSON {
-    text-transform: uppercase;
-    background-image: linear-gradient(
-        -225deg,
-        #050402 0%,
-        #4e4e4e 29%,
-        #848484 67%,
-        #a1a1a1 100%
-    );
-    background-size: auto auto;
-    background-clip: border-box;
-    background-size: 200% auto;
-    color: #fff;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: textclip 2s linear infinite;
-    display: inline-block;
-    font-size: 440%;
-    display: flex;
-    justify-content: center;
-    font-weight: bolder;
-}
-
-.TitJSONXL {
-    margin-top: 17%;
-}
-
-.TitJSON {
-    margin-top: 14%;
-}
-
-.ContTitXMLXL {
-    background-image: url("../images/XML.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: black;
-    background-size: 50%!important;
-    background-position: 50% 30%!important;
-    height: 600px!important;
+    margin-top: 21.5vh;
 }
 
 .TitoloXMLXL {
@@ -1359,59 +1350,7 @@ buttonJAVA:hover .button-text {
     display: flex;
     justify-content: center;
     font-weight: bolder;
-}
-
-.ContTitXML {
-    background-image: url("../images/XML.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: black;
-    background-size: 50%;
-    background-position: 50% 12%!important;
-    height: 250px!important;
-}
-
-.TitoloXML {
-    text-transform: uppercase;
-    background-image: linear-gradient(
-        -225deg,
-        #ff0000 0%,
-        #ff5e00 29%,
-        #ffa600 67%,
-        #ffff00 100%
-    );
-    background-size: auto auto;
-    background-clip: border-box;
-    background-size: 200% auto;
-    color: #fff;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: textclip 2s linear infinite;
-    display: inline-block;
-    font-size: 440%;
-    display: flex;
-    justify-content: center;
-    font-weight: bolder;
-}
-
-.TitXMLXL {
-    margin-top: 17%;
-}
-
-.TitXML {
-    margin-top: 14%;
-}
-
-.ContTitJSAvXL {
-    background-image: url("../images/JSAv.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: black;
-    background-size: 50%!important;
-    background-position: 50% 30%!important;
-    height: 600px!important;
+    margin-top: 21.5vh;
 }
 
 .TitoloJSAvXL {
@@ -1433,63 +1372,11 @@ buttonJAVA:hover .button-text {
     -webkit-text-fill-color: transparent;
     animation: textclip 2s linear infinite;
     display: inline-block;
-    font-size: 880%;
+    font-size: 400%;
     display: flex;
     justify-content: center;
     font-weight: bolder;
-}
-
-.ContTitJSAv {
-    background-image: url("../images/JSAv.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: black;
-    background-size: 50%;
-    background-position: 50% 12%!important;
-    height: 250px!important;
-}
-
-.TitoloJSAv {
-    text-transform: uppercase;
-    background-image: linear-gradient(
-        -225deg,
-        #ff4400 0%,
-        #ff7b00 29%,
-        #ffc400 67%,
-        #c3ff00 100%
-    );
-    background-size: auto auto;
-    background-clip: border-box;
-    background-size: 200% auto;
-    color: #fff;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: textclip 2s linear infinite;
-    display: inline-block;
-    font-size: 350%;
-    display: flex;
-    justify-content: center;
-    font-weight: bolder;
-}
-
-.TitJSAvXL {
-    margin-top: 17%;
-}
-
-.TitJSAv {
-    margin-top: 17%;
-}
-
-.ContTitREACTXL {
-    background-image: url("../images/React.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: black;
-    background-size: 50%!important;
-    background-position: 50% 30%!important;
-    height: 600px!important;
+    margin-top: 28.5vh;
 }
 
 .TitoloREACTXL {
@@ -1515,26 +1402,17 @@ buttonJAVA:hover .button-text {
     display: flex;
     justify-content: center;
     font-weight: bolder;
+    margin-top: 21.5vh;
 }
 
-.ContTitREACT {
-    background-image: url("../images/React.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: black;
-    background-size: 50%;
-    background-position: 50% 12%!important;
-    height: 250px!important;
-}
-
-.TitoloREACT {
+.TitoloMongoXL {
     text-transform: uppercase;
     background-image: linear-gradient(
         -225deg,
-        #0004ff 0%,
-        #0051ff 29%,
-        #0095ff 67%,
-        #00fbff 100%
+        #144200 0%,
+        #00a431 29%,
+        #00ff59 67%,
+        #88ff00 100%
     );
     background-size: auto auto;
     background-clip: border-box;
@@ -1550,14 +1428,81 @@ buttonJAVA:hover .button-text {
     display: flex;
     justify-content: center;
     font-weight: bolder;
+    margin-top: 27.5vh;
 }
 
-.TitREACTXL {
-    margin-top: 16.5%;
+.TitoloJavaXL {
+    text-transform: uppercase;
+    background-image: linear-gradient(
+        -225deg,
+        #0015ff 0%,
+        #005eff 29%,
+        #ff6200 67%,
+        #ff0000 100%
+    );
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 2s linear infinite;
+    display: inline-block;
+    font-size: 880%;
+    display: flex;
+    justify-content: center;
+    font-weight: bolder;
+    margin-top: 21.5vh;
 }
 
-.TitREACT {
-    margin-top: 14%;
+.boxSinistra {
+    display: inline-block;
+    justify-content: center!important;
+    width: 40%;
+    height: 80vh;
+    text-align: center!important;
+}
+
+.boxCentro {
+    display: inline-block;
+    justify-content: center!important;
+    width: 0.2%;
+    height: 300px;
+    margin-top: 150px;
+    text-align: center!important;
+    background-color: white;
+}
+
+.boxDestra {
+    display: inline-block;
+    width: 40%;
+    height: 80vh;
+}
+
+.margIndJSON {
+    margin-top: 23vh!important;
+}
+
+.margIndXML {
+    margin-top: 24vh!important;
+}
+
+.margIndJSAv {
+    margin-top: 28vh!important;
+}
+
+.margIndReact {
+    margin-top: 19vh!important;
+}
+
+.margIndMongo {
+    margin-top: 23vh!important;
+}
+
+.margIndJava {
+    margin-top: 23vh!important;
 }
 
 /* animazione per i titoli */
@@ -1569,7 +1514,7 @@ buttonJAVA:hover .button-text {
 
 .Def {
     color: white;
-    font-size: 50px;
+    font-size: 30px;
     font-weight: bolder;
     margin-bottom: 10px;
     margin-top: 50px;
@@ -1590,17 +1535,15 @@ buttonJAVA:hover .button-text {
     font-weight: bolder;
     margin-bottom: 10px;
     margin-top: 50px;
-    margin-left: 48px;
 }
 
 .indice {
     display: flex;
     justify-content: center;
     border: 2px dashed white;
-    width: 50%;
+    width: 80%;
     color: white;
     margin-left: 25%;
-    margin-top: 150px;
     border-radius: 10px;
 }
 
@@ -1742,6 +1685,42 @@ buttonJAVA:hover .button-text {
 
 .sep2R {
     background-image: -webkit-linear-gradient(top right, black 50%, #0095ff);
+    height: 7px;
+    width: 50%;
+    display: flex;
+    justify-content: end;
+    margin-top: 50px;
+}
+
+.sepM {
+    background-image: -webkit-linear-gradient(top left, black 50%, #059600);
+    height: 7px;
+    width: 50%;
+    display: flex;
+    justify-content: left;
+    margin-top: 50px;
+}
+
+.sep2M {
+    background-image: -webkit-linear-gradient(top right, black 50%, #059600);
+    height: 7px;
+    width: 50%;
+    display: flex;
+    justify-content: end;
+    margin-top: 50px;
+}
+
+.sepJa {
+    background-image: -webkit-linear-gradient(top left, black 50%, #8a0000);
+    height: 7px;
+    width: 50%;
+    display: flex;
+    justify-content: left;
+    margin-top: 50px;
+}
+
+.sep2Ja {
+    background-image: -webkit-linear-gradient(top right, black 50%, #8a0000);
     height: 7px;
     width: 50%;
     display: flex;
@@ -2056,7 +2035,7 @@ buttonDenina:hover .button-text {
 }
 
 #back-to-top {
-    display: none; /* Nasconde il pulsante per impostazione predefinita */
+    display: none;
     position: fixed;
     bottom: 20px;
     right: 0px;
@@ -2070,5 +2049,51 @@ buttonDenina:hover .button-text {
 
 #back-to-top:hover {
     transform: translateY(-50px);
-    transition: 1s;
+    transition: 1s ease;
+}
+
+#back-to-top:not(:hover) {
+    transform: translateY(0px);
+    transition: 1s ease;
+}
+
+.TabellaComandi {
+    margin-left: 10%;
+}
+
+table {
+    width: 80%;
+    border-collapse: collapse;
+    border-left: 10%!important;
+}
+
+th, td {
+    padding: 8px;
+    text-align: center!important;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f2f2f2;
+    font-weight: bolder!important;
+    color: black;
+    font-size: 15px;
+}
+
+td {
+    color: white;
+}
+
+tr:hover {
+    opacity: 0.7;
+    transition: 0.5s;
+}
+
+tr:not(:hover) {
+    font-weight: null;
+    transition: 0.5s;
+}  
+
+.righetta {
+    border-right: 1px solid #f2f2f2;
 }

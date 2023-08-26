@@ -25,13 +25,13 @@
                 <p class="menu">MENÙ</p>
             </buttonM>
           
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="collapse navbar-collapse back" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active d-flex justify-content-center">
                         <a href="index.html"><buttonNav class="btn text">HOME</buttonNav></a>
                     </li>
                     <li class="nav-item active d-flex justify-content-center">
-                        <a href="JSON.html"><buttonNav class="btn text">JSON</buttonNav></a>
+                        <a href="JSON.html"><buttonNav class="btn text selezione">JSON</buttonNav></a>
                     </li>
                     <li class="nav-item active d-flex justify-content-center">
                         <a href="XML.html"><buttonNav class="btn text">XML</buttonNav></a>
@@ -55,56 +55,46 @@
 
         <div class="spazio"></div>
         <p class="d-sm-block d-xl-none d-md-block">
-            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <br><br><br><br>
         </p>
 
         <!-- INIZIO CONTENUTI -->
 
         <div class="container">
-            <!-- INIZIO INTRODUZIONE + TITOLO JSON -->
-            <div class="ContTitJSONXL d-xl-block d-none">
-                <div class="TitoloJSONXL" data-aos="flip-up">
-                    <p class="TitJSONXL">JSON</p>
+            <!-- INIZIO INTRODUZIONE + TITOLO JSON + INDICE -->
+            <div class="container d-xl-flex justify-content-between d-none">
+                <div class="boxSinistra" data-aos="fade-down-right">
+                    <div class="TitoloJSONXL">
+                        <p class="TitJSONXL">JSON</p>
+                    </div>
+                </div>
+
+                <div class="boxCentro"></div>
+                
+                <div class="boxDestra" data-aos="fade-down-left">
+                    <div class="indice margIndJSON" data-aos="flip-right">
+                        <div class="titIndice">INDICE <br></div>
+                        <div class="IndiceCont">
+                            <ul>
+                                <li><a href="#Cos'e" class="riga">Cos'è il JSON</a></li>
+                                <ul>
+                                    <li><a href="#Object" class="riga">Object</a></li>
+                                    <li><a href="#Array" class="riga">Array</a></li>
+                                    <li><a href="#Value" class="riga">Value</a></li>
+                                    <li><a href="#String" class="riga">String</a></li>
+                                    <li><a href="#Number" class="riga">Number</a></li>
+                                    <li><a href="#Whitespace" class="riga">Whitespace</a></li>
+                                </ul>
+                                <li><a href="#Fetch" class="riga">Fetch</a></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
-
-            <div class="ContTitJSON d-xl-none">
-                <div class="TitoloJSON" data-aos="flip-up">
-                    <p class="TitJSON">JSON</p>
-                </div>
-            </div>
-
-            <div>
-                <a class="ContFreccia" href="#Contenuti">
-                    <img class="FrecciaGiu" src="./images/FrecciaGIU.png" alt="Freccia Giu" title="Clicca per scendere a vedere i contenuti">
-                </a>
-            </div>
-
-            <a name="Contenuti"></a>
-
-            <!-- INIZIO INDICE -->
-            <div class="indice" data-aos="flip-right">
-                <div class="titIndice">INDICE <br></div>
-                <div class="IndiceCont">
-                    <ul>
-                        <li><a href="#Cos'e" class="riga">Cos'è il JSON</a></li>
-                        <ul>
-                            <li><a href="#Object" class="riga">Object</a></li>
-                            <li><a href="#Array" class="riga">Array</a></li>
-                            <li><a href="#Value" class="riga">Value</a></li>
-                            <li><a href="#String" class="riga">String</a></li>
-                            <li><a href="#Number" class="riga">Number</a></li>
-                            <li><a href="#Whitespace" class="riga">Whitespace</a></li>
-                        </ul>
-                        <li><a href="#Fetch" class="riga">Fetch</a></li>
-                    </ul>
-                </div>
-            </div>
-            <!-- FINE INDICE -->
 
             <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
-                <a name="Cos'e"></a>
-                <div class="Def">Cos'è il JSON e come si presenta il suo formato?</div>
+                <a name="Cos'e"></a><br><br><br>
+                <div class="Def marg">Cos'è il JSON e come si presenta il suo formato?</div>
                 <div class="testo ml-xl-5 mr-xl-5">
                     <p>Il JSON (JavaScript Objet Notation) è un formato per lo scambio dei dati. È facile da leggere e da scrivere per gli utenti, ma anche facile da interpretare per le macchine. È un sottoinsieme del Linguaggio di Programmazione JavaScript. Possiamo anche dire che il JSON è un formato di testo indipendente dal linguaggio di programmazione, ma utilizza convenzioni simili ai linguaggi del C, C++, Java, JavaScript, Python, ... .</p>
                 </div>
@@ -118,55 +108,55 @@
                 </div>
                 <br>
             </div>
-            <!-- FINE INTRODUZIONE + TITOLO JSON -->
+            <!-- FINE INTRODUZIONE + TITOLO JSON + INDICE -->
 
             <!-- INIZIO SINTASSI -->
-            <a id="Object"></a>
+            <a id="Object"></a><br><br><br><br>
             <div data-aos="flip-up" class="testo ml-xl-5 mr-xl-5 d-flex justify-content-center">
                 <p>Un oggetto è una serie non ordinata di nomi/valori. Un oggetto inizia con <strong>'{'</strong> [parentesi graffa sinistra] e finisce con <strong>'}'</strong> [parentesi graffa destra]. Ogni nome è seguito da <strong>':'</strong> [due punti] e la coppia di nome/valore sono separata da una <strong>','</strong> [virgola]</p>
             </div>
             <div data-aos="flip-down" class="imgJSON">
-                <img src="./images/ObjetJSON.png" alt="Object JSON" title="Objet JSON" width="50%">
+                <img src="./images/ObjetJSON.png" alt="Object JSON" title="Objet JSON" width="60%">
             </div>
 
-            <a id="Array"></a>
+            <a id="Array"></a><br><br><br>
             <div data-aos="flip-up" class="testo ml-xl-5 mr-xl-5 mt-5 d-flex justify-content-center">
                 <p>Un array è una raccolta ordinata di valori. Un array comincia con <strong>'['</strong> [parentesi quadra sinistra] e finisce con <strong>']'</strong> [parentesi quadra destra]. I valori sono separati da <strong>','</strong> [virgola].</p>
             </div>
             <div data-aos="flip-down" class="imgJSON">
-                <img src="./images/ArrayJSON.png" alt="Array JSON" title="Array JSON" width="50%">
+                <img src="./images/ArrayJSON.png" alt="Array JSON" title="Array JSON" width="60%">
             </div>
 
-            <a id="Value"></a>
+            <a id="Value"></a><br><br><br>
             <div data-aos="flip-up" class="testo ml-xl-5 mr-xl-5 mt-5 d-flex justify-content-center">
                 <p>Un valore può essere una stringa tra virgolette, o un numero, o vero <strong>TRUE</strong> o falso <strong>FALSE</strong> o nullo <strong>NULL</strong>, o un oggetto o un array. Queste strutture possono essere annidate.</p>
             </div>
             <div data-aos="flip-down" class="imgJSON">
-                <img src="./images/ValueJSON.png" alt="Value JSON" title="Value JSON" width="50%">
+                <img src="./images/ValueJSON.png" alt="Value JSON" title="Value JSON" width="60%">
             </div>
 
-            <a id="String"></a>
+            <a id="String"></a><br><br><br>
             <div data-aos="flip-up" class="testo ml-xl-5 mr-xl-5 mt-5 d-flex justify-content-center">
                 <p>Una stringa è una raccolta di zero o più caratteri <strong>Unicode</strong> tra virgolette; per le sequenze di escape utilizza la barra rovesciata. Un singolo carattere è rappresentato come una stringa di caratteri di lunghezza uno. Una stringa è molto simile ad una stringa C o Java.</p>
             </div>
             <div data-aos="flip-down" class="imgJSON">
-                <img src="./images/StringJSON.png" alt="String JSON" title="String JSON" width="50%">
+                <img src="./images/StringJSON.png" alt="String JSON" title="String JSON" width="60%">
             </div>
 
-            <a id="Number"></a>
+            <a id="Number"></a><br><br><br>
             <div data-aos="flip-up" class="testo ml-xl-5 mr-xl-5 mt-5 d-flex justify-content-center">
                 <p>Un numero è molto simile ad un numero C o Java, a parte il fatto che i formati ottali e esadecimali non sono utilizzati.</p>
             </div>
             <div data-aos="flip-down" class="imgJSON">
-                <img src="./images/NumberJSON.png" alt="Number JSON" title="Number JSON" width="50%">
+                <img src="./images/NumberJSON.png" alt="Number JSON" title="Number JSON" width="60%">
             </div>
 
-            <a id="Whitespace"></a>
+            <a id="Whitespace"></a><br><br><br>
             <div data-aos="flip-up" class="testo ml-xl-5 mr-xl-5 mt-5 d-flex justify-content-center">
                 <p>I caratteri di spaziatura possono essere inseriti in mezzo a qualsiasi coppia di token.</p>
             </div>
             <div data-aos="flip-down" class="imgJSON">
-                <img src="./images/WhitespaceJSON.png" alt="Whitespace JSON" title="Whitespace JSON" width="50%">
+                <img src="./images/WhitespaceJSON.png" alt="Whitespace JSON" title="Whitespace JSON" width="60%">
             </div>
             <!-- FINE SINTASSI -->
             
@@ -177,8 +167,8 @@
             
             <!-- INIZIO FETCH -->
             <div>
-                <a name="Fetch"></a>
-                <div class="Def mt-5 d-flex justify-content-center" data-aos="fade-down" data-aos-duration="1000">La fetch</div>
+                <a name="Fetch"></a><br><br><br>
+                <div class="Def mt-5 d-flex justify-content-center" data-aos="fade-down" data-aos-duration="1000">Il metodo fetch</div>
                 <div class="testo ml-xl-5 mr-xl-5" data-aos="fade-right">
                     <p>La <strong>Fetch</strong> è un metodo che ci permette di mandare una richiesta al server e caricare informazioni ogni volta che ne abbiamo bisogno. <br><br>
                     Per usare la fetch servono 3 "parole chiavi":
@@ -255,10 +245,10 @@
             </div>
         </footer>
         <!-- FINE FOOTER -->
-
+        
         <!-- INIZIO BUTTON INIZIO PAGINA -->
         <buttonIn id="back-to-top">
-            <img class="img-fluid" src="./images/FrecciaSu.png" alt="" width="40%">
+            <img class="img-fluid" src="./images/FrecciaSu.png" alt="" width="30%">
         </buttonIN>
         <!-- FINE BUTTON INIZIO PAGINA -->
     </div>

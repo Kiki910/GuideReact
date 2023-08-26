@@ -25,7 +25,7 @@
                 <p class="menu">MENÙ</p>
             </buttonM>
           
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="collapse navbar-collapse back" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active d-flex justify-content-center">
                         <a href="index.html"><buttonNav class="btn text">HOME</buttonNav></a>
@@ -40,7 +40,7 @@
                         <a href="JSAvanzato.html"><buttonNav class="btn text">JS AVANZATO</buttonNav></a>
                     </li>
                     <li class="nav-item active d-flex justify-content-center">
-                        <a href="React.html"><buttonNav class="btn text">REACT</buttonNav></a>
+                        <a href="React.html"><buttonNav class="btn text selezione">REACT</buttonNav></a>
                     </li>
                     <li class="nav-item active d-flex justify-content-center">
                         <a href="MongoDB.html"><buttonNav class="btn text">MONGO DB</buttonNav></a>
@@ -55,71 +55,61 @@
 
         <div class="spazio"></div>
         <p class="d-sm-block d-xl-none d-md-block">
-            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <br><br><br><br>
         </p>
 
         <!-- INIZIO CONTENUTI -->
         <div class="container">
-            <!-- INIZIO INTRODUZIONE + TITOLO REACT -->
-            <div class="ContTitREACTXL d-xl-block d-none">
-                <div class="TitoloREACTXL" data-aos="flip-up">
-                    <p class="TitREACTXL">REACT</p>
+            <!-- INIZIO INTRODUZIONE + TITOLO REACT + INDICE -->
+            <div class="container d-xl-flex justify-content-between d-none">
+                <div class="boxSinistra" data-aos="fade-down-right">
+                    <div class="TitoloREACTXL" data-aos="flip-up">
+                        <p class="TitREACTXL">REACT</p>
+                    </div>
+                </div>
+
+                <div class="boxCentro"></div>
+                
+                <div class="boxDestra" data-aos="fade-down-left">
+                    <div class="indice margIndReact" data-aos="flip-right">
+                        <div class="titIndice">INDICE</div>
+                        <div>
+                            <ul>
+                                <li><a href="#Cos'e" class="riga">Cos'è React</a></li>
+                                <ul>
+                                    <li><a href="#Inst" class="riga">Installazione</a></li>
+                                    <li><a href="#Crea" class="riga">Creazione e avvio</a></li>
+                                </ul>
+                                <li><a href="#Spread" class="riga">Operatore spread()</a></li>
+                                <li><a href="#Hooks" class="riga">Hooks</a></li>
+                                <ul>
+                                    <li><a href="#State" class="riga">useState()</a></li>
+                                    <li><a href="#Effect" class="riga">useEffect()</a></li>
+                                    <li><a href="#Ref" class="riga">useRef()</a></li>
+                                </ul>
+                                <li><a href="#Comp" class="riga">Componenti</a></li>
+                                <li><a href="#Param" class="riga">Passaggio parametri</a></li>
+                                <li><a href="#Dom" class="riga">React Router Dom</a></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
-
-            <div class="ContTitREACT d-xl-none">
-                <div class="TitoloREACT" data-aos="flip-up">
-                    <p class="TitREACT">REACT</p>
-                </div>
-            </div>
-
-            <div>
-                <a class="ContFreccia" href="#Contenuti">
-                    <img class="FrecciaGiu" src="./images/FrecciaGIU.png" alt="Freccia Giu" title="Clicca per scendere a vedere i contenuti">
-                </a>
-            </div>
-
-            <a name="Contenuti"></a>
-
-            <!-- INIZIO INDICE -->
-            <div class="indice" data-aos="flip-right">
-                <div class="titIndice">INDICE</div>
-                <div>
-                    <ul>
-                        <li><a href="#Cos'e" class="riga">Cos'è React</a></li>
-                        <ul>
-                            <li><a href="#Inst" class="riga">Installazione</a></li>
-                            <li><a href="#Crea" class="riga">Creazione e avvio</a></li>
-                        </ul>
-                        <li><a href="#Spread" class="riga">Operatore spread()</a></li>
-                        <li><a href="#Hooks" class="riga">Hooks</a></li>
-                        <ul>
-                            <li><a href="#State" class="riga">useState()</a></li>
-                            <li><a href="#Effect" class="riga">useEffect()</a></li>
-                            <li><a href="#Ref" class="riga">useRef()</a></li>
-                        </ul>
-                        <li><a href="#Comp" class="riga">Componenti</a></li>
-                        <li><a href="#Param" class="riga">Passaggio parametri</a></li>
-                        <li><a href="#Dom" class="riga">React Router Dom</a></li>
-                    </ul>
-                </div>
-            </div>
-            <!-- FINE INDICE -->
 
             <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
-                <a name="Cos'e"></a>
+                <a name="Cos'e"></a><br><br><br>
                 <div class="Def">Cos'è React?</div>
                 <div class="testo ml-xl-5 mr-xl-5">
                     <p>React è una libreria JavaScript per la creazione di interfacce utente, ossia per la creazione di SPA(single Page Application). React venne sviluppato all'interno di Facebook nel 2013, ma ora si è estesa molto ed è una libreria open-source sostenuta da molti programmatori. <br>
                     La funzionalità principale è lo sviluppo di applicazioni dinamiche che non hanno bisogno di ricaricare la pagina; molto importante è anche la possibilità di vedere le modifiche effettuate sul codice in tempo reale in modo da avere uno sviluppo flessibile, ma soprattutto più rapido.</p>
                 </div>
             </div>
-            <!-- FINE INTRODUZIONE + TITOLO REACT -->
+            <!-- FINE INTRODUZIONE + TITOLO REACT + INDICE -->
 
             <!-- INIZIO INSTALLAZIONE -->
             <div>
-                <a id="Inst"></a>
-                <div class="Def mt-5 d-flex justify-content-center" data-aos="fade-down" data-aos-duration="1000">Installazione</div>
+                <a id="Inst"></a><br><br><br>
+                <div class="Def mt-5 ml-5" data-aos="fade-down" data-aos-duration="1000">Installazione</div>
                 <div class="testo ml-xl-5 mr-xl-5" data-aos="fade-right">
                     Per poter iniziare a lavorare con React, occorre installare npm e nodejs. Per evitare problemi con l'ultima versione, utilizziamo direttamente i seguenti comandi da terminale:
                 </div>
@@ -128,7 +118,7 @@
             <br>
         
             <div class="row d-flex justify-content-center" data-aos="zoom-in">
-                <div class="col-12">
+                <div class="col-11">
                     <pre class="Codice">
                         <code>
     <span class="white">Comando 1)</span>     <span class="blue">sudo npm install -g n</span>
@@ -144,8 +134,8 @@
 
             <!-- INIZIO CREAZIONE E AVVIO PROGETTO -->
             <div>
-                <a id="Crea"></a>
-                <div class="Def mt-5 d-flex justify-content-center" data-aos="fade-down" data-aos-duration="1000">Creazione a avvio progetto</div>
+                <a id="Crea"></a><br><br><br>
+                <div class="Def mt-5 ml-5" data-aos="fade-down" data-aos-duration="1000">Creazione a avvio progetto</div>
                 <div class="testo ml-xl-5 mr-xl-5" data-aos="fade-right">
                     Per creare un progetto occorre scrivere questo comando nel terminale:
                 </div>
@@ -154,7 +144,7 @@
             <br>
         
             <div class="row d-flex justify-content-center" data-aos="zoom-in">
-                <div class="col-12">
+                <div class="col-11">
                     <pre class="Codice">
                         <code>
     <span class="white">Comando creazione progetto --></span>     <span class="blue">npx create-react-app</span><span class="lightB"> nomeprogetto</span>    
@@ -184,7 +174,7 @@
             <br>
         
             <div class="row d-flex justify-content-center" data-aos="zoom-in">
-                <div class="col-12">
+                <div class="col-11">
                     <pre class="Codice">
                         <code>
     <span class="white">Comando avvio progetto --></span>     <span class="blue">npm start</span>
@@ -314,50 +304,50 @@
 
             <!-- INIZIO SPREAD -->
             <div>
-                <a name="Spread"></a>
+                <a name="Spread"></a><br><br><br>
                 <div class="Def mt-5 d-flex justify-content-center" data-aos="fade-down" data-aos-duration="1000">Operatore spred()</div>
                 <div class="testo ml-xl-5 mr-xl-5" data-aos="fade-right">
                     Molto spesso, associato alla funzione map() spiegata nella sezione <strong>JS Avanzato </strong>, viene utilizzato l'operatore spread. Questo operatore è facilmente individuabile attraverso l'utilizzo dei 3 punti <strong>[ ... ]</strong>. Questo operatore serve per fare una copia perfetta di un array.
                 </div>
-            </div>
 
-            <br>
-        
-            <div class="row d-flex justify-content-center" data-aos="zoom-in">
-                <div class="col-12">
-                    <pre class="Codice">
-                        <code>
-        <span class="violet">import</span><span class="lightB"> React</span><span class="white">, </span><span class="yellow">{</span><span class="lightB"> useState </span><span class="yellow">}</span><span class="violet"> from</span><span class="red"> 'react'</span>
-        <span class="violet">import</span><span class="red"> "./App.css"</span>
-        
-        <span class="blue">const</span><span class="blue2"> URL</span><span class="white"> = </span><span class="red">"https://raw.githubusercontent.com/itisrivoira/obelix/main/lista_locali.json"</span>
+                <br>
 
-        <span class="blue">const</span><span class="lightY"> App</span><span class="white"> = </span><span class="yellow">()</span><span class="blue"> => </span><span class="yellow">{</span>
-            <span class="blue">const</span><span class="violet">[</span><span class="blue2">locali</span><span class="lightY"> setLocali</span><span class="violet">]</span><span class="white"> = </span><span class="lightY"> useState</span><span class="violet">(<span class="blue2">[]</span>)</span>
-
-            <span class="blue">const</span><span class="lightY"> connessione</span><span class="white">=</span><span class="violet">())</span><span class="blue"> => </span><span class="violet">{</span>
-                <span class="lightY">fetch</span><span class="blue">(</span><span class="blue2">URL</span><span class="blue">)</span>
-                <span class="lightY">.then</span><span class="blue">(</span><span class="yellow">(</span><span class="lightB">LocaliText</span><span class="yellow">)</span><span class="blue"> => </span><span class="lightB">LocaliText</span><span class="lightY">.json</span><span class="yellow">()</span><span class="blue">)</span>
-                <span class="lightY">.then</span><span class="blue">(</span><span class="yellow">(</span><span class="lightB">LocaliJSON</span><span class="yellow">)</span><span class="blue"> => </span><span class="yellow">{</span>
-                    <span class="lightB">LocaliJSON</span><span class="lightY">.map</span><span class="violet">(</span><span class="blue">(</span><span class="lightB">elemento</span><span class="white">, </span><span class="blue2">indice</span><span class="blue">) => {</span>
-                        <span class="lightY">setLocali</span><span class="yellow">(</span><span class="violet">(<span class="lightB">locali</span>)</span><span class="blue"> => </span><span class="violet">[</span><span class="white">...</span><span class="lightB">locali</span><span class="white">, </span><span class="gray">&lt<span class="blue">div</span>&gt</span><span class="blue">{<span class="lightB">elemento.citta</span>   }</span><span class="gray">&lt/<span class="blue">div</span>&gt</span>
-                    <span class="blue">}</span><span class="violet">)</span>
-                <span class="yellow">}</span><span class="blue">)</span>
-            <span class="violet">]</span>
-
-            <span class="violet">return (</span>
-                <span class="gray">&lt</span><span class="blue">div</span><span class="gray">&gt</span>
-                    <span class="gray">&lt</span><span class="blue">div</span><span class="lightB"> className</span><span class="white">=</span><span class="red">"container"</span><span class="gray">&gt</span>
-                        <span class="gray">&lt</span><span class="blue">div </span><span class="lightB">className</span><span class="white">=</span><span class="red">"button" </span><span class="lightB">onClick</span><span class="white">=</span><span class="blue">{<span class="lightY">connessione</span>}</span><span class="gray">&gt</span><span class="white">CONNESSIONE JSON</span><span class="gray">&lt/</span><span class="blue">div</span><span class="gray">&gt</span>
+                <div class="row d-flex justify-content-center" data-aos="zoom-in">
+                    <div class="col-12">
+                        <pre class="Codice">
+                            <code>
+            <span class="violet">import</span><span class="lightB"> React</span><span class="white">, </span><span class="yellow">{</span><span class="lightB"> useState </span><span class="yellow">}</span><span class="violet"> from</span><span class="red"> 'react'</span>
+            <span class="violet">import</span><span class="red"> "./App.css"</span>
+            
+            <span class="blue">const</span><span class="blue2"> URL</span><span class="white"> = </span><span class="red">"https://raw.githubusercontent.com/itisrivoira/obelix/main/lista_locali.json"</span>
+    
+            <span class="blue">const</span><span class="lightY"> App</span><span class="white"> = </span><span class="yellow">()</span><span class="blue"> => </span><span class="yellow">{</span>
+                <span class="blue">const</span><span class="violet">[</span><span class="blue2">locali</span><span class="lightY"> setLocali</span><span class="violet">]</span><span class="white"> = </span><span class="lightY"> useState</span><span class="violet">(<span class="blue2">[]</span>)</span>
+    
+                <span class="blue">const</span><span class="lightY"> connessione</span><span class="white">=</span><span class="violet">())</span><span class="blue"> => </span><span class="violet">{</span>
+                    <span class="lightY">fetch</span><span class="blue">(</span><span class="blue2">URL</span><span class="blue">)</span>
+                    <span class="lightY">.then</span><span class="blue">(</span><span class="yellow">(</span><span class="lightB">LocaliText</span><span class="yellow">)</span><span class="blue"> => </span><span class="lightB">LocaliText</span><span class="lightY">.json</span><span class="yellow">()</span><span class="blue">)</span>
+                    <span class="lightY">.then</span><span class="blue">(</span><span class="yellow">(</span><span class="lightB">LocaliJSON</span><span class="yellow">)</span><span class="blue"> => </span><span class="yellow">{</span>
+                        <span class="lightB">LocaliJSON</span><span class="lightY">.map</span><span class="violet">(</span><span class="blue">(</span><span class="lightB">elemento</span><span class="white">, </span><span class="blue2">indice</span><span class="blue">) => {</span>
+                            <span class="lightY">setLocali</span><span class="yellow">(</span><span class="violet">(<span class="lightB">locali</span>)</span><span class="blue"> => </span><span class="violet">[</span><span class="white">...</span><span class="lightB">locali</span><span class="white">, </span><span class="gray">&lt<span class="blue">div</span>&gt</span><span class="blue">{<span class="lightB">elemento.citta</span>   }</span><span class="gray">&lt/<span class="blue">div</span>&gt</span>
+                        <span class="blue">}</span><span class="violet">)</span>
+                    <span class="yellow">}</span><span class="blue">)</span>
+                <span class="violet">]</span>
+    
+                <span class="violet">return (</span>
+                    <span class="gray">&lt</span><span class="blue">div</span><span class="gray">&gt</span>
+                        <span class="gray">&lt</span><span class="blue">div</span><span class="lightB"> className</span><span class="white">=</span><span class="red">"container"</span><span class="gray">&gt</span>
+                            <span class="gray">&lt</span><span class="blue">div </span><span class="lightB">className</span><span class="white">=</span><span class="red">"button" </span><span class="lightB">onClick</span><span class="white">=</span><span class="blue">{<span class="lightY">connessione</span>}</span><span class="gray">&gt</span><span class="white">CONNESSIONE JSON</span><span class="gray">&lt/</span><span class="blue">div</span><span class="gray">&gt</span>
+                        <span class="gray">&lt/</span><span class="blue">div</span><span class="gray">&gt</span>
+                        <span class="blue">{<span class="blue2">locali</span>}</span>
                     <span class="gray">&lt/</span><span class="blue">div</span><span class="gray">&gt</span>
-                    <span class="blue">{<span class="blue2">locali</span>}</span>
-                <span class="gray">&lt/</span><span class="blue">div</span><span class="gray">&gt</span>
-            <span class="violet">)</span>
-        <span class="yellow">}</span>
-
-        <span class="violet">export default </span><span class="lightY">App</span>
-                        </code>
-                    </pre>
+                <span class="violet">)</span>
+            <span class="yellow">}</span>
+    
+            <span class="violet">export default </span><span class="lightY">App</span>
+                            </code>
+                        </pre>
+                    </div>
                 </div>
             </div> 
             <!-- FINE SPREAD -->
@@ -369,7 +359,7 @@
 
             <!-- INIZIO HOOKS -->
             <div>
-                <a name="Hooks"></a>
+                <a name="Hooks"></a><br><br><br>
                 <div class="Def mt-5 d-flex justify-content-center" data-aos="fade-down" data-aos-duration="1000">Gli hooks</div>
                 <div class="testo ml-xl-5 mr-xl-5" data-aos="fade-right">
                     Gli hooks ci permettono di agganciarci alle funzionalità di React come lo stato e il ciclo.
@@ -379,8 +369,8 @@
             <br>
 
             <div>
-                <a id="State"></a>
-                <div class="Def3 mt-5" data-aos="fade-down" data-aos-duration="1000">useState()</div>
+                <a id="State"></a><br><br><br>
+                <div class="Def3 mt-5 ml-xl-5" data-aos="fade-down" data-aos-duration="1000">useState()</div>
                 <div class="testo ml-xl-5 mr-xl-5" data-aos="fade-right">
                     Lo useState() è un hook che ci permettere di modificare lo stato di funzione in un componente; lo stato si riferisce a dati o proprietà che servono nell'applicazione. <br><br>
                     Per utilizzarlo occorre innanzitutto importarlo. Per fare ciò dobbiamo scrivere questo:
@@ -427,7 +417,7 @@
                 </div>
             </div>
         
-            <div class="Def2" data-aos="fade-right">Esempio dell'utilizzo dello useState()</div>
+            <div class="Def2 ml-xl-5" data-aos="fade-right">Esempio dell'utilizzo dello useState()</div>
 
             <div class="row d-flex justify-content-center" data-aos="zoom-in">
                 <div class="col-11">
@@ -471,8 +461,8 @@
             <br>
 
             <div>
-                <a id="Effect"></a>
-                <div class="Def3 mt-5" data-aos="fade-down" data-aos-duration="1000">useEffect()</div>
+                <a id="Effect"></a><br><br><br>
+                <div class="Def3 mt-5 ml-xl-5" data-aos="fade-down" data-aos-duration="1000">useEffect()</div>
                 <div class="testo ml-xl-5 mr-xl-5" data-aos="fade-right">
                     Lo useEffect() è un hook che ci permettere di sincronizzare un componente cin un sistema esterno. In poche parole possiamo utilizzare lo useEffect() per richiamare una sola volta una funzione all'interno dell'applicazione.<br><br>
                     Per utilizzarlo occorre innanzitutto importarlo. Per fare ciò dobbiamo scrivere questo:
@@ -517,7 +507,7 @@
                 </div>
             </div>
         
-            <div class="Def2" data-aos="fade-right">Esempio dell'utilizzo dello useEffect()</div>
+            <div class="Def2 ml-xl-5" data-aos="fade-right">Esempio dell'utilizzo dello useEffect()</div>
 
             <div class="row d-flex justify-content-center" data-aos="zoom-in">
                 <div class="col-11">
@@ -564,8 +554,8 @@
             <br>
 
             <div>
-                <a id="Ref"></a>
-                <div class="Def3 mt-5" data-aos="fade-down" data-aos-duration="1000">useRef()</div>
+                <a id="Ref"></a><br><br><br>
+                <div class="Def3 mt-5 ml-xl-5" data-aos="fade-down" data-aos-duration="1000">useRef()</div>
                 <div class="testo ml-xl-5 mr-xl-5" data-aos="fade-right">
                     Lo useRef() è un hooks che permette di modificare delle caratteristiche di elementi di React. Viene utilizzato al posto del <strong>querySelector</strong> di JavaScript.<br/>
                     Per utilizzarlo occorre prima importarlo e lo facciamo nel seguente modo:
@@ -598,7 +588,7 @@
                 </div>
             </div>
 
-            <div class="Def2" data-aos="fade-right">Esempio dell'utilizzo dello useRef()</div>
+            <div class="Def2 ml-xl-5" data-aos="fade-right">Esempio dell'utilizzo dello useRef()</div>
 
             <div class="row d-flex justify-content-center" data-aos="zoom-in">
                 <div class="col-11">
@@ -672,7 +662,7 @@
 
             <!-- INIZIO COMPONENTI -->
             <div>
-                <a name="Comp"></a>
+                <a name="Comp"></a><br><br><br>
                 <div class="Def mt-5 d-flex justify-content-center" data-aos="fade-down" data-aos-duration="1000">I componenti</div>
                 <div class="testo ml-xl-5 mr-xl-5" data-aos="fade-right">
                     Molto importante e utile nell'utilizzo di React è il passaggio di componenti tra i componenti.
@@ -682,7 +672,7 @@
             <br>
 
             <div class="testo ml-xl-5 mr-xl-5 d-xl-flex justify-content-between" data-aos="fade-right">
-                <div class="col-xl-6 col-md-10 col-sm-10">
+                <div class="col-xl-6 col-md-12 col-sm-12">
                     <div class="row d-flex justify-content-center" data-aos="zoom-in">
                         <div class="col-12">
                             <pre class="Codice">
@@ -707,7 +697,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-6">
+                <div class="col-xl-6 col-md-12 col-sm-12">
                     <div class="row d-flex justify-content-center" data-aos="zoom-in">
                         <div class="col-12">
                             <pre class="Codice">
@@ -759,7 +749,7 @@
 
             <!-- INIZIO PASSAGGIO PARAMETRI -->
             <div>
-                <a name="Param"></a>
+                <a name="Param"></a><br><br><br>
                 <div class="Def mt-5 d-flex justify-content-center" data-aos="fade-down" data-aos-duration="1000">Passaggio parametri</div>
                 <div class="testo ml-xl-5 mr-xl-5" data-aos="fade-right">
                     Quando si lavora in React, ci vieni molto più semplice suddividere l'applicazione in componenti in modo da avere un codice più semplice e più leggibile.
@@ -769,7 +759,7 @@
             <br>
 
             <div class="testo ml-xl-5 mr-xl-5 d-xl-flex justify-content-between" data-aos="fade-right">
-                <div class="col-xl-6 col-md-10 col-sm-10">
+                <div class="col-xl-6 col-md-12 col-sm-12">
                     <div class="row d-flex justify-content-center" data-aos="zoom-in">
                         <div class="col-12">
                             <pre class="Codice">
@@ -816,7 +806,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-6">
+                <div class="col-xl-6 col-md-12 col-sm-12">
                     <div class="row d-flex justify-content-center" data-aos="zoom-in">
                         <div class="col-12">
                             <pre class="Codice">
@@ -868,7 +858,7 @@
 
             <!-- INIZIO ROUTER DOM -->
             <div>
-                <a name="Dom"></a>
+                <a name="Dom"></a><br><br><br>
                 <div class="Def mt-5 d-flex justify-content-center" data-aos="fade-down" data-aos-duration="1000">React Router Dom</div>
                 <div class="testo ml-xl-5 mr-xl-5" data-aos="fade-right">
                     React-router-dom è un modulo non di React, cioè, come si dice, non è nativo, che ci permette di passare da un componente all'altro. <br>
@@ -879,7 +869,7 @@
             <br>
 
             <div class="row d-flex justify-content-center" data-aos="zoom-in">
-                <div class="col-12">
+                <div class="col-11">
                     <pre class="Codice">
                         <code>
     <span class="red">npm</span><span class="blue"> install</span><span class="white"> react-router-dom</span>
@@ -888,7 +878,7 @@
                 </div>
             </div>
 
-            <div class="Def2" data-aos="fade-right">Esempio dell'utilizzo del Router Dom</div>
+            <div class="Def2 ml-5" data-aos="fade-right">Esempio dell'utilizzo del Router Dom</div>
 
             <div class="row d-flex justify-content-center" data-aos="zoom-in">
                 <div class="col-11">
@@ -921,7 +911,7 @@
             </div> 
 
             <div class="testo ml-xl-5 mr-xl-5 d-xl-flex justify-content-between" data-aos="fade-right">
-                <div class="col-xl-6 col-md-10 col-sm-10">
+                <div class="col-xl-6 col-md-12 col-sm-12">
                     <div class="row d-flex justify-content-center" data-aos="zoom-in">
                         <div class="col-12">
                             <pre class="Codice">
@@ -944,7 +934,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-6">
+                <div class="col-xl-6 col-md-12 col-sm-12">
                     <div class="row d-flex justify-content-center" data-aos="zoom-in">
                         <div class="col-12">
                             <pre class="Codice">
@@ -1016,7 +1006,7 @@
 
         <!-- INIZIO BUTTON INIZIO PAGINA -->
         <buttonIn id="back-to-top">
-            <img class="img-fluid" src="./images/FrecciaSu.png" alt="" width="40%">
+            <img class="img-fluid" src="./images/FrecciaSu.png" alt="" width="30%">
         </buttonIN>
         <!-- FINE BUTTON INIZIO PAGINA -->
     </div>

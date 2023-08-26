@@ -25,7 +25,7 @@
                 <p class="menu">MENÙ</p>
             </buttonM>
           
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="collapse navbar-collapse back" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active d-flex justify-content-center">
                         <a href="index.html"><buttonNav class="btn text">HOME</buttonNav></a>
@@ -34,7 +34,7 @@
                         <a href="JSON.html"><buttonNav class="btn text">JSON</buttonNav></a>
                     </li>
                     <li class="nav-item active d-flex justify-content-center">
-                        <a href="XML.html"><buttonNav class="btn text">XML</buttonNav></a>
+                        <a href="XML.html"><buttonNav class="btn text selezione">XML</buttonNav></a>
                     </li>
                     <li class="nav-item active d-flex justify-content-center">
                         <a href="JSAvanzato.html"><buttonNav class="btn text">JS AVANZATO</buttonNav></a>
@@ -55,53 +55,43 @@
 
         <div class="spazio"></div>
         <p class="d-sm-block d-xl-none d-md-block">
-            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <br><br><br><br>
         </p>
 
         <!-- INIZIO CONTENUTI -->
         <div class="container">
-            <!-- INIZIO INTRODUZIONE + TITOLO XML -->
-            <div class="ContTitXMLXL d-xl-block d-none">
-                <div class="TitoloXMLXL" data-aos="flip-up">
-                    <p class="TitXMLXL">XML</p>
+            <!-- INIZIO INTRODUZIONE + TITOLO XML + INDICE -->
+            <div class="container d-xl-flex justify-content-between d-none">
+                <div class="boxSinistra" data-aos="fade-down-right">
+                    <div class="TitoloXMLXL">
+                        <p class="TitXMLXL">XML</p>
+                    </div>
+                </div>
+
+                <div class="boxCentro"></div>
+                
+                <div class="boxDestra" data-aos="fade-down-left">
+                    <div class="indice margIndXML" data-aos="flip-right">
+                        <div class="titIndice">INDICE <br></div>
+                        <ul>
+                            <li><a href="#Cos'e" class="riga">Cos'è l'XML</a></li>
+                            <ul>
+                                <li><a href="#Linguaggi" class="riga">Linguaggi e grammatiche</a></li>
+                                <li><a href="#Struttura" class="riga">Struttura</a></li>
+                            </ul>
+                            <li><a href="#DTD" class="riga">DTD</a></li>
+                            <ul>
+                                <li><a href="#StrutturaDTD" class="riga">Struttura</a></li>
+                                <li><a href="#Esempio" class="riga">Esempio</a></li>
+                            </ul>
+                            <li><a href="#Fetch" class="riga">Fetch()</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-
-            <div class="ContTitXML d-xl-none">
-                <div class="TitoloXML" data-aos="flip-up">
-                    <p class="TitXML">XML</p>
-                </div>
-            </div>
-
-            <div>
-                <a class="ContFreccia" href="#Contenuti">
-                    <img class="FrecciaGiu" src="./images/FrecciaGIU.png" alt="Freccia Giu" title="Clicca per scendere a vedere i contenuti">
-                </a>
-            </div>
-
-            <a name="Contenuti"></a>
-
-            <!-- INIZIO INDICE -->
-            <div class="indice" data-aos="flip-right">
-                <div class="titIndice">INDICE <br></div>
-                <ul>
-                    <li><a href="#Cos'e" class="riga">Cos'è l'XML</a></li>
-                    <ul>
-                        <li><a href="#Linguaggi" class="riga">Linguaggi e grammatiche</a></li>
-                        <li><a href="#Struttura" class="riga">Struttura</a></li>
-                    </ul>
-                    <li><a href="#DTD" class="riga">DTD</a></li>
-                    <ul>
-                        <li><a href="#StrutturaDTD" class="riga">Struttura</a></li>
-                        <li><a href="#Esempio" class="riga">Esempio</a></li>
-                    </ul>
-                    <li><a href="#Fetch" class="riga">Fetch()</a></li>
-                </ul>
-            </div>
-            <!-- FINE INDICE -->
 
             <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
-                <a name="Cos'e"></a>
+                <a name="Cos'e"></a><br><br><br>
                 <div class="Def">Cos'è l'XML, com'è nato e quali sono le sue principali caratteristiche?</div>
                 <div class="testo ml-xl-5 mr-xl-5">
                     <p>L'XML è un linguaggio che permette la rappresentazione di documenti e dati su supporto digitale.<br>
@@ -124,8 +114,8 @@
             <br>
 
             <div>
-                <a id="Linguaggi"></a>
-                <div class="Def mt-5" data-aos="fade-right" data-aos-duration="1000">-Linguaggi e grammatiche</div>
+                <a id="Linguaggi"></a><br><br><br>
+                <div class="Def mt-5 ml-xl-5" data-aos="fade-right" data-aos-duration="1000">-Linguaggi e grammatiche</div>
                 <div class="testo ml-xl-5 mr-xl-5" data-aos="fade-right">
                     <p>Per stabilire quali tag possono essere utilizzati e come li devono essere usati, ci deve essere una grammatica, cioè un insieme di regole che indica quali elementi possono essere utilizzati e con quale struttura devono essere strutturati i documenti.<br>
                         Se un documento XML rispetta le regole definite dalla grammatica, si dice che è valido. <br><br>
@@ -140,8 +130,8 @@
             <br>
 
             <div>
-                <a id="Struttura"></a>
-                <div class="Def mt-5" data-aos="fade-right" data-aos-duration="1000">-Struttura di un documento XML</div>
+                <a id="Struttura"></a><br><br><br>
+                <div class="Def mt-5 ml-xl-5" data-aos="fade-right" data-aos-duration="1000">-Struttura di un documento XML</div>
                 <div class="testo ml-xl-5 mr-xl-5" data-aos="fade-right">
                     <p>Un documento XML è strutturato in modo gerarchico. È formato da elementi, ossia dei componenti logici del documento che può contenere una parte di testo oppure altri elementi, che in questo si chiamano "sotto-elementi". Ad ogni elemento possono essere associati degli attributi che ne descrivono delle caratteristiche o delle proprietà; questi attributi sono formati da un nome a cui viene associato un valore. <br>
                         Gli elementi sono rappresentati attraverso dei tag che racchiudono il contenuto dell'elemento, mentre i sotto-elementi sonodei tag contenuti in altri tag. <br><br>
@@ -170,7 +160,7 @@
                     </pre>
                 </div>
             </div> 
-            <!-- FINE INTRODUZIONE + TITOLO XML -->
+            <!-- FINE INTRODUZIONE + TITOLO XML + INDICE -->
 
             <div class="d-flex justify-content-between">
                 <div class="sepX"></div>
@@ -179,7 +169,7 @@
         
             <!-- INIZIO DTD -->
             <div>
-                <a name="DTD"></a>
+                <a name="DTD"></a><br><br><br>
                 <div class="Def mt-5 d-flex justify-content-center" data-aos="fade-down" data-aos-duration="1000">Il DTD (Document Type Definition)</div>
                 <div class="testo ml-xl-5 mr-xl-5" data-aos="fade-right">
                     <p>Il DTD, ovvero Il Document Type Definition, è un liguaggio, o meglio, uno strumento di validazione, per definire la grammatica che descrive i elementi presenti in un documento XML. 
@@ -205,8 +195,8 @@
                 </div>
 
                 <div>
-                    <a id="StrutturaDTD"></a>
-                    <div class="Def mt-5 d-flex justify-content-center" data-aos="fade-down" data-aos-duration="1000">-Struttura di un DTD</div>
+                    <a id="StrutturaDTD"></a><br><br><br>
+                    <div class="Def mt-5 ml-xl-5" data-aos="fade-down" data-aos-duration="1000">-Struttura di un DTD</div>
                     <div class="testo ml-xl-5 mr-xl-5" data-aos="fade-right">
                         Per dichiarare un elemento si utilizza la parola chiave ELEMENT che, dopo di esso, ha bisogno del nome dell'elemento stesso e una serie di parametri che verranno spiegati di seguito. <br>
                         Invece, per dichiarare un attributo dell'elemento, si utilizza la parola chiave ATTLIST che, dopo di esso, ha bisogno del nome dell'attributo e una serie di parametri che verrannno anche spiegati di seguito. <br><br>
@@ -261,8 +251,8 @@
             </div>
 
             <div>
-                <a id="Esempio"></a>
-                <div class="Def mt-5" data-aos="fade-right" data-aos-duration="1000">-Esempio di un XML valido per il suo DTD</div>
+                <a id="Esempio"></a><br><br><br>
+                <div class="Def mt-5 ml-xl-5" data-aos="fade-right" data-aos-duration="1000">-Esempio di un XML valido per il suo DTD</div>
                 <div class="testo ml-xl-5 mr-xl-5 d-xl-flex justify-content-between" data-aos="fade-right">
                     <div class="col-xl-6 col-md-10 col-sm-10">
                         <div class="row d-flex justify-content-center" data-aos="zoom-in">
@@ -352,7 +342,7 @@
         
             <!-- INIZIO FETCH -->
             <div>
-                <a name="Fetch"></a>
+                <a name="Fetch"></a><br><br><br>
                 <div class="Def mt-5 d-flex justify-content-center" data-aos="fade-down" data-aos-duration="1000">Il metodo fetch</div>
                 <div class="testo ml-xl-5 mr-xl-5" data-aos="fade-right">
                     La <strong>Fetch</strong> è un metodo che, come per il JSON, ci permette di mandare una richiesta al server e caricare informazioni ogni volta che ne abbiamo bisogno. A differenza di quanto avviene con il JSON, per l'XML, prima din utilizzare concretamente i dati, serviranno dei passaggi in più.<br><br>
@@ -448,7 +438,7 @@
 
         <!-- INIZIO BUTTON INIZIO PAGINA -->
         <buttonIn id="back-to-top">
-            <img class="img-fluid" src="./images/FrecciaSu.png" alt="" width="40%">
+            <img class="img-fluid" src="./images/FrecciaSu.png" alt="" width="30%">
         </buttonIN>
         <!-- FINE BUTTON INIZIO PAGINA -->
     </div>

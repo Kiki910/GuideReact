@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="icon" href="./images/KP_logo.png" >
+    <link rel="icon" href="./images/MongoDB.png" >
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,15 +18,15 @@
         <nav class="navbar navbar-expand-lg navbar navB">
             <div class="LogoTitolo">
                 <a href="index.html">
-                    <img class="logo align-self-center" src="./images/KP_logo.png" width="16%" alt="Logo Kevin Paseri" title="Logo KEVIN PASERI">
+                    <img class="logo align-self-center" src="./images/KP_logo.png" width="80vh" alt="Logo Kevin Paseri" title="Logo KEVIN PASERI">
                 </a>
             </div>
             <div class="Link"></div>
-            <buttonM class="navbar-toggler border-light" style="width: 80%; margin-left: 10%;" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-label="Toggle navigation">
+            <buttonM class="navbar-toggler border-light menuButton" style="width: 80%; margin-left: 10%;" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-label="Toggle navigation">
                 <p class="menu">MENÙ</p>
             </buttonM>
           
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="collapse navbar-collapse back" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active d-flex justify-content-center">
                         <a href="index.html"><buttonNav class="btn text">HOME</buttonNav></a>
@@ -44,7 +44,7 @@
                         <a href="React.html"><buttonNav class="btn text">REACT</buttonNav></a>
                     </li>
                     <li class="nav-item active d-flex justify-content-center">
-                        <a href="MongoDB.html"><buttonNav class="btn text">MONGO DB</buttonNav></a>
+                        <a href="MongoDB.html"><buttonNav class="btn text selezione">MONGO DB</buttonNav></a>
                     </li>
                     <li class="nav-item active d-flex justify-content-center">
                         <a href="Java.html"><buttonNav class="btn text">JAVA</buttonNav></a>
@@ -56,11 +56,318 @@
 
         <div class="spazio"></div>
         <p class="d-sm-block d-xl-none d-md-block">
-           <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <br><br><br><br>
         </p>
 
-        <!-- INIZIO INTRODUZIONE -->
+        <!-- INIZIO CONTENUTI -->
+        <div class="container">
+            <!-- INIZIO INTRODUZIONE + TITOLO MONGO DB + INDICE -->
+            <div class="container d-xl-flex justify-content-between d-none">
+                <div class="boxSinistra">
+                    <div class="TitoloMongoXL" data-aos="fade-down-right">
+                        <p class="TitMongoXL">MONGO DB</p>
+                    </div>
+                </div>
 
+                <div class="boxCentro"></div>
+                
+                <div class="boxDestra" data-aos="fade-down-left">
+                    <div class="indice margIndMongo" data-aos="flip-right">
+                        <div class="titIndice">INDICE <br></div>
+                        <div class="IndiceCont">
+                            <ul>
+                                <li><a href="#Cos'e" class="riga">Cos'è Mongo DB</a></li>
+                                <ul>
+                                    <li><a href="#Funzionamento" class="riga">Funzionamento</a></li>
+                                    <li><a href="#Ricerca" class="riga">Ricerca testuale</a></li>
+                                </ul>
+                                <li><a href="#Installazione" class="riga">Installazione Mongo DB</a></li>
+                                <ul>
+                                    <li><a href="#Shell" class="riga">Mongo DB Shell</a></li>
+                                    <li><a href="#Compass" class="riga">Mongo DB Compass</a></li>
+                                </ul>
+                                <li><a href="#Comandi" class="riga">Comandi Mongo DBcShell</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                <a name="Cos'e"></a><br><br><br>
+                <div class="Def marg">Cos'è Mongo DB?</div>
+                <div class="testo ml-xl-5 mr-xl-5">
+                    <p>MongoDB è un sistema di gestione di database non relazionale (oppure NoSQL), ossia quei database utilizzati per modelli con schemi flessibili per creare applicazioni moderne. E' in grado di elaborare dati strutturati, semi-strutturati e non, orientato ai documenti e a un linguaggio di query non strutturato. <br>Utilizza un formato di storage chiamato BSON che è una forma binaria di <a href="JSON.html#Cos'e">JSON</a> in grado di memorizzare più tipi di dati.</p>
+                </div>
+
+                <div>
+                    <a id="Funzionamento"></a><br><br><br>
+                    <div class="Def mt-5 ml-xl-5" data-aos="fade-right" data-aos-duration="1000">-Funzionamento Mongo DB</div>
+                    <div class="testo ml-xl-5 mr-xl-5" data-aos="fade-right">
+                        <p>Mongo DB memorizza gli oggetti di dati in raccolte e documenti, al contrario dei database relazionali che raccolgono i dati in tabelle e righe. Le raccolte comprendono insiemi di documenti. I documenti sono formati da coppie chiave-valore che sono l'unità base dei dati in Mongo DB. <br><br>La struttura di un documento può essere modificata aggiungengo nuovi campi o eliminandone altri. Le chiavi vengono definite dai documenti, mentre i valori vengono definiti da tipi di dati, compresi altri documenti, array e array di documenti.</p>
+                    </div>
+                </div>
+
+                <div>
+                    <a id="Ricerca"></a><br><br><br>
+                    <div class="Def mt-5 ml-xl-5" data-aos="fade-right" data-aos-duration="1000">-Ricerca testuale</div>
+                    <div class="testo ml-xl-5 mr-xl-5" data-aos="fade-right">
+                        <p>Una funzionalità molto importante in Mongo DB è la ricerca testuale che permette di eseguire query in campi stringa per trovare testo o parole specifiche. Una ricerca di testo può essere eseguita con un indice di testo o opertatore <strong>$text</strong>. <br>Un indice di testo può essere una stringa oppure un array di elementi e per eseguire la ricerca occorre che la raccolta contenga un indice di testo. Una raccolta può avere un solo indice di testo e più campi possono avere lo stesso indice di testo.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- FINE INTRODUZIONE + TITOLO MONGO DB + INDICE -->
+
+            <div class="d-flex justify-content-between">
+                <div class="sepM"></div>
+                <div class="sep2M"></div>
+            </div>
+
+            <!-- INIZIO INSTALLAZIONE -->
+            <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                <a name="Installazione"></a><br><br><br>
+                <div class="Def marg">Installazione</div>
+                <div class="testo ml-xl-5 mr-xl-5">
+                    <p>Per poter utilizzare Mongo DB occorre installarlo e abbiamo due strade. <br>Possiamo installare la Mongo DB Shell oppure installare Mongo DB Compass. <br>In ogni caso, installare Mongo DB Community Server [<a href="https://www.mongodb.com/try/download/community" target="new">download</a>]. <br><br>Una volta scaricato il file, fare doppio clic ed eseguire il file.</p>
+                </div>
+
+                <br><br><br>
+
+                <div class="d-xl-flex justify-content-between">
+                    <div class="col-xl-6 col-md-12 col-sm-12 d-flex justify-content-center" data-aos="zoom-in-down">
+                        <div class="row ml-xl-5">
+                            <div class="testoElenco">1)</div>
+                            <div class="testoElencoDescr">Dalla finestra che si apre in seguito all'<em>Esegui</em>, dovremmo semplicemente cliccare <em>Next</em>.</div>
+                            <div>
+                                <img class="imgElenco" src="./images/MongoDBCom1.png" alt="Immagine Installazione Mongo DB Server Community 1" title="Immagine Installazione Mongo DB Server Community 1">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-6 col-md-12 col-sm-12 d-flex justify-content-center" data-aos="zoom-in-down">
+                        <div class="row ml-xl-5">
+                            <div class="testoElenco">2)</div>
+                            <div class="testoElencoDescr">In seguito, dovremo accettare i termini della licenza e cliccare nuovamente su <em>Next</em>.</div>
+                            <div>
+                                <img class="imgElenco" src="./images/MongoDBCom2.png" alt="Immagine Installazione Mongo DB Server Community 2" title="Immagine Installazione Mongo DB Server Community 2">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <br><br><br>
+
+                <div class="d-xl-flex justify-content-between">
+                    <div class="col-xl-6 col-md-12 col-sm-12 d-flex justify-content-center" data-aos="zoom-in-down">
+                        <div class="row ml-xl-5">
+                            <div class="testoElenco">3)</div>
+                            <div class="testoElencoDescr">In seguito all'eccettazione dei termini, ci verrà chiesto di scegliere la tipologia che abbiamo bisogno. Con la <strong>Complete</strong>, verranno installate tutte le funzionalità del programma, mentre la <strong>Costum</strong> consente agli utenti di scegliere quali funzionalità del programma verranno installate. <br>Ti consiglio di installare la Completa per avere tutto l'occorrente per poter lavorare.</div>
+                            <div>
+                                <img class="imgElenco" src="./images/MongoDBCom3.png" alt="Immagine Installazione Mongo DB Server Community 3" title="Immagine Installazione Mongo DB Server Community 3">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-6 col-md-12 col-sm-12 d-flex justify-content-center" data-aos="zoom-in-down">
+                        <div class="row ml-xl-5">
+                            <div class="testoElenco">4)</div>
+                            <div class="testoElencoDescr">Dopo aver scelto la tipologia di installazione, ci occorrerà indicare la configurazione del servizio e indicare il percorso di installazione. Per comodità ti consiglio di lasciare le impostazioni di default e proseguire con il tasto <em>Next</em>. <br><br><br><br></div>
+                            <div>
+                                <img class="imgElenco" src="./images/MongoDBCom4.png" alt="Immagine Installazione Mongo DB Server Community 4" title="Immagine Installazione Mongo DB Server Community 4">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <br><br><br>
+
+                <div class="d-xl-flex justify-content-between">
+                    <div class="col-xl-6 col-md-12 col-sm-12 d-flex justify-content-center" data-aos="zoom-in-down">
+                        <div class="row ml-xl-5">
+                            <div class="testoElenco">5)</div>
+                            <div class="testoElencoDescr">Ti verrà chiesto di decidere di installare Mongo DB Compass. Ti consiglio di installarlo per evitare di farlo in seguito.</div>
+                            <div>
+                                <img class="imgElenco" src="./images/MongoDBCom5.png" alt="Immagine Installazione Mongo DB Server Community 5" title="Immagine Installazione Mongo DB Server Community 5">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-6 col-md-12 col-sm-12 d-flex justify-content-center" data-aos="zoom-in-down">
+                        <div class="row ml-xl-5">
+                            <div class="testoElenco">6)</div>
+                            <div class="testoElencoDescr">Nella schermata finale ti verrà chiesto di iniziare l'installazione e abbiamo concluso questa parte.</div>
+                            <div>
+                                <img class="imgElenco" src="./images/MongoDBCom6.png" alt="Immagine Installazione Mongo DB Server Community 6" title="Immagine Installazione Mongo DB Server Community 6">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <a id="Shell"></a><br><br><br>
+                    <div class="Def mt-5 ml-xl-5" data-aos="fade-right" data-aos-duration="1000">-Mongo DB Shell</div>
+                    <div class="testo ml-xl-5 mr-xl-5" data-aos="fade-right">
+                        <p>Mongo DB Shell (o mongosh) è un ambiente di programmazione che ci permette di avere una completa gestione dei nostri database utilizzando dei comandi da terminale. <br>Per poterlo utilizzare occorre installarlo e lo si può fare dal sito ufficiale [<a href="https://www.mongodb.com/try/download/shell" target="new">download</a>]. <br>Dopo averlo installato, estrarre l'intera cartella. Una volta estratta, avremo una cartella chiamata <strong>mongosh-1.10.1-win32-x64</strong> con all'interno dei file e un'altra directory chiamata <strong>bin</strong>. Nella cartella bin avremo due file: <em>mongosh.exe</em> che è il file eseguibile e <em>mongosh_crypt_v1.dll</em>.</p>
+                    </div>
+
+                    <br><br><br>
+
+                    <div class="d-xl-flex justify-content-between">
+                        <div class="col-xl-6 col-md-12 col-sm-12 d-flex justify-content-center" data-aos="zoom-in-down">
+                            <div class="row ml-xl-5">
+                                <div class="testoElenco">1)</div>
+                                <div class="testoElencoDescr">Questi sono i due file che dovresti avere nella cartella bin che spiegavo qui sopra. Quello che devi fare è di copiare questi due file. <br><br><br><br><br><br><br><br><br><br></div>
+                                <div>
+                                    <img class="imgElenco" src="./images/MongoDBSh1.png" alt="Immagine Installazione Mongo DB Shell 1" title="Immagine Installazione Mongo DB Shell 1">
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="col-xl-6 col-md-12 col-sm-12 d-flex justify-content-center" data-aos="zoom-in-down">
+                            <div class="row ml-xl-5">
+                                <div class="testoElenco">2)</div>
+                                <div class="testoElencoDescr">Dopo aver copiato devi seguire questo percorso: <br><strong>Questo PC / OS P(:C) / Programmi / Mongo DB / Server / 6.0 / bin</strong> <br>Una volta arrivato a questo punto, l'unica cosa che dovrai fare è incollare i file copiati precedentemente.</div>
+                                <div class="testoElencoAttenzione">Per poter proseguire nell'incollatura dei file, è necessario fornire l'autorizzazione cliccando sul tasto <em>Continua</em>.</div>
+                                <div>
+                                    <img class="imgElenco" src="./images/MongoDBSh2.png" alt="Immagine Installazione Mongo DB Shell 2" title="Immagine Installazione Mongo DB Shell 2">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <a id="Compass"></a><br><br><br>
+                    <div class="Def mt-5 ml-5" data-aos="fade-right" data-aos-duration="1000">-Mongo DB Compass</div>
+                    <div class="testo ml-xl-5 mr-xl-5" data-aos="fade-right">
+                        <p>Mongo DB Compass è uno strumento interattivo che ci permette di analizzare e ottimizare i dati. Se nell'installazione di Mongo DB Community Server a accettato di installare anche Mongo DB Compass (A), sei a posto. Altrimenti, non è un problema, andiamo sul sito ufficiale e lo scarichiamo [<a href="https://www.mongodb.com/try/download/compass" target="new">download</a>]. </p>
+                    </div>
+
+                    <br><br><br>
+
+                    <div class="d-xl-flex justify-content-between">
+                        <div class="col-xl-6 col-md-12 col-sm-12 d-flex justify-content-center" data-aos="zoom-in-down">
+                            <div class="row ml-xl-5">
+                                <div class="testoElenco">1)</div>
+                                <div class="testoElencoDescr">Dal download sul sito ufficiale avremo questo file eseguibile di cui dovremo solo fare semplicemente il doppio clic. <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></div>
+                                <div>
+                                    <img class="imgElenco" src="./images/MongoDBCompass1.png" alt="Immagine Installazione Mongo DB Compass 1" title="Immagine Installazione Mongo DB Compass 1">
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="col-xl-6 col-md-12 col-sm-12 d-flex justify-content-center" data-aos="zoom-in-down">
+                            <div class="row ml-xl-5">
+                                <div class="testoElenco">2)</div>
+                                <div class="testoElencoDescr">In seguito dovremo cliccare su <em>Next</em> per proseguire con l'installazione.</div>
+                                <div>
+                                    <img class="imgElenco" src="./images/MongoDBCompass2.png" alt="Immagine Installazione Mongo DB Compass 2" title="Immagine Installazione Mongo DB Compass 2">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <br><br><br>
+
+                    <div class="d-xl-flex justify-content-between">
+                        <div class="col-xl-12 col-md-12 col-sm-12 d-flex justify-content-center" data-aos="zoom-in-down">
+                            <div class="row ml-xl-5">
+                                <div class="testoElenco">3)</div>
+                                <div class="testoElencoDescr">Quando ti si apre questa finestra vuol dire che l'installazione è finita ed è avvenuta con successo e puoi iniziare ad utilizzare Mongo DB Compass.</div>
+                                <div>
+                                    <img class="imgElenco d-flex justify-content-center" src="./images/MongoDBCompass3.png" alt="Immagine Installazione Mongo DB Compass 3" title="Immagine Installazione Mongo DB Compass 3">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- FINE INSTALLAZIONE -->
+
+            <div class="d-flex justify-content-between">
+                <div class="sepM"></div>
+                <div class="sep2M"></div>
+            </div>
+
+            <!-- INIZIO COMANDI -->
+            <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                <a name="Comandi"></a><br><br><br>
+                <div class="Def marg">Comandi</div>
+                <div class="testo ml-xl-5 mr-xl-5">
+                    <p>Per poter utilizzare Mongo DB Shell bisogna utilizzare dei comandi nel terminale e per far questo bisogna un minimo saperli. Ecco quali sono! <br><br>I nomi in italico sono le parole che bisogna cambiare con quelle che si vogliono</p>
+                </div>
+                <div class="TabellaComandi mt-5">
+                    <table>
+                        <tr>
+                          <th>COMANDO</th>
+                          <th>FUNZIONE</th>
+                        </tr>
+                        <tr>
+                          <td class="righetta">mongosh</td>
+                          <td>Avvia shell di MongoDB (da fare nel proprio terminale)</td>
+                        </tr>
+                        <tr>
+                          <td class="righetta">show dbs</td>
+                          <td>Visualizza i propri database</td>
+                        </tr>
+                        <tr>
+                          <td class="righetta">use <em>database</em></td>
+                          <td>Passa dal database corrente a quello desiderato <br>Se non esiste, ne viene creato uno</td>
+                        </tr>
+                        <tr>
+                          <td class="righetta">db.getName()</td>
+                          <td>Ottiene il nome del database corrente</td>
+                        </tr>
+                        <tr>
+                          <td class="righetta">db.createCollection(<em>nome</em>, <em>opzioni</em>)</td>
+                          <td>Crea una raccolta con le informazioni contenute tra le parentesi</td>
+                        </tr>
+                        <tr>
+                          <td class="righetta">show collections</td>
+                          <td>Mostra tutte le raccolte disponibili</td>
+                        </tr>
+                        <tr>
+                          <td class="righetta">db.getColletionNames()</td>
+                          <td>Ottiene il contenuto del database</td>
+                        </tr>
+                        <tr>
+                          <td class="righetta">db.<em>nomeCollection</em>.find()</td>
+                          <td>Restituisce tutti i documenti della collection specificata</td>
+                        </tr>
+                        <tr>
+                          <td class="righetta">db.<em>nomeCollection</em>.findOne(<em>filtro</em>)</td>
+                          <td>Restituisce il primo documento che soddisfa il filtro specificato</td>
+                        </tr>
+                        <tr>
+                          <td class="righetta">db.<em>nomeCollection</em>.insertOne(<em>documento</em>)</td>
+                          <td>Inserisce un nuovo documento nella collection specificata</td>
+                        </tr>
+                        <tr>
+                          <td class="righetta">db.<em>nomeCollection</em>.insertMany(<em>documento 1</em>, <em>documento 2</em>, ...)</td>
+                          <td>Inserisce più documenti nella collection specificata</td>
+                        </tr>
+                        <tr>
+                          <td class="righetta">db.<em>nomeCollection</em>.updateOne(<em>filtro</em>, <em>aggiornamento</em>)</td>
+                          <td>Aggiorna il primo documento che che soddisfa il filtro specificato con l'aggiornamento</td>
+                        </tr>
+                        <tr>
+                          <td class="righetta">db.<em>nomeCollection</em>.updateMany(<em>filtro</em>, <em>aggiornamento</em>)</td>
+                          <td>Aggiorna tutti i documenti che che soddisfano il filtro specificato con l'aggiornamento</td>
+                        </tr>
+                        <tr>
+                          <td class="righetta">db.<em>nomeCollection</em>.deleteOne(<em>filtro</em>)</td>
+                          <td>Elimina il primo documento che soddisfa il filtro specificato</td>
+                        </tr>
+                        <tr>
+                          <td class="righetta">db.<em>nomeCollection</em>.deleteMany(<em>filtro</em>)</td>
+                          <td>Elimina tutti i documenti che soddisfano il filtro specificato</td>
+                        </tr>
+                    </table>
+                </div>                  
+            </div>
+            <!-- FINE COMANDI -->
+
+        </div>
         <!-- FINE CONTENUTI -->
 
         <!-- INIZIO FOOTER -->
@@ -103,7 +410,7 @@
 
         <!-- INIZIO BUTTON INIZIO PAGINA -->
         <buttonIn id="back-to-top">
-            <img class="img-fluid" src="./images/FrecciaSu.png" alt="" width="40%">
+            <img class="img-fluid" src="./images/FrecciaSu.png" alt="" width="30%">
         </buttonIN>
         <!-- FINE BUTTON INIZIO PAGINA -->
     </div>

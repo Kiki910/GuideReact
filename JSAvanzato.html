@@ -25,7 +25,7 @@
                 <p class="menu">MENÙ</p>
             </buttonM>
           
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="collapse navbar-collapse back" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active d-flex justify-content-center">
                         <a href="index.html"><buttonNav class="btn text">HOME</buttonNav></a>
@@ -37,7 +37,7 @@
                         <a href="XML.html"><buttonNav class="btn text">XML</buttonNav></a>
                     </li>
                     <li class="nav-item active d-flex justify-content-center">
-                        <a href="JSAvanzato.html"><buttonNav class="btn text">JS AVANZATO</buttonNav></a>
+                        <a href="JSAvanzato.html"><buttonNav class="btn text selezione">JS AVANZATO</buttonNav></a>
                     </li>
                     <li class="nav-item active d-flex justify-content-center">
                         <a href="React.html"><buttonNav class="btn text">REACT</buttonNav></a>
@@ -55,46 +55,36 @@
 
         <div class="spazio"></div>
         <p class="d-sm-block d-xl-none d-md-block">
-            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <br><br><br><br>
         </p>
 
         <!-- INIZIO CONTENUTI -->
         <div class="container">
-            <!-- INIZIO INTRODUZIONE + TITOLO JS -->
-            <div class="ContTitJSAvXL d-xl-block d-none">
-                <div class="TitoloJSAvXL" data-aos="flip-up">
-                    <p class="TitJSAvXL">JS AVANZATO</p>
+            <!-- INIZIO INTRODUZIONE + TITOLO JS + INDICE -->
+            <div class="container d-xl-flex justify-content-between d-none">
+                <div class="boxSinistra" data-aos="fade-down-right">
+                    <div class="TitoloJSAvXL" data-aos="flip-up">
+                        <p class="TitJSAvXL">JS AVANZATO</p>
+                    </div>
+                </div>
+
+                <div class="boxCentro"></div>
+                
+                <div class="boxDestra" data-aos="fade-down-left">
+                    <div class="indice margIndJSAv" data-aos="flip-right">
+                        <div class="titIndice">INDICE <br></div>
+                        <ul>
+                            <li><a href="#Cos'e" class="riga">Cos'è JS Avanzato</a></li>
+                            <li><a href="#TemplString" class="riga">Template String</a></li>
+                            <li><a href="#Map" class="riga">Map()</a></li>
+                            <li><a href="#Destr" class="riga">Destrutturazione</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-
-            <div class="ContTitJSAv d-xl-none">
-                <div class="TitoloJSAv" data-aos="flip-up">
-                    <p class="TitJSAv">JS AVANZATO</p>
-                </div>
-            </div>
-
-            <div>
-                <a class="ContFreccia" href="#Contenuti">
-                    <img class="FrecciaGiu" src="./images/FrecciaGIU.png" alt="Freccia Giu" title="Clicca per scendere a vedere i contenuti">
-                </a>
-            </div>
-
-            <a name="Contenuti"></a>
-
-            <!-- INIZIO INDICE -->
-            <div class="indice" data-aos="flip-right">
-                <div class="titIndice">INDICE <br></div>
-                <ul>
-                    <li><a href="#Cos'e" class="riga">Cos'è JS Avanzato</a></li>
-                    <li><a href="#TemplString" class="riga">Template String</a></li>
-                    <li><a href="#Map" class="riga">Map()</a></li>
-                    <li><a href="#Destr" class="riga">Destrutturazione</a></li>
-                </ul>
-            </div>
-            <!-- FINE INDICE -->
 
             <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
-                <a name="Cos'e"></a>
+                <a name="Cos'e"></a><br><br><br>
                 <div class="Def">Cos'è JavaScript Avanzato?</div>
                 <div class="testo ml-xl-5 mr-xl-5">
                     <p>JavaScript Avanzato è un modulo che ci permette di mettere in atto l'ES6 (ossia EcmaScript, ultima versione di JavaScript). <br>
@@ -102,7 +92,7 @@
                     </p>
                 </div>
             </div>
-            <!-- FINE INTRODUZIONE + TITOLO JS -->
+            <!-- FINE INTRODUZIONE + TITOLO JS + INDICE -->
 
             <div class="d-flex justify-content-between">
                 <div class="sepJS"></div>
@@ -111,7 +101,7 @@
         
             <!-- INIZIO TEMPLATE STRING -->
             <div>
-                <a name="TemplString"></a>
+                <a name="TemplString"></a><br><br><br>
                 <div class="Def mt-5 d-flex justify-content-center" data-aos="fade-down" data-aos-duration="1000">Template String</div>
                 <div class="testo ml-xl-5 mr-xl-5" data-aos="fade-right">
                     La Template String è una sintassi avanzata molto interessante perché ci permette di creare stringhe complesse formate da parti fisse e parti variabili. 
@@ -149,7 +139,7 @@
 
             <!-- INIZIO MAP -->
             <div>
-                <a name="Map"></a>
+                <a name="Map"></a><br><br><br>
                 <div class="Def mt-5 d-flex justify-content-center" data-aos="fade-down" data-aos-duration="1000">Funzione map()</div>
                 <div class="testo ml-xl-5 mr-xl-5" data-aos="fade-right">
                     La funzione map() è una funzione molto utilizzata in JavaScript perchè permette di ritornare un nuovo array. Praticamente la map() chiama una funzione una volta per ogni elemento in un array, senza modificarne l'arry originale. Molto importante è l'utilizzo di questa funzione quando si utilizza un JSON, ad esempio; questo perché ci permette di ciclare tutto il contenuto dei dati che abbiamo estrapolato dal server.
@@ -186,7 +176,7 @@
 
             <!-- INIZIO DESTRUTTURAZIONE -->
             <div>
-                <a name="Destr"></a>
+                <a name="Destr"></a><br><br><br>
                 <div class="Def mt-5 d-flex justify-content-center" data-aos="fade-down" data-aos-duration="1000">La destrutturazione</div>
                 <div class="testo ml-xl-5 mr-xl-5" data-aos="fade-right">
                     La destrutturazione ci permette di "spacchettare" un array o un oggetto in variabili distinte; in poche parole, possiamo dividere i dati di un array o di un oggetto in varibile separate.
@@ -251,7 +241,7 @@
 
         <!-- INIZIO BUTTON INIZIO PAGINA -->
         <buttonIn id="back-to-top">
-            <img class="img-fluid" src="./images/FrecciaSu.png" alt="" width="40%">
+            <img class="img-fluid" src="./images/FrecciaSu.png" alt="" width="30%">
         </buttonIN>
         <!-- FINE BUTTON INIZIO PAGINA -->
     </div>

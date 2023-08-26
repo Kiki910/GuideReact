@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="icon" href="./images/KP_logo.png" >
+    <link rel="icon" href="./images/Java.png" >
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -26,7 +26,7 @@
                 <p class="menu">MENÙ</p>
             </buttonM>
           
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="collapse navbar-collapse back" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active d-flex justify-content-center">
                         <a href="index.html"><buttonNav class="btn text">HOME</buttonNav></a>
@@ -47,7 +47,7 @@
                         <a href="MongoDB.html"><buttonNav class="btn text">MONGO DB</buttonNav></a>
                     </li>
                     <li class="nav-item active d-flex justify-content-center">
-                        <a href="Java.html"><buttonNav class="btn text">JAVA</buttonNav></a>
+                        <a href="Java.html"><buttonNav class="btn text selezione">JAVA</buttonNav></a>
                     </li>
                 </ul>
             </div>
@@ -56,11 +56,70 @@
 
         <div class="spazio"></div>
         <p class="d-sm-block d-xl-none d-md-block">
-           <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <br><br><br><br>
         </p>
 
-        <!-- INIZIO INTRODUZIONE -->
+        <!-- INIZIO CONTENUTI -->
+        <div class="container">
+            <!-- INIZIO INTRODUZIONE + TITOLO JAVA + INDICE -->
+            <div class="container d-xl-flex justify-content-between d-none">
+                <div class="boxSinistra" data-aos="fade-down-right">
+                    <div class="TitoloJavaXL">
+                        <p class="TitJavaXL">JAVA</p>
+                    </div>
+                </div>
 
+                <div class="boxCentro"></div>
+                
+                <div class="boxDestra" data-aos="fade-down-left">
+                    <div class="indice margIndJava" data-aos="flip-right">
+                        <div class="titIndice">INDICE <br></div>
+                        <div class="IndiceCont">
+                            <ul>
+                                <li><a href="#Cos'e" class="riga">Cos'è Java</a></li>
+                                <ul>
+                                    <li><a href="#Caratt" class="riga">Caratteristiche</a></li>
+                                </ul>
+                                <li><a href="#Fetch" class="riga">Fetch</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                <a name="Cos'e"></a><br><br><br>
+                <div class="Def marg">Cos'è Java?</div>
+                <div class="testo ml-xl-5 mr-xl-5">
+                    <p>Java è un linguaggio di programmazione ad alto livello orientato a oggetti a alla tipizzazione statica. Venne sviluppato da Sun Microsystems (proprietà di oracle Corporation) e venne rilasciato nel 1995. Una caratteristica molto importante di java è la sua portabilità che gli permette di eseguire il codice su diverse piattaforme senza riscriverlo.</p>
+                </div>
+
+                <div>
+                    <a id="Caratt"></a><br><br><br>
+                    <div class="Def mt-5 ml-xl-5" data-aos="fade-right" data-aos-duration="1000">-Caratteristiche principali</div>
+                    <div class="testo ml-xl-5 mr-xl-5" data-aos="fade-right">
+                        <p>Le principali caratteristiche di Java sono le seguenti:</p>
+                        <ol>
+                            <li><strong>orientamento agli oggetti: </strong>Java si basa sulla programmazione agli oggetti (OOP) quindi ha un organizzazione in classi e oggetti. Gli oggetti sono istanze di classi e contengono metodi per manipolare i dati;</li>
+                            <li><strong>multi-piattaforma: </strong>il codice Java viene compilato in bytecode, un formato di istruzioni eseguibile per una macchina virtuale Java [JVM] e quidni può essere eseguito su qualsiasi dispositivo dotato di una JVM rendendolo un linguaggio <em>WORA</em> [Write Once, Run Anywhere];</li>
+                            <li><strong>robustezza e sicurezza: </strong>Java è progettato per prevenire gli errori di runtime comuni, per cui viene eseguita una gestione dell'errore tramite l'eccezioni. Offre anche un modello di sicurezza <em>sandbox</em> che protegge il sistema da codice dannoso;</li>
+                            <li><strong>getionalità automatica della memoria: </strong>Java utilizza un meccanismo di gestione della memoria chiamato <em>garbage collection</em> che rilascia la memoria utilizzata dagli oggetti non più referenziati, semplificando la gestione e riducendo i problemi di perdite di memoria;</li>
+                            <li><strong>ampia libreria standard: </strong>Java offre molte librerie per svolgere diverse attività di programmazione, come ad esempio per la gestione input/output;</li>
+                            <li><strong>community e supporto: </strong>Java è uno dei linguaggi di programmazione più popolari e ha una vasta community di sviluppatori che fornisce supporto, librerie open-source e una grande quantità di risorse di apprendimento.</li>
+                        </ol>
+                    </div>
+                </div>
+
+                <div>
+                    <a id="Ricerca"></a><br><br><br>
+                    <div class="Def mt-5 ml-xl-5" data-aos="fade-right" data-aos-duration="1000">-Ricerca testuale</div>
+                    <div class="testo ml-xl-5 mr-xl-5" data-aos="fade-right">
+                        <p>Una funzionalità molto importante in Mongo DB è la ricerca testuale che permette di eseguire query in campi stringa per trovare testo o parole specifiche. Una ricerca di testo può essere eseguita con un indice di testo o opertatore <strong>$text</strong>. <br>Un indice di testo può essere una stringa oppure un array di elementi e per eseguire la ricerca occorre che la raccolta contenga un indice di testo. Una raccolta può avere un solo indice di testo e più campi possono avere lo stesso indice di testo.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
         <!-- FINE CONTENUTI -->
 
         <!-- INIZIO FOOTER -->
@@ -103,7 +162,7 @@
 
         <!-- INIZIO BUTTON INIZIO PAGINA -->
         <buttonIn id="back-to-top">
-            <img class="img-fluid" src="./images/FrecciaSu.png" alt="" width="40%">
+            <img class="img-fluid" src="./images/FrecciaSu.png" alt="" width="30%">
         </buttonIN>
         <!-- FINE BUTTON INIZIO PAGINA -->
     </div>
